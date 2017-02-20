@@ -47,7 +47,7 @@ void permutacao(int x1, int y1){
 void exercicioC(int x1, int y1){
 	char *x = convertNumberIntoArray(x1);
 	char *y = convertNumberIntoArray(y1);
-	int i, count, findIndex = 0;
+	int i, count = 0, findIndex = 0;
 	bool ok[strlen(y)];
 	for (i = 0; i < strlen(x); i++){
 		if(x[i] == y[0]){
@@ -62,9 +62,9 @@ void exercicioC(int x1, int y1){
 				ok[1+j-findIndex] = true;
 			}
 		}
-		int i;
-		for (i = 0; i < strlen(y); i++){
-			if(ok[i]){
+		int k;
+		for (k = 0; k < strlen(y); k++){
+			if(ok[k]){
 				count++;
 			}
 		}
