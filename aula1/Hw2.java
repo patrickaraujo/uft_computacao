@@ -17,6 +17,8 @@ public class Hw2 {
      * @param args the command line arguments
      */
     
+    // fucking triangular numbers
+    
     public static int[] toArray(String x){
         String numeros[] = x.split(",");
         int z[] = new int[numeros.length];
@@ -48,43 +50,39 @@ public class Hw2 {
     }
     
     public static void v(int s[]) {
-        int x[][] = verify(s);
-        boolean resultado = false;
-        int var1 = 0;
-        for (int i = 0; i < x[0].length; i++)
-                if(s.length==(x[i][0]*x[i][1])){
-                    resultado = true;
-                    
-                }
-        if(resultado){
-            System.out.println("Sequencia completa, definindo resutado...");
+        int n = (int) Math.sqrt(2 * s.length);
+        boolean triangular = n * (n + 1) / 2 == s.length;
+        if(triangular){
+            boolean allOK = verify(s, n);
+            if(allOK)
+                System.out.println("Sequencia completa e correta, definindo resutado...");
+            else
+                System.out.println("Sequencia completa mas incorreta, sem resultados a mostrar");
+                
         }
-        else{
+        else
             System.out.println("Sequencia incompleta");
-        }
     }
     
-    public static int[][] verify(int s[]){
-        int j = 1, l = 0;
-        int arrayTD [][] = new int [s.length*2][s.length*2];
-        for (int i = 1; i <= s.length; i++) {
-            int k = 0;    
-            while(k < 2){
-                k++;
-                while(k != 1){
-                    if(j%2==0)
-                        j++;
-                    else
-                        j=j+2;
-                    break;
+    public static boolean verify(int s[], int x){
+        for (int i = 1; i <= x; i++) {
+            int k = 0;
+            if (i - 1 != 0)
+                k = ((i - 1) * ((i - 1) + 1) / 2);
+            for (int j = k; j < (i * (i + 1) / 2); j++) {
+                if((i % 2 == 0)){
+                    if(s[j] % 2 != 0){
+                        return false;
+                    }
                 }
-                arrayTD [l][0] = i;
-                arrayTD [l][1] = j;
-                //  if(s.length > arrayTD [l][0]*arrayTD [l][1]) return arrayTD;
-                l++;
+                else{
+                    if(s[j] % 2 == 0){
+                        return false;
+                    }
+                }
             }
         }
-        return arrayTD;
+        return true;
     }
     
     public static void printArray(int v[]) {
