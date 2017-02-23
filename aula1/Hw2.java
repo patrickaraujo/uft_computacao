@@ -28,25 +28,26 @@ public class Hw2 {
         return z;
     }
     
-    public static boolean odd(int x){
-        /*        
-            int l = 0;
-                while(l < 2){
-                    System.out.println("0-------j: "+j);
-                    if(l==1)
-                        j++;
-                    if(j%2!=0){
-                        System.out.println("\nj: "+j+"\n");
-                        l++;
-                    }
-                    else{
-                        System.out.println("----------------shit");
-                        j++;
-                    }
-                    l++;
-                }
-        */
-        return false;
+    public static int[] generateNext(int x){
+        int v[] = new int[(((x+1) * ((x + 1) + 1) / 2) - (x * (x + 1) / 2))];
+        System.out.println("x: "+x);
+        for (int i = (x * (x + 1) / 2); i < ((x+1) * ((x + 1) + 1) / 2); i++) {
+            int num;
+            if((x + 1) % 2 == 0){
+                do{
+                    num = (int) (Math.random() * 100);
+                    System.out.println("shit");
+                    v[(i-(x * (x + 1) / 2))] = num;
+                }while(num % 2 != 0);
+            }
+            else{
+                do{
+                    num = (int) (Math.random() * 100);
+                    v[(i-(x * (x + 1) / 2))] = num;
+                }while(num % 2 == 0);
+            }
+        }
+        return v;
     }
     
     public static void v(int s[]) {
@@ -54,8 +55,10 @@ public class Hw2 {
         boolean triangular = n * (n + 1) / 2 == s.length;
         if(triangular){
             boolean allOK = verify(s, n);
-            if(allOK)
+            if(allOK){
                 System.out.println("Sequencia completa e correta, definindo resutado...");
+                int x[] = generateNext(n);
+            }
             else
                 System.out.println("Sequencia completa mas incorreta, sem resultados a mostrar");
                 
