@@ -30,13 +30,11 @@ public class Hw2 {
     
     public static int[] generateNext(int x){
         int v[] = new int[(((x+1) * ((x + 1) + 1) / 2) - (x * (x + 1) / 2))];
-        System.out.println("x: "+x);
         for (int i = (x * (x + 1) / 2); i < ((x+1) * ((x + 1) + 1) / 2); i++) {
             int num;
             if((x + 1) % 2 == 0){
                 do{
                     num = (int) (Math.random() * 100);
-                    System.out.println("shit");
                     v[(i-(x * (x + 1) / 2))] = num;
                 }while(num % 2 != 0);
             }
@@ -50,6 +48,17 @@ public class Hw2 {
         return v;
     }
     
+    public static int[] arrayIncrease(int s[], int x[]){
+        int newC[] = new int[s.length+x.length];
+        for (int i = 0; i < s.length; i++) {
+            newC[i] = s[i];
+        }
+        for (int i = x.length; i < (s.length+x.length); i++) {
+            newC[i] = x[i-x.length];
+        }
+        return newC;
+    }
+    
     public static void v(int s[]) {
         int n = (int) Math.sqrt(2 * s.length);
         boolean triangular = n * (n + 1) / 2 == s.length;
@@ -57,7 +66,13 @@ public class Hw2 {
             boolean allOK = verify(s, n);
             if(allOK){
                 System.out.println("Sequencia completa e correta, definindo resutado...");
-                int x[] = generateNext(n);
+                int x[] = arrayIncrease(s,generateNext(n));
+                boolean repeate = true;
+                while(repeate){
+                    System.out.println("Deseja continuar com a próxima sequência?\n1. Sim\n2.Não");
+                    Scanner input = new Scanner(System.in);
+                    int comando = input.nextInt;
+                }
             }
             else
                 System.out.println("Sequencia completa mas incorreta, sem resultados a mostrar");
