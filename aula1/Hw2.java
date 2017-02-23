@@ -80,6 +80,7 @@ public class Hw2 {
                 }
                 arrayTD [l][0] = i;
                 arrayTD [l][1] = j;
+                //  if(s.length > arrayTD [l][0]*arrayTD [l][1]) return arrayTD;
                 l++;
             }
         }
