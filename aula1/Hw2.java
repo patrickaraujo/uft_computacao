@@ -5,6 +5,7 @@
  */
 package hw2;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -53,8 +54,8 @@ public class Hw2 {
         for (int i = 0; i < s.length; i++) {
             newC[i] = s[i];
         }
-        for (int i = x.length; i < (s.length+x.length); i++) {
-            newC[i] = x[i-x.length];
+        for (int i = s.length; i < (s.length+x.length); i++) {
+            newC[i] = x[i - s.length];
         }
         return newC;
     }
@@ -66,13 +67,8 @@ public class Hw2 {
             boolean allOK = verify(s, n);
             if(allOK){
                 System.out.println("Sequencia completa e correta, definindo resutado...");
-                int x[] = arrayIncrease(s,generateNext(n));
-                boolean repeate = true;
-                while(repeate){
-                    System.out.println("Deseja continuar com a próxima sequência?\n1. Sim\n2.Não");
-                    Scanner input = new Scanner(System.in);
-                    int comando = input.nextInt;
-                }
+                int x[] = arrayIncrease(s, generateNext(n));
+                printArray(x);
             }
             else
                 System.out.println("Sequencia completa mas incorreta, sem resultados a mostrar");
