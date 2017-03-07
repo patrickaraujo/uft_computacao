@@ -114,6 +114,7 @@ int main(int argc, char *argv[]) {
 		for(i = 0; i < t; i++){
 			printf("Entre com o elemento %i\n", (i+1));
 			scanf("%i", &x[i]);
+			printf(x[i]);
 		}
 		printArray(t, x);
 	}
