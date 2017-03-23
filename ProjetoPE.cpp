@@ -93,11 +93,15 @@ int main(){
             max = i;
         }
     }
-
+    float amplitude = (a[sep.size()-1]-a[0]);
+    float k = sqrt(sep.size());
+    float w = amplitude/k;
+    cout << "w: " << w << endl;
+    cout << "k: " << k << endl;
     float pMedio = (a[0]+a[sep.size()-1])/2;
     cout << "Desvio Médio: " << pDesvioM/sep.size() << endl;
     cout << "Ponto Medio: " << pMedio << endl;
-    cout << "Amplitude: " << (a[sep.size()-1]-a[0]) << endl;
+    cout << "Amplitude: " << amplitude << endl;
     cout << "Mediana: " << mediana << endl;
     cout << "Média: " << media << endl;
     for(int j = 0; j < sep.size(); j++){
@@ -119,11 +123,41 @@ int main(){
     else if(op == 2){
         cout << "Desvio Padrão: " << sqrt (pDesvioP/(sep.size())) << endl;
         cout << "Variância: " << pDesvioP/(sep.size()) << endl;
-        cout << "Coeficiente de Variação em Porcento: " << (sqrt (pDesvioP/sep.size()))/media << endl;
+        cout << "Coeficiente de Variação: " << (sqrt (pDesvioP/sep.size()))/media << endl;
         cout << "Coeficiente de Variação em Porcento: " << ((sqrt (pDesvioP/sep.size()))/media)*100 << "%" << endl;
     }
     else{
         cout << "Opção inválida" << endl;
     }
+    cout << " " << endl;
+    cout << "Tabela de Frequência" << endl;
+    cout << "Classes\tIntervalo de Números\tQuantidade\tFrequência Percentual" << endl;
 
+    int quant[(int)k];
+    for(int i = 0; i < (int)k; i++){
+        quant[i] = 0;
+    }
+    for(int i = 0; i < (int)k; i++){
+        if(i == 0){
+            for(int j = 0; j < sep.size(); j++)
+                if(a[j] < (a[0])+pow(w, (i+1)))
+                    quant[0]++;
+        }
+        else{
+            for(int j = 0; j < sep.size(); j++)
+                if((a[j] >= ((a[0])+pow(w, i))) && (a[j] <= ((a[0])+pow(w, (i+1)))))
+                    quant[i]++;
+        }
+    }
+
+    for(int i = 0; i < (int)k; i++){
+        if(i == 0){
+            cout << i+1 << "\t" << a[0] << " |----- " << a[0] + pow(w, (i+1)) << "\t" << quant[i] << "\t" << ((quant[i]*100)/sep.size()) << "%" << endl;
+        }
+        else{
+            cout << i+1 << "\t" << a[0] + pow(w, i) << " |----- " << a[0] + pow(w, (i+1)) << "\t" << quant[i] << "\t" << ((quant[i]*100)/sep.size()) << "%" << endl;
+        }
+        cout << "" << endl;
+    }
+    return 0;
 }
