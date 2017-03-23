@@ -30,7 +30,7 @@ void fillActors(vector <string>&numbers){
 */
 
 int main(){
-    ifstream MyFile("Tabela1.txt");
+    ifstream MyFile("Tabela3.txt");
     string line;
     vector<string> sep;
     if (MyFile.is_open()){
@@ -93,13 +93,23 @@ int main(){
             }
     }
     int max = 0;
+    int maxN = 0;
     for(int i = 0; i < sep.size(); i++){
-        if(max < z[i]){
+        cout << "z[" << i << "]: " << z[i] << endl;
+        if(maxN < z[i]){
+            maxN = z[i];
             max = i;
         }
     }
+    for(int j = 0; j < sep.size(); j++){
+        if(z[max] == z[j]){
+            cout << "Moda: " << a[j] << endl;
+            saida << "Moda: " << a[j] << "\n";
+        }
+    }
+
     float amplitude = (a[sep.size()-1]-a[0]);
-    float k = sqrt(sep.size());
+    float k = 1+3.22*log10(sep.size());
     float w = amplitude/k;
     float pMedio = (a[0]+a[sep.size()-1])/2;
     cout << "Desvio Médio: " << pDesvioM/sep.size() << endl;
@@ -113,12 +123,7 @@ int main(){
     cout << "Média: " << media << endl;
     saida << "Média: " << media << "\n\n";
     cout << "" << endl;
-    for(int j = 0; j < sep.size(); j++){
-        if(z[max] == z[j]){
-            cout << "Moda: " << a[j] << endl;
-            saida << "Moda: " << a[j] << "\n";
-        }
-    }
+
     cout << "" << endl;
     cout << "Esses dados são do tipo Amostra ou População?" << endl;
     cout << "1 - Amostra" << endl;
@@ -154,10 +159,10 @@ int main(){
     cout << " " << endl;
 
     int quant[(int)k];
-    for(int i = 0; i < (int)k; i++){
+    for(int i = 0; i < (int)k+1; i++){
         quant[i] = 0;
     }
-    for(int i = 0; i < (int)k; i++){
+    for(int i = 0; i < (int)k+1; i++){
         if(i == 0){
             for(int j = 0; j < sep.size(); j++)
                 if(a[j] < (a[0])+pow(w, (i+1)))
@@ -165,7 +170,7 @@ int main(){
         }
         else{
             for(int j = 0; j < sep.size(); j++)
-                if((a[j] >= ((a[0])+pow(w, i))) && (a[j] <= ((a[0])+pow(w, (i+1)))))
+                if((a[j] >= ((a[0])+pow(w, i))) && (a[j] < ((a[0])+pow(w, (i+1)))))
                     quant[i]++;
         }
     }
@@ -174,20 +179,21 @@ int main(){
     cout << "Classes\tIntervalo de Números\tQuantidade\tFrequência Percentual\tFrequência Acumulada" << endl;
     saida << "\nClasses\tIntervalo de Números\tQuantidade\tFrequência Percentual\tFrequência Acumulada";
     int fa = quant[0];
-    for(int i = 0; i < (int)k; i++){
+    for(int i = 0; i < (int)k+1; i++){
+        float fp = (((float)quant[i]*100)/(float)sep.size());
         if(i == 0){
-            cout << i+1 << "\t" << a[0] << " |----- " << a[0] + pow(w, (i+1)) << "\t" << quant[i] << "\t" << ((quant[i]*100)/sep.size()) << "%\t" << fa << endl;
-            saida << i+1 << "\t" << a[0] << " |----- " << a[0] + pow(w, (i+1)) << "\t" << quant[i] << "\t" << ((quant[i]*100)/sep.size()) << "%\t" << fa << "\n";
+            cout << i+1 << "\t" << a[0] << " |----- " << a[0] + pow(w, (i+1)) << "\t" << quant[i] << "\t" << fp << "%\t" << fa << endl;
+            saida << i+1 << "\t" << a[0] << " |----- " << a[0] + pow(w, (i+1)) << "\t" << quant[i] << "\t" << fp << "%\t" << fa << "\n";
         }
         else{
             fa += quant[i];
-            cout << i+1 << "\t" << a[0] + pow(w, i) << " |----- " << a[0] + pow(w, (i+1)) << "\t" << quant[i] << "\t" << ((quant[i]*100)/sep.size()) << "%\t" << fa << endl;
-            saida << i+1 << "\t" << a[0] + pow(w, i) << " |----- " << a[0] + pow(w, (i+1)) << "\t" << quant[i] << "\t" << ((quant[i]*100)/sep.size()) << "%\t" << fa << "\n";
+            cout << i+1 << "\t" << a[0] + pow(w, i) << " |----- " << a[0] + pow(w, (i+1)) << "\t" << quant[i] << "\t" << fp << "%\t" << fa << endl;
+            saida << i+1 << "\t" << a[0] + pow(w, i) << " |----- " << a[0] + pow(w, (i+1)) << "\t" << quant[i] << "\t" << fp << "%\t" << fa << "\n";
         }
         cout << "" << endl;
     }
-    cout << "\t\tTotal: " << sep.size() << "\t100%" << endl;
-    saida << "\t\tTotal: " << sep.size() << "\t100%";
+    cout << "\t\tTotal: " << fa << "\t" << ((float)fa*100)/(float)sep.size() <<"%" << endl;
+    saida << "\t\tTotal: " << fa << "\t" << ((float)fa*100)/(float)sep.size() <<"%";
     saida << "\n\nFim da execução";
     saida.close();
     return 0;
