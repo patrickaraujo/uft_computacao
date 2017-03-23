@@ -65,15 +65,20 @@ int main(){
     else{
         mediana = a[meio];
     }
-
+    ofstream saida;
+    saida.open ("saida.txt");
     float pDesvioM = 0;
     float pDesvioP = 0;
     for(int o = 0; o <sep.size(); o++){
-        cout << "a[" << o << "]: " << a[o] << endl;
+        cout << "Elemento [" << o+1 << "]: " << a[o] << endl;
+        saida << "Elemento [" << o+1 << "]: " << a[o] << "\n";
         float desvio = a[o]-media;
         cout << "Desvio: " << (desvio) << endl;
+        saida << "Desvio: " << (desvio) << "\n";
         pDesvioP += pow(desvio, 2);
         pDesvioM += fabs(desvio);
+        cout << "" << endl;
+        saida << "\n";
     }
 
 
@@ -96,42 +101,57 @@ int main(){
     float amplitude = (a[sep.size()-1]-a[0]);
     float k = sqrt(sep.size());
     float w = amplitude/k;
-    cout << "w: " << w << endl;
-    cout << "k: " << k << endl;
     float pMedio = (a[0]+a[sep.size()-1])/2;
     cout << "Desvio Médio: " << pDesvioM/sep.size() << endl;
+    saida << "\nDesvio Médio: " << pDesvioM/sep.size() << "\n";
     cout << "Ponto Medio: " << pMedio << endl;
+    saida << "Ponto Médio: " << pMedio << "\n";
     cout << "Amplitude: " << amplitude << endl;
+    saida << "Amplitude: " << amplitude << "\n";
     cout << "Mediana: " << mediana << endl;
+    saida << "Mediana: " << mediana << "\n";
     cout << "Média: " << media << endl;
+    saida << "Média: " << media << "\n\n";
+    cout << "" << endl;
     for(int j = 0; j < sep.size(); j++){
         if(z[max] == z[j]){
             cout << "Moda: " << a[j] << endl;
+            saida << "Moda: " << a[j] << "\n";
         }
     }
+    cout << "" << endl;
     cout << "Esses dados são do tipo Amostra ou População?" << endl;
     cout << "1 - Amostra" << endl;
     int op;
     cout << "2 - População" << endl;
     cin >> op;
     if(op == 1){
+        saida << "\nTipo de dado: Amostra" << "\n";
         cout << "Desvio Padrão: " << sqrt (pDesvioP/(sep.size()-1)) << endl;
+        saida << "Desvio Padrão: " << sqrt (pDesvioP/(sep.size()-1)) << "\n";
         cout << "Variância: " << pDesvioP/(sep.size()-1) << endl;
+        saida << "Variância: " << pDesvioP/(sep.size()-1) << "\n";
         cout << "Coeficiente de Variação: " << (sqrt (pDesvioP/(sep.size()-1)))/media <<endl;
+        saida << "Coeficiente de Variação: " << (sqrt (pDesvioP/(sep.size()-1)))/media << "\n";
         cout << "Coeficiente de Variação em Porcento: " << ((sqrt (pDesvioP/(sep.size()-1)))/media)*100 << "%" << endl;
+        saida << "Coeficiente de Variação em Porcento: " << ((sqrt (pDesvioP/(sep.size()-1)))/media)*100 << "%" << "\n";
     }
     else if(op == 2){
+        saida << "\nTipo de dado: População" << "\n" ;
         cout << "Desvio Padrão: " << sqrt (pDesvioP/(sep.size())) << endl;
+        saida << "Desvio Padrão: " << sqrt (pDesvioP/(sep.size())) << "\n";
         cout << "Variância: " << pDesvioP/(sep.size()) << endl;
+        saida << "Variância: " << pDesvioP/(sep.size()) << "\n";
         cout << "Coeficiente de Variação: " << (sqrt (pDesvioP/sep.size()))/media << endl;
+        saida << "Coeficiente de Variação: " << (sqrt (pDesvioP/sep.size()))/media << "\n";
         cout << "Coeficiente de Variação em Porcento: " << ((sqrt (pDesvioP/sep.size()))/media)*100 << "%" << endl;
+        saida << "Coeficiente de Variação em Porcento: " << ((sqrt (pDesvioP/sep.size()))/media)*100 << "%" << "\n";
     }
     else{
         cout << "Opção inválida" << endl;
+        saida << "\nnull" << "\n";
     }
     cout << " " << endl;
-    cout << "Tabela de Frequência" << endl;
-    cout << "Classes\tIntervalo de Números\tQuantidade\tFrequência Percentual" << endl;
 
     int quant[(int)k];
     for(int i = 0; i < (int)k; i++){
@@ -149,15 +169,26 @@ int main(){
                     quant[i]++;
         }
     }
-
+    cout << "Tabela de Frequência" << endl;
+    saida << "\nTabela de Frequência";
+    cout << "Classes\tIntervalo de Números\tQuantidade\tFrequência Percentual\tFrequência Acumulada" << endl;
+    saida << "\nClasses\tIntervalo de Números\tQuantidade\tFrequência Percentual\tFrequência Acumulada";
+    int fa = quant[0];
     for(int i = 0; i < (int)k; i++){
         if(i == 0){
-            cout << i+1 << "\t" << a[0] << " |----- " << a[0] + pow(w, (i+1)) << "\t" << quant[i] << "\t" << ((quant[i]*100)/sep.size()) << "%" << endl;
+            cout << i+1 << "\t" << a[0] << " |----- " << a[0] + pow(w, (i+1)) << "\t" << quant[i] << "\t" << ((quant[i]*100)/sep.size()) << "%\t" << fa << endl;
+            saida << i+1 << "\t" << a[0] << " |----- " << a[0] + pow(w, (i+1)) << "\t" << quant[i] << "\t" << ((quant[i]*100)/sep.size()) << "%\t" << fa << "\n";
         }
         else{
-            cout << i+1 << "\t" << a[0] + pow(w, i) << " |----- " << a[0] + pow(w, (i+1)) << "\t" << quant[i] << "\t" << ((quant[i]*100)/sep.size()) << "%" << endl;
+            fa += quant[i];
+            cout << i+1 << "\t" << a[0] + pow(w, i) << " |----- " << a[0] + pow(w, (i+1)) << "\t" << quant[i] << "\t" << ((quant[i]*100)/sep.size()) << "%\t" << fa << endl;
+            saida << i+1 << "\t" << a[0] + pow(w, i) << " |----- " << a[0] + pow(w, (i+1)) << "\t" << quant[i] << "\t" << ((quant[i]*100)/sep.size()) << "%\t" << fa << "\n";
         }
         cout << "" << endl;
     }
+    cout << "\t\tTotal: " << sep.size() << "\t100%" << endl;
+    saida << "\t\tTotal: " << sep.size() << "\t100%";
+    saida << "\n\nFim da execução";
+    saida.close();
     return 0;
 }
