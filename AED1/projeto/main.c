@@ -32,12 +32,12 @@ char *randomString(int len) {
 }
 
 int* bin(char a){
-        int i = 0;
-        int *output = calloc(8, sizeof(int));
-        for (i = 0; i <8 ; ++i) {
-                 output[8-i-1] = (a >> i) & 1;
-        }
-        return output;
+    int i = 0;
+    int *output = calloc(8, sizeof(int));
+    for (i = 0; i <8 ; ++i) {
+        output[8-i-1] = (a >> i) & 1;
+    }
+    return output;
 }
 
 /*
@@ -92,6 +92,40 @@ void imprime(int *m, int n){
         printf("%d", m[i]);
 }
 
+int* result(int *msg1, int *msg2, int *index, int x, int y){
+    int j = 0;
+    int i;
+    printf("\n");
+    imprime(msg1, 8);
+    printf("\nmsg2: ");
+    imprime(msg2, 8);
+    printf("\n\nindex1: %d\n", index[0]);
+    printf("\n\nindex2: %d\n", index[1]);
+
+    for(i = b-x; i < b-y; i++){
+        printf("\nidw: %i", i);
+        printf("\nthis: %i", msg1[i]);
+        msg2[index[j]] = msg1[i];
+        j++;
+        printf("\nfuckery: ");
+    imprime(msg2, 8);
+    }
+
+}
+
+int** convert(int **msg1, int **msg2, int *index, int tam){
+	int k = 0, i, j;
+    for(i = 0; i < tam; i++){
+        for(j = 0; j < 4; j++){
+            printf("\ni: %i", i);
+            result(msg1[i], msg2[k], index, ((j+1)*2), (j*2));
+            printf("\nk: %i", k);
+            k++;
+        }
+
+    }
+}
+
 int main(){
     char msg1 [] =  {"hello"};
     int n = (4*strlen(msg1));
@@ -104,27 +138,5 @@ int main(){
     imprime(msgBin, b);
     int** msg1Bin = strToBin(msg1, strlen(msg1));
     int** msg2Bin = strToBin(msg2, strlen(msg2));
-    convert(msg1Bin, msg2Bin, id);
-}
-
-int* result(int *msg1, int *msg2, int *index, int x, int y){
-    int the2;
-    int j = 0;
-    int i;
-    for(i = b-x; i < b-y; i++){
-        msg2[j] = msg1[i];
-    }
-
-}
-
-
-int**convert(int **msg1, int **msg2, int *index){
-	k = 0;
-    for(int i = 0; i < msg1.length; i++){
-        for(int j = 0; j < 4; j++){
-            result(msg1[i], msg2[k], index, ((j+1)*2), (j*2));
-            k++;
-        }
-
-    }
+    int** done = convert(msg1Bin, msg2Bin, id, strlen(msg1));
 }
