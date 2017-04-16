@@ -104,26 +104,27 @@ int main(){
     imprime(msgBin, b);
     int** msg1Bin = strToBin(msg1, strlen(msg1));
     int** msg2Bin = strToBin(msg2, strlen(msg2));
+    convert(msg1Bin, msg2Bin, id);
+}
+
+int* result(int *msg1, int *msg2, int *index, int x, int y){
+    int the2;
+    int j = 0;
     int i;
-    for(i = 0; i < strlen(msg1); i++){
-
+    for(i = b-x; i < b-y; i++){
+        msg2[j] = msg1[i];
     }
-}
 
-int* result(int x){
-    int index[2];
-    if()
-    
 }
 
 
-int** strToBin(int **msg1, int **msg2, int *index){
+int**convert(int **msg1, int **msg2, int *index){
 	k = 0;
     for(int i = 0; i < msg1.length; i++){
         for(int j = 0; j < 4; j++){
-            msg1[i][j]
+            result(msg1[i], msg2[k], index, ((j+1)*2), (j*2));
             k++;
         }
-        
+
     }
 }
