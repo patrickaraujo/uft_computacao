@@ -44,7 +44,6 @@ int* bin(char a){
 typedef struct{
     TData* data;
 } AoadBin;
-
 AoadBin* AoadBin_add(int qty){
     AoadBin* nova = (TStaticList*) malloc(sizeof(TStaticList));
     int i;
@@ -93,37 +92,46 @@ void imprime(int *m, int n){
 }
 
 int* result(int *msg1, int *msg2, int *index, int x, int y){
-    int j = 0;
-    int i;
-    printf("\n");
-    imprime(msg1, 8);
-    printf("\nmsg2: ");
-    imprime(msg2, 8);
-    printf("\n\nindex1: %d\n", index[0]);
-    printf("\n\nindex2: %d\n", index[1]);
+    int i, j = 0;
 
     for(i = b-x; i < b-y; i++){
-        printf("\nidw: %i", i);
-        printf("\nthis: %i", msg1[i]);
         msg2[index[j]] = msg1[i];
         j++;
-        printf("\nfuckery: ");
-    imprime(msg2, 8);
     }
-
+    printf("\nResultado: ");
+    imprime(msg2, b);
+    return msg2;
 }
 
-int** convert(int **msg1, int **msg2, int *index, int tam){
+int** convert(int **msg1, int **msg2, int *index, int tam1, int tam2){
+	int **array2d;
+	array2d = malloc(tam2 * sizeof(int *));
 	int k = 0, i, j;
-    for(i = 0; i < tam; i++){
+    for(i = 0; i < tam1; i++){
         for(j = 0; j < 4; j++){
-            printf("\ni: %i", i);
-            result(msg1[i], msg2[k], index, ((j+1)*2), (j*2));
-            printf("\nk: %i", k);
+            array2d[k] = malloc(b*sizeof(int));
+            printf("\nmsg1: ");
+            imprime(msg1[i], b);
+            printf("\nmsg2: ");
+            imprime(msg2[k], b);
+            array2d[k] = result(msg1[i], msg2[k], index, ((j+1)*2), (j*2));
             k++;
         }
 
     }
+    return array2d;
+}
+
+void toFile(int **m, int n){
+    FILE *fp;
+    fp = fopen("/home/patrick/Downloads/projeto/tmp/test.txt", "w+");
+    int i, j;
+    for(i = 0; i < n; i++){
+        for(j = 0; j < b; j++)
+            fprintf(fp, "%d", m[i][j]);
+    fputs("\n", fp);
+    }
+    fclose(fp);
 }
 
 int main(){
@@ -138,5 +146,8 @@ int main(){
     imprime(msgBin, b);
     int** msg1Bin = strToBin(msg1, strlen(msg1));
     int** msg2Bin = strToBin(msg2, strlen(msg2));
-    int** done = convert(msg1Bin, msg2Bin, id, strlen(msg1));
+    int** done = convert(msg1Bin, msg2Bin, id, strlen(msg1), strlen(msg2));
+    toFile(done, n);
+
+    return 0;
 }
