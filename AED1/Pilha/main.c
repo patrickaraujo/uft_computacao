@@ -54,6 +54,9 @@ int main(){
     push(34);
     imprimePilha();
 
+    pop();
+    pop();
+    pop();
     imprimePilha();
     return 0;
 }
