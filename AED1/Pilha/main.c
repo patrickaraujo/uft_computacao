@@ -19,13 +19,15 @@ void push(int x){
 int pop(){
     int aux;
     if( !pilhaVazia() ){
-        aux = pilha[fim - 1];
+        int x = (fim - 1);
+        aux = pilha[x];
+        pilha[x] = 0;
         fim--;
-        return aux;
+        printf("Removido com sucesso\n");
+        return 1;
     }
-    else{
-        return -1;
-    }
+    printf("Pilha vazia\n");
+    return -1;
 }
 
 int pilhaVazia(){
@@ -51,12 +53,7 @@ int main(){
     push(12);
     push(34);
     imprimePilha();
-    printf("%d\n", pop());
-    printf("%d\n", pop());
-    printf("%d\n", pop());
 
-    if(pop() == -1)
-        printf("Pilha vazia\n");
     imprimePilha();
     return 0;
 }
