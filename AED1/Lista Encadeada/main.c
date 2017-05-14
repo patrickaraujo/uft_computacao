@@ -5,7 +5,7 @@
 typedef struct reg {
     int x, y, z;
     struct reg *prox;
-}ponto ;
+}ponto;
 
 int main() {
     ponto * primeiro;
