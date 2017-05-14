@@ -24,7 +24,7 @@ int pop(){
         return aux;
     }
     else{
-        return   -1;
+        return -1;
     }
 }
 
