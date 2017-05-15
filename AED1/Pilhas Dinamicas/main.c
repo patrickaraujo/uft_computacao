@@ -104,14 +104,16 @@ void top () {
 }
 
 void pop() {
-    ponto aux;
+    ponto *aux;
 
     if(Point == NULL)
         printf("Nao ha elementos na pilha\n");
-    aux = *Point->prox;
-    free(Point);
-    // ver isso
-    *Point = aux;
+    else{
+        aux = Point->prox;
+        free(Point);
+        // ver isso
+        Point = aux;
+    }
 }
 
 void imprimir() {
