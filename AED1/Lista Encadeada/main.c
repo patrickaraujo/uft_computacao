@@ -1,44 +1,129 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/*
+typedef struct reg_pilha{
+      int info;
+      struct reg_pilha *lig ;
+};
+typedef struct reg_pilha *tpont;
+typedef tpont pilha;
+*/
 
-typedef struct reg {
-    int x, y, z;
-    struct reg *prox;
+typedef struct reg{
+    int x;
+    struct reg *prox ;
 }ponto;
 
-int main() {
-    ponto * primeiro;
-    ponto * seguinte;
-    int op;
+ponto *Point;
+//  typedef tpoint pilha;
 
-    primeiro = (ponto *)malloc(sizeof(ponto));
+void criar();
+void push(int num);
+void vazia();
+void top();
+void pop();
+void imprimir();
 
-    seguinte = primeiro;
+int main(){
+    int choice, x;
 
-    while(1){
-        printf("\nDigite o x: ");
-        scanf("%d", &seguinte->x);
-        printf("Digite o y: ");
-        scanf("%d", &seguinte->y);
-        printf("Digite o z: ");
-        scanf("%d", &seguinte->z);
-        printf("Deseja continua? \n<1>: SIM \n<outro valor>?: NAO\nComando: ");
-        scanf("%d", &op);
-        if(op == 1){
-            seguinte->prox = (ponto *)malloc(sizeof(ponto));
-            seguinte = seguinte->prox;
-        }
-        else
+    while(choice != 7){
+        printf("\n\tMENU\t\n\n");
+        printf("1 - Para Criar pilha vazia\n");
+        printf("2 - Para Empilhar(PUSH)\n");
+        printf("3 - Para Verificar se a pilha esta vazia\n");
+        printf("4 - Para Desempilhar(POP)\n");
+        printf("5 - Para Acessar o topo da pilha\n");
+        printf("6 - Mostrar elementos da pilha\n");
+        printf("7 - Para Sair\n");
+        printf("\n\n");
+        printf("Informe A Opcao: ");
+        scanf("%d", &choice);
+
+        switch(choice) {
+            case 1:
+                criar();
             break;
+            case 2:
+                printf("Digite o numero a inserir\n");
+                scanf("%d", &x);
+                push(x);
+            break;
+            case 3:
+                vazia();
+                system("pause");
+            break;
+            case 4:
+                pop ();
+            break;
+            case 5:
+                top ();
+                system("pause");
+            break;
+            case 6:
+                imprimir();
+                system("pause");
+            break;
+            default:
+                printf("\nOpção inválida");
+        }
+        //  limpa a tela
+        //  system("cls");
     }
-    seguinte->prox = NULL;
-    //  volta para o começo
-    seguinte = primeiro;
-    printf("\n");
-    while(seguinte != NULL){
-        printf("x: %i \ty: %i \tz: %i \n", seguinte->x, seguinte->y, seguinte->z);
-        seguinte = seguinte->prox;
-    }
+
+    system("pause");
     return 0;
+}
+
+void criar() {
+    Point = NULL;
+}
+
+void push (int num) {
+    ponto *pont = malloc(sizeof(ponto));
+    if(pont == NULL)
+        printf("Memoria insulficiente\n");
+    else{
+        pont->x = num;
+            printf("push-point: %i", Point);
+        pont->prox = Point;
+    }
+    Point = pont;
+}
+
+void vazia() {
+    if(Point == NULL)
+        printf("Pilha vazia\n");
+    else
+        printf("Pilha nao vazia\n");
+}
+
+void top () {
+    if(Point != NULL)
+        printf("Topo da pilha %d", Point->x);
+    else
+        printf("Pilha vazia\n");
+}
+
+void pop() {
+    ponto *aux;
+
+    if(Point == NULL)
+        printf("Nao ha elementos na pilha\n");
+    else{
+        aux = Point->prox;
+        free(Point);
+        // ver isso
+        Point = aux;
+    }
+}
+
+void imprimir() {
+    ponto *aux;
+    if(Point != NULL)
+        for(aux = Point; aux != NULL; aux=aux->prox)
+            printf("%d, ",aux->x);
+    else
+        printf("Pilha vazia\n");
 }
