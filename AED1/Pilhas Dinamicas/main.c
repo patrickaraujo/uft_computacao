@@ -69,7 +69,7 @@ int main(){
                 printf("\nOpção inválida");
         }
         //  limpa a tela
-        system("cls");
+        //  system("cls");
     }
 
     system("pause");
@@ -82,10 +82,11 @@ void criar() {
 
 void push (int num) {
     ponto *pont = malloc(sizeof(ponto));
-    if(pont  == NULL)
+    if(pont == NULL)
         printf("Memoria insulficiente\n");
     else{
         pont->x = num;
+            printf("push-point: %i", Point);
         pont->prox = Point;
     }
     Point = pont;
@@ -122,7 +123,7 @@ void imprimir() {
     ponto *aux;
     if(Point != NULL)
         for(aux = Point; aux != NULL; aux=aux->prox)
-            printf("%d ",aux->x);
+            printf("%d, ",aux->x);
     else
         printf("Pilha vazia\n");
 }
