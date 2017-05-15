@@ -27,8 +27,9 @@ void imprimir();
 
 int main(){
     int choice, x;
-    for(;;){
-        printf("\n--------------------MENU---------------------------\n\n");
+
+    while(choice != 7){
+        printf("\n\tMENU\t\n\n");
         printf("1 - Para Criar pilha vazia\n");
         printf("2 - Para Empilhar(PUSH)\n");
         printf("3 - Para Verificar se a pilha esta vazia\n");
@@ -36,7 +37,7 @@ int main(){
         printf("5 - Para Acessar o topo da pilha\n");
         printf("6 - Mostrar elementos da pilha\n");
         printf("7 - Para Sair\n");
-        printf("\n----------------------------------------------------\n\n");
+        printf("\n\n");
         printf("Informe A Opcao: ");
         scanf("%d", &choice);
 
@@ -64,9 +65,10 @@ int main(){
                 imprimir();
                 system("pause");
             break;
-            case 7:
-                exit (1);
+            default:
+                printf("\nOpção inválida");
         }
+        //  limpa a tela
         system("cls");
     }
 
