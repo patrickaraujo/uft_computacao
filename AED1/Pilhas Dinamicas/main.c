@@ -15,16 +15,15 @@ typedef struct reg{
     struct reg *prox ;
 }ponto;
 
-typedef ponto *tpoint;
-typedef tpoint pilha;
-pilha p;
+ponto *Point;
+//  typedef tpoint pilha;
 
 void criar();
 void push(int num);
-void vazia(pilha p);
-void top(pilha p);
+void vazia();
+void top();
 void pop();
-void imprimir(pilha p);
+void imprimir();
 
 int main(){
     int choice, x;
@@ -43,7 +42,7 @@ int main(){
 
         switch(choice) {
             case 1:
-                criar;
+                criar();
             break;
             case 2:
                 printf("Digite o numero a inserir\n");
@@ -51,18 +50,18 @@ int main(){
                 push(x);
             break;
             case 3:
-                vazia (p);
+                vazia();
                 system("pause");
             break;
             case 4:
-                pop (p);
+                pop ();
             break;
             case 5:
-                top (p);
+                top ();
                 system("pause");
             break;
             case 6:
-                imprimir(p);
+                imprimir();
                 system("pause");
             break;
             case 7:
@@ -76,52 +75,49 @@ int main(){
 }
 
 void criar() {
-    p = NULL;
+    Point = NULL;
 }
 
 void push (int num) {
-    pilha pont;
-    if((pont = malloc(sizeof(ponto))) == NULL)
+    ponto *pont = malloc(sizeof(ponto));
+    if(pont  == NULL)
         printf("Memoria insulficiente\n");
     else{
         pont->x = num;
-        pont->prox = p;
+        pont->prox = Point;
     }
-    p = pont;
+    Point = pont;
 }
 
-void vazia (pilha p) {
-    if(p == NULL)
+void vazia() {
+    if(Point == NULL)
         printf("Pilha vazia\n");
     else
         printf("Pilha nao vazia\n");
 }
 
-void top (pilha p) {
-    if(p != NULL)
-        printf("Topo da pilha %d",p->x);
+void top () {
+    if(Point != NULL)
+        printf("Topo da pilha %d", Point->x);
     else
         printf("Pilha vazia\n");
 }
 
 void pop() {
-    tpoint aux;
+    ponto aux;
 
-    if(p == NULL){
+    if(Point == NULL)
         printf("Nao ha elementos na pilha\n");
-        return;
-    }
-    aux = p->prox;
-    free(p);
-
-    p = aux;
+    aux = *Point->prox;
+    free(Point);
+    // ver isso
+    *Point = aux;
 }
 
-void imprimir(pilha p) {
-    tpoint aux;
-
-    if(p!= NULL)
-        for(aux = p;aux!=NULL;aux=aux->prox)
+void imprimir() {
+    ponto *aux;
+    if(Point != NULL)
+        for(aux = Point; aux != NULL; aux=aux->prox)
             printf("%d ",aux->x);
     else
         printf("Pilha vazia\n");
