@@ -69,7 +69,7 @@ int main(){
                 printf("\nOpção inválida");
         }
         //  limpa a tela
-        //  system("cls");
+        system("cls");
     }
 
     system("pause");
@@ -86,7 +86,6 @@ void push (int num) {
         printf("Memoria insulficiente\n");
     else{
         pont->x = num;
-            printf("push-point: %i", Point);
         pont->prox = Point;
     }
     Point = pont;
