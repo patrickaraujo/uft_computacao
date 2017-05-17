@@ -1,3 +1,8 @@
+/**
+* @author Patrick Araújo
+*Lista Encadeada em C para a aula de Algorismo e Estrutura de Dados 1
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
