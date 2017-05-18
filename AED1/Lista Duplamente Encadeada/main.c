@@ -19,19 +19,23 @@ void push(int valor);
 void print();
 void printInvert();
 void top ();
+ponto* find(int valor);
+//void erase(int valor);
 
 int main() {
     int op, x;
 	criar();
 
-	while(op != 6){
+	while(op != 8){
         printf("\n\tMENU\t\n\n");
         printf("1 - Para Empilhar(PUSH)\n");
         printf("2 - Para Verificar se a pilha esta vazia\n");
         printf("3 - Para Desempilhar(POP)\n");
         printf("4 - Para Acessar o topo da pilha\n");
         printf("5 - Mostrar elementos da pilha\n");
-        printf("6 - Para Sair\n");
+        printf("6 - Buscar um Elemento e Exibir Ponteiro\n");
+        //  printf("7 - Remover Elemento\n");
+        printf("8 - Para Sair\n");
         printf("\n\n");
         printf("Informe A Opcao: ");
         scanf("%d", &op);
@@ -57,6 +61,20 @@ int main() {
                 print();
                 system("pause");
             break;
+            case 6:
+                printf("Digite o numero a procurar\n");
+                scanf("%d", &x);
+                printf("\nPonteiro: %i\n", find(x));
+                system("pause");
+            break;
+            /*
+            case 7:
+                printf("Entre com o valor\n");
+                scanf("%d", &x);
+                erase(x);
+                system("pause");
+            break;
+            */
             default:
                 printf("\nOpção inválida");
         }
@@ -171,3 +189,49 @@ void printInvert(){ //  imprime em ordem decrescente
 		}
 	}
 }
+
+ponto* find(int valor){ //função passada para buscar, e retornar ponteiro
+	ponto *retorno; //ponteiro de retorno
+	int encontrou = 0;
+	retorno = NULL; //  se não encontrar então retorno é nulo
+	while(lista != NULL){   //  enquanto a lista não for nula
+		if((lista->x) == valor){ //  se valor digitado for encotnrado
+			retorno = lista;  //retorno recebe a lista, para retornar ponteiro
+			encontrou = 1;
+			break;
+		}
+		lista = lista->ant; //próximo elemento
+	}
+	if(encontrou == 1)  //  encontrou
+		printf("\nElemento Encontrado com Sucesso!\n");
+	else    //  nao encontrou
+		printf("\nElemento digitado %c inv%clido!\n", 130, 160);
+	return retorno;//retorno do ponteiro
+}
+
+/*
+void erase(int valor){ //  remover elemento desejado
+	ponto *aux; //  auxiliar
+	int encontrou = 0;
+	aux = find(valor);  //  chamando função de busca
+	if(lista == NULL)   // lista vazia
+		printf("\nLista Vazia\n");
+	else{
+		if(aux != NULL){    //  se a lista não for nula
+			if(aux->ant != NULL)    //  se no valor digitado a direita não for nula
+				aux->ant->prox = aux->prox; //  aux direita e esquerdqa recebe o valor da esquerda
+			if(aux->prox != NULL)   //  e se a esquerda não for nula
+				aux->prox->ant = aux->ant;  //  aux esquerda e direita recebe o valor da direita
+			else    //  se os 2 forem nulos
+				lista = aux->ant;
+			free(aux);
+			encontrou = 1;
+		}
+
+		if(encontrou == 1)  //  mensagem
+			printf("\nElemento removido com Sucesso!\n");
+		else
+			printf("\nElemento nao Encontrado\n");
+	}
+}
+*/
