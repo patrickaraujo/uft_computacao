@@ -16,6 +16,7 @@ ponto *lista;
 void criar();
 void push(int valor);
 void print();
+void printInvert();
 void top ();
 
 int main() {
@@ -116,7 +117,7 @@ void pop() {
     }
 }
 
-void print(){	//	imprimir da direita para esquerda
+void print(){	//	imprime em ordem crescente
 	ponto *p;
 	p = lista;
 	if(lista == NULL)//lista vazia
@@ -129,6 +130,24 @@ void print(){	//	imprimir da direita para esquerda
 		while(p != NULL){	//	enquanto não houver objetos nulos, da direita
 			printf("\nElemento: %d\n",p->x);
 			p = p->prox; //o ponteiro volta imprimindo
+		}
+	}
+}
+
+void printInvert(){ //  imprime em ordem decrescente
+
+	ponto *p;
+	p = lista;
+	if(p == NULL) //lista nula, lista vazia
+	{
+		printf("\nLista Vazia");
+	}
+	else
+	{
+		while(p!=NULL) //enquanto a lista não for nula
+		{
+			printf("\nElemento: %d\n",p->x); //imprime o elemento
+			p = p->ant; //passa para o próximo regitro
 		}
 	}
 }
