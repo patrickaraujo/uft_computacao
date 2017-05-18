@@ -122,13 +122,13 @@ void print(){	//	imprimir da direita para esquerda
 	if(lista == NULL)//lista vazia
 		printf("\nLista Vazia\n");
 	else{
-		while(p->prox != NULL){	//	enquanto o elemento da direita não for nulo
-			p = p->prox; //p passa para o próximo elemento
+		while(p->ant != NULL){	//	enquanto o elemento da direita não for nulo
+			p = p->ant; //p passa para o próximo elemento
 		}
 
 		while(p != NULL){	//	enquanto não houver objetos nulos, da direita
 			printf("\nElemento: %d\n",p->x);
-			p = p->ant; //o ponteiro volta imprimindo
+			p = p->prox; //o ponteiro volta imprimindo
 		}
 	}
 }
