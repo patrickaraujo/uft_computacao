@@ -95,6 +95,30 @@ void push(int valor){//adicionar no inicio da lista
 	}
 }
 
+void pushInvert(int valor){ //  inserir no fim da lista
+
+	ponto *pNow, *pNavegar; //  ponteiro de navegação
+	pNavegar = lista;  //  navegação recebe a lista
+
+	if((pNow = malloc(sizeof(ponto))) == NULL)  //  erro
+		printf("\nMemory Failure\n");
+	else{
+		//para conter algum valor
+		pNow->x = valor; //recebe valor
+		pNow->ant = NULL; //direita e esquerda são nulos
+		pNow->prox = NULL;
+		if(lista == NULL) //  lista vazia
+			lista = pNow;
+		else{
+			while(pNavegar->ant != NULL){   //  navegar paraa o último elemento para inserir no fim
+				pNavegar = pNavegar->ant;
+			}
+			pNavegar->ant = pNow; //o ultimo elemento recebe o valor (direita e esquerda do pNow continuam nulos)
+			pNow->prox = pNavegar; //valor da esquerda recebe o valor contido acima e insere no fim
+		}
+	}
+}
+
 void top () {
     if(lista != NULL)
         printf("Topo da pilha: %d\n", lista->x);
