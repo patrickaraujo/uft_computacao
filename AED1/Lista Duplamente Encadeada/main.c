@@ -126,7 +126,6 @@ void print(){	//	imprime em ordem crescente
 		while(p->ant != NULL){	//	enquanto o elemento da direita não for nulo
 			p = p->ant; //p passa para o próximo elemento
 		}
-
 		while(p != NULL){	//	enquanto não houver objetos nulos, da direita
 			printf("\nElemento: %d\n",p->x);
 			p = p->prox; //o ponteiro volta imprimindo
@@ -138,16 +137,12 @@ void printInvert(){ //  imprime em ordem decrescente
 
 	ponto *p;
 	p = lista;
-	if(p == NULL) //lista nula, lista vazia
-	{
+	if(p == NULL)   //  lista nula, lista vazia
 		printf("\nLista Vazia");
-	}
-	else
-	{
-		while(p!=NULL) //enquanto a lista não for nula
-		{
-			printf("\nElemento: %d\n",p->x); //imprime o elemento
-			p = p->ant; //passa para o próximo regitro
+	else{
+		while(p!=NULL){ //  enquanto a lista não for nula
+			printf("\nElemento: %d\n",p->x);    // imprime o elemento
+			p = p->ant; //  passa para o próximo regitro
 		}
 	}
 }
