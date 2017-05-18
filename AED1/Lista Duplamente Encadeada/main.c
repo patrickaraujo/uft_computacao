@@ -1,6 +1,7 @@
 /**
 * @author Patrick Araújo
 *Lista Duplamente Encadeada em C para a aula de Algorismo e Estrutura de Dados 1
+* baseado no código do site: http://www.ebah.com.br/content/ABAAAgKOQAJ/lista-duplamente-encadeada-c
 */
 #include <stdio.h>
 #include <stdlib.h>
