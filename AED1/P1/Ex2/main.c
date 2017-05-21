@@ -2,6 +2,7 @@
 * @author Patrick Araújo
 *
 */
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -10,8 +11,9 @@ typedef struct reg{
     struct reg *prox;
 }no;
 
+no *primeiro;
+
 int busca(no* aux, int dado);
-//  int busca(int dado);
 void criar(no **aux);
 void push (no **aux, int num);
 void imprimir(no *lista);
@@ -21,12 +23,11 @@ int main(){
     criar(&L);
     //  Código para criação da lista 15 busca(L, x);
     int arr[10] = {1, 2, 3, 4, 5, 6, 10, 400, 500, 550};
-
     int i;
     for(i = 0; i < 10; i++)
         push(&L, arr[i]);
-    imprimir(L);
-    printf("%i", busca(L, 400));
+    //  imprimir(L);
+    busca(primeiro, 3);
     return 0;
 }
 
@@ -49,26 +50,31 @@ int busca(no* aux, int dado){
 }
 
 void push (no **aux, int num) {
-    no *pont = malloc(sizeof(no));
-    if(pont == NULL)
-        printf("Memoria insulficiente\n");
-    else{
-        pont->info = num;
-        if(aux == NULL)
-            pont->prox = 0;
-        pont->prox = *aux;
-    }
-    *aux = pont;
+    no *p; //auxiliar
+	if((p = malloc(sizeof(no))) == NULL)	//	erro
+		printf("\nMemory Failure");
+	else{
+		p->info = num; //recebendo valor
+		p->prox = NULL;	//	esquerda é nulo pois a inseção é no inicio
+		if(*aux != NULL)    //  se a lista não for nula então a esquerda recebe o valor
+			(*aux)->prox = p;
+		else
+            primeiro = p;
+		*aux = p; //lista recebe valor da direita
+	}
 }
 
 void imprimir(no *lista){
     no *aux;
-    if(lista != NULL)
-        for(aux = lista; aux != NULL; aux=aux->prox){
-            printf("\n%d\n", aux->info);
-            printf("\nimprimir aux: %i\n", aux);
-            printf("\nimprimir aux - prox: %i\n", aux->prox);
-            }
-    else
-        printf("Pilha vazia\n");
+	aux = primeiro;
+	if(aux == NULL)//lista vazia
+		printf("\nLista Vazia\n");
+	else{
+		while(aux != NULL){	//	enquanto não houver objetos nulos, da direita
+			printf("\nElemento: %d\n", aux->info);
+			//  printf("\nEnd - Elemento: %d\n", aux);
+			//  printf("\nprox - Elemento: %d\n", aux->prox);
+			aux = aux->prox; //o ponteiro volta imprimindo
+		}
+	}
 }
