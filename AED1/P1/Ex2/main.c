@@ -17,6 +17,7 @@ int busca(no* aux, int dado);
 void criar(no **aux);
 void push (no **aux, int num);
 void imprimir(no *lista);
+void erase(no **lista);
 
 int main(){
     no *L;
@@ -77,4 +78,12 @@ void imprimir(no *lista){
 			aux = aux->prox; //o ponteiro volta imprimindo
 		}
 	}
+}
+
+void erase(no **lista) {
+    if(*lista == NULL)
+        printf("Nao ha elementos na pilha\n");
+    no *aux = (primeiro)->prox;
+    free(primeiro);
+    primeiro = aux;
 }
