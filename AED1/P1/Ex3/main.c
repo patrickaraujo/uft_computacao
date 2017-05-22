@@ -29,7 +29,8 @@ int main(){
         push(&L, arr[i]);
     imprimir(L);
     erase();
-    //imprimir(L);
+    erase();
+    imprimir(L);
     busca(primeiro, 3);
     return 0;
 }
@@ -71,14 +72,13 @@ void imprimir(no *lista){
     no *aux = primeiro;
 	if(aux == NULL)//lista vazia
 		printf("\nLista Vazia\n");
-	else{
+	else
 		while(aux != NULL){	//	enquanto não houver objetos nulos, da direita
 			printf("\nElemento: %d\n", aux->info);
 			//  printf("\nEnd - Elemento: %d\n", aux);
-			printf("\nprox - Elemento: %d\n", aux->prox);
+			//  printf("\nprox - Elemento: %d\n", aux->prox);
 			aux = aux->prox; //o ponteiro volta imprimindo
 		}
-	}
 }
 
 void erase() {
@@ -94,14 +94,8 @@ void erase() {
 		aux = primeiro;
     if(j)
         for(i = 0; i < j-1; i++){
-            if(aux != NULL){
-                printf("\nElddcsdemento: %d\n", aux->info);
-                if(i == j-2){
-                    aux->prox = 0;
-                }
-                printf("\nprox - Elemento: %d\n", aux->prox);
-                aux = aux->prox;
-                }
-            }
-
+            if(i == j-2)
+                aux->prox = 0;
+            aux = aux->prox;
+        }
 }
