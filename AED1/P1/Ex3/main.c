@@ -23,7 +23,7 @@ void erase(Lista **lista);
 int funcX(char v[1024]);
 void push (Lista **aux, int num);
 int* create();
-int Pilha_desempilha(Pilha **lista, int *k);
+int Pilha_desempilha(Pilha *pilha, int *in);
 int Lista_remove(Lista *lista, int *in);
 void Pilha_empilha (Pilha **aux, char num);
 void Lista_insere (Lista **aux, char num);
@@ -52,9 +52,11 @@ int funcX(char v[1024]){
         Pilha_empilha(&P, v[i]);
     }
     while(Pilha_desempilha(P, &i) && Lista_remove(F, &j)){
-            printf("\ni: %i\n", i);
-        if(v[i] != j)
-            return 0;}
+        printf("\ni: %i\n", i);
+        printf("\nj: %i\n", j);
+        if(i != j)
+            return 2;
+    }
     return 1;
 }
 
@@ -111,10 +113,16 @@ int Lista_remove(Lista *lista, int *in) {
     return 1;
 }
 
-int Pilha_desempilha(Pilha *lista, int *k) {
+int Pilha_desempilha(Pilha *pilha, int *in) {
+    printf("\nPilha->info: %c\n", pilha->info);
+    printf("\nPrim->info: %c\n", prim->info);
     int j = 0, i;
     Pilha *aux = prim;
-	if(aux == NULL){    //  lista vazia
+    *in = 0;
+    if((pilha->info) == (primeiro->info)){
+        *in = 1;
+    }
+	if(prim == NULL){    //  lista vazia
         printf("\nLista Vazia\n");
         return 0;
 	}
@@ -123,14 +131,12 @@ int Pilha_desempilha(Pilha *lista, int *k) {
 			j++;
 			aux = aux->prox;
 		}
-		aux = prim;
+    aux = prim;
     if(j)
         for(i = 0; i < j-1; i++){
             if(i == j-2)
                 aux->prox = 0;
             aux = aux->prox;
         }
-    int g = 3;
-    *k = g;
     return 1;
 }
