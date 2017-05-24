@@ -1,6 +1,6 @@
 /**
 * @author Patrick Araújo
-*
+* Link para o enunciado: https://www.passeidireto.com/arquivo/29072879/prova-1-de-algoritmos-e-estrutura-de-dados-1
 */
 
 #include <stdio.h>
