@@ -28,6 +28,8 @@ int main(){
     for(i = 0; i < 10; i++)
         push(&L, arr[i]);
     imprimir();
+    erase();
+    imprimir();
     busca(primeiro, 3);
     return 0;
 }
@@ -89,12 +91,15 @@ void erase() {
     aux = primeiro;
     if((j !=0 ) && (j != 1)){
         for(i = 0; i < j-1; i++){
-            if(i == j-2)
+            if(i == j-2){
+                //  printf("aux-info: %i", aux->prox->info);
                 aux->prox = 0;
+                }
             aux = aux->prox;
         }
     }
     else{
+        //  printf("aux-info: %i", aux->info);
         primeiro = NULL;
     }
 
