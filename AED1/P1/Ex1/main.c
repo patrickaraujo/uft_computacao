@@ -1,22 +1,6 @@
 /**
 * @author Patrick Araújo
-* Lista Duplamente Encadeada em C para a aula de Algorismo e Estrutura de Dados 1
-*
-* Assumindo que os códigos para as funções Pilha_empilha(Pilha* P, int dado); e
-* Pilha_desempilha(Pilha* P, int &dado); estejam implementadas, faça um programa
-* em C que receba uma expressão matemática usando operadores simples e as marcações
-* de chaves, colchetes e parênteses e verifique se a equação está correta do ponto de
-* vista da abertura de chaves, parênteses e colchetes
-*/
-/**
-* @author Patrick Araújo
-* Lista Duplamente Encadeada em C para a aula de Algorismo e Estrutura de Dados 1
-*
-* Assumindo que os códigos para as funções Pilha_empilha(Pilha* P, int dado); e
-* Pilha_desempilha(Pilha* P, int &dado); estejam implementadas, faça um programa
-* em C que receba uma expressão matemática usando operadores simples e as marcações
-* de chaves, colchetes e parênteses e verifique se a equação está correta do ponto de
-* vista da abertura de chaves, parênteses e colchetes
+* Link para o enunciado: https://www.passeidireto.com/arquivo/29072879/prova-1-de-algoritmos-e-estrutura-de-dados-1
 */
 
 #include <stdio.h>
