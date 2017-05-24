@@ -31,7 +31,7 @@ void Lista_insere (Lista **aux, char num);
 
 void main(){
     //  printf("%d, %d, %d, %d", funcX("barrabas"), funcX("asouosa"), funcX("eh ou nao eh"), funcX("SAIPPUAKIVIKAUPPIAS"));
-    printf("%d", funcX("asouosa"));
+    printf("%i", funcX("asouosa"));
     return 0;
 }
 
@@ -55,7 +55,7 @@ int funcX(char v[1024]){
         printf("\ni: %i\n", i);
         printf("\nj: %i\n", j);
         if(i != j)
-            return 2;
+            return 0;
     }
     return 1;
 }
