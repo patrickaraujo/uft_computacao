@@ -31,7 +31,6 @@ void Lista_insere (Lista **aux, char num);
 
 void main(){
     printf("%d, %d, %d, %d", funcX("barrabas"), funcX("asouosa"), funcX("eh ou nao eh"), funcX("SAIPPUAKIVIKAUPPIAS"));
-    printf("%d", funcX("asouosa"));
     return 0;
 }
 
@@ -42,19 +41,16 @@ int* create(){
 
 int funcX(char v[1024]){
     int i = 0;
-    //  int j;
-    int j;
+    int j = 0;
     Lista *F = create();
     Pilha *P = create();
     //  *P = create();
     for(; i < strlen(v); i++){
-        //Lista_insere(&F, v[i]);
-        //Pilha_empilha(&P, v[i]);
+        Lista_insere(&F, v[i]);
+        Pilha_empilha(&P, v[i]);
     }
     while((Pilha_desempilha(P, &i)) && (Lista_remove(F, &j))){
-        printf("i: %i,", i);
-        printf("j: %i,", i);
-        if(i != j){
+        if((i == 0) && (j == 0)){
             return 0;
         }
     }
@@ -106,8 +102,7 @@ int Lista_remove(Lista *lista, int *in) {
     Lista *aux = primeiro;
 	if(primeiro == NULL){
         printf("Nao ha elementos na pilha\n");
-        *in = 0;
-        return 0;
+		return 0;
     }
 	else
 		while(aux != NULL){ //  enquanto não houver objetos nulos, da direita
@@ -118,7 +113,7 @@ int Lista_remove(Lista *lista, int *in) {
 	if((j !=0) && (j != 1)){
         for(i = 0; i < j-1; i++){
             if(i == j-2){
-                //	printf("\nPilha->info: %c\n", (aux->prox->info));
+                //  printf("\nPilha->info: %c\n", (aux->prox->info));
                 if((aux->prox->info) == (primeiro->info))
                     *in = 1;
                 aux->prox = 0;
@@ -127,7 +122,7 @@ int Lista_remove(Lista *lista, int *in) {
         }
     }
     else{
-		*in = 1;
+		*in = 0;
         primeiro = NULL;
         return 0;
     }
@@ -140,13 +135,12 @@ int Lista_remove(Lista *lista, int *in) {
 }
 
 int Pilha_desempilha(Pilha *pilha, int *in) {
-    printf("\nPrim->info: %c\n", prim->info);
     *in = 0;
     int j = 0, i;
     Pilha *aux = prim;
 	if(prim == NULL){    //  lista vazia
         printf("\nLista Vazia\n");
-        return 0;
+		return 0;
 	}
 	else
 		while(aux != NULL){	//	enquanto não houver objetos nulos, da direita
