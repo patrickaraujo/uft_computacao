@@ -7,83 +7,157 @@
 #include <stdlib.h>
 
 typedef struct reg{
-    int info;
+    char info;
     struct reg *prox;
-}no;
+}Lista;
 
-no *primeiro;
+typedef struct info{
+    char info;
+    struct info *prox;
+}Pilha;
 
-int busca(no* aux, int dado);
-void criar(no **aux);
-void push (no **aux, int num);
-void imprimir(no *lista);
-void erase(no **lista);
+Lista *primeiro;
+Pilha *prim;
 
-int main(){
-    no *L;
-    criar(&L);
-    //  Código para criação da lista 15 busca(L, x);
-    int arr[10] = {1, 2, 3, 4, 5, 6, 10, 400, 500, 550};
-    int i;
-    for(i = 0; i < 10; i++)
-        push(&L, arr[i]);
-    //  imprimir(L);
-    busca(primeiro, 3);
+void erase(Lista **lista);
+int funcX(char v[1024]);
+void push (Lista **aux, int num);
+int* create();
+int Pilha_desempilha(Pilha *pilha, int *in);
+int Lista_remove(Lista *lista, int *in);
+void Pilha_empilha (Pilha **aux, char num);
+void Lista_insere (Lista **aux, char num);
+
+
+void main(){
+    printf("%d, %d, %d, %d", funcX("barrabas"), funcX("asouosa"), funcX("eh ou nao eh"), funcX("SAIPPUAKIVIKAUPPIAS"));
     return 0;
 }
 
-void criar(no **aux){
-    *aux = NULL;
+int* create(){
+    int *F = NULL;
+    return F;
 }
 
-
-int busca(no* aux, int dado){
-//  int busca(int dado){
-    puts("Busca");
-    if(aux){
-        if(aux->info == dado)
-            return 1;
-        else
-            return busca(aux->prox, dado);
+int funcX(char v[1024]){
+    int i = 0;
+    int j = 0;
+    Lista *F = create();
+    Pilha *P = create();
+    //  *P = create();
+    for(; i < strlen(v); i++){
+        Lista_insere(&F, v[i]);
+        Pilha_empilha(&P, v[i]);
     }
-    else
-        return 0;
+    while((Pilha_desempilha(P, &i)) && (Lista_remove(F, &j))){
+        if((i == 0) && (j == 0)){
+            return 0;
+        }
+    }
+    return 1;
 }
 
-void push (no **aux, int num) {
-    no *p; //auxiliar
-	if((p = malloc(sizeof(no))) == NULL)	//	erro
+void Lista_insere (Lista **aux, char let) {
+    Lista *p;   //  auxiliar
+	if((p = malloc(sizeof(Lista))) == NULL)	//	erro
 		printf("\nMemory Failure");
 	else{
-		p->info = num; //recebendo valor
-		p->prox = NULL;	//	esquerda é nulo pois a inseção é no inicio
+		p->info = let;  //  recebendo valor
+		p->prox = NULL; //  esquerda é nulo pois a inseção é no inicio
 		if(*aux != NULL)    //  se a lista não for nula então a esquerda recebe o valor
 			(*aux)->prox = p;
 		else
             primeiro = p;
-		*aux = p; //lista recebe valor da direita
+		*aux = p;   //  lista recebe valor da direita
 	}
 }
 
-void imprimir(no *lista){
-    no *aux;
-	aux = primeiro;
-	if(aux == NULL)//lista vazia
-		printf("\nLista Vazia\n");
+void Pilha_empilha(Pilha **aux, char num) {
+    Pilha *p;   //  auxiliar
+	if((p = malloc(sizeof(Pilha))) == NULL)	//	erro
+		printf("\nMemory Failure");
 	else{
-		while(aux != NULL){	//	enquanto não houver objetos nulos, da direita
-			printf("\nElemento: %d\n", aux->info);
-			//  printf("\nEnd - Elemento: %d\n", aux);
-			//  printf("\nprox - Elemento: %d\n", aux->prox);
-			aux = aux->prox; //o ponteiro volta imprimindo
-		}
+		p->info = num;  //  recebendo valor
+		p->prox = NULL; //  esquerda é nulo pois a inseção é no inicio
+		if(*aux != NULL)    //  se a lista não for nula então a esquerda recebe o valor
+			(*aux)->prox = p;
+		else
+            prim = p;
+		(*aux) = p; //  lista recebe valor da direita
 	}
 }
 
-void erase(no **lista) {
-    if(*lista == NULL)
+int Lista_remove(Lista *lista, int *in) {
+	*in = 0;
+	int j = 0, i;
+    Lista *aux = primeiro;
+	if(primeiro == NULL){
         printf("Nao ha elementos na pilha\n");
-    no *aux = (primeiro)->prox;
-    free(primeiro);
-    primeiro = aux;
+		return 0;
+    }
+	else
+		while(aux != NULL){ //  enquanto não houver objetos nulos, da direita
+			j++;
+			aux = aux->prox;
+		}
+	aux = primeiro;
+	if((j !=0) && (j != 1)){
+        for(i = 0; i < j-1; i++){
+            if(i == j-2){
+                //  printf("\nPilha->info: %c\n", (aux->prox->info));
+                if((aux->prox->info) == (primeiro->info))
+                    *in = 1;
+                aux->prox = 0;
+            }
+            aux = aux->prox;
+        }
+    }
+    else{
+		*in = 0;
+        primeiro = NULL;
+        return 0;
+    }
+	if(primeiro != NULL){
+        Lista *temp = (primeiro)->prox;
+        free(primeiro);
+        primeiro = temp;
+    }
+    return 1;
+}
+
+int Pilha_desempilha(Pilha *pilha, int *in) {
+    *in = 0;
+    int j = 0, i;
+    Pilha *aux = prim;
+	if(prim == NULL){   //  lista vazia
+        printf("\nLista Vazia\n");
+		return 0;
+	}
+	else
+		while(aux != NULL){ //  enquanto não houver objetos nulos, da direita
+			j++;
+			aux = aux->prox;
+		}
+    aux = prim;
+    if((j !=0) && (j != 1)){
+        for(i = 0; i < j-1; i++){
+            if(i == j-2){
+                if((aux->prox->info) == (prim->info))
+                    *in = 1;
+                aux->prox = 0;
+            }
+            aux = aux->prox;
+        }
+    }
+    else{
+        *in = 0;
+        prim = NULL;
+        return 0;
+    }
+    if(prim != NULL){
+        Pilha *temp = (prim)->prox;
+        free(prim);
+        prim = temp;
+    }
+    return 1;
 }
