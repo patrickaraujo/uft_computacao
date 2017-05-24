@@ -57,14 +57,6 @@ int funcX(char v[1024]){
     return 1;
 }
 
-void erase(Lista **lista) {
-    if(*lista == NULL)
-        printf("Nao ha elementos na pilha\n");
-    Lista *aux = (primeiro)->prox;
-    free(primeiro);
-    primeiro = aux;
-}
-
 void Lista_insere (Lista **aux, char let) {
     Lista *p; //auxiliar
 	if((p = malloc(sizeof(Lista))) == NULL)	//	erro
