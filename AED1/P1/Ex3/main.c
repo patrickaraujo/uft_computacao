@@ -145,6 +145,6 @@ int Pilha_desempilha(Pilha *pilha, int *in) {
     }
     Pilha *temp = (prim)->prox;
     free(prim);
-    prim = aux;
+    prim = temp;
     return 1;
 }
