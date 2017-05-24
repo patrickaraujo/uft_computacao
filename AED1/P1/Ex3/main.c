@@ -51,13 +51,16 @@ int funcX(char v[1024]){
         Lista_insere(&F, v[i]);
         Pilha_empilha(&P, v[i]);
     }
-    while(Pilha_desempilha(P, &i) && Lista_remove(F, &j)){
+    int d;
+    int n;
+    while((Pilha_desempilha(P, &i)) && (Lista_remove(F, &j))){
         printf("\ni: %i\n", i);
         printf("\nj: %i\n", j);
         if(i != j){
             return 0;
         }
     }
+
     return 1;
 }
 
@@ -100,13 +103,10 @@ void Pilha_empilha(Pilha **aux, char num) {
 }
 
 int Lista_remove(Lista *lista, int *in) {
+	*in = 0;
 	int j = 0, i;
     Lista *aux = primeiro;
-    *in = 1;
-    if((lista->info) == (primeiro->info)){
-        *in = 1;
-    }
-	if(lista == NULL){
+	if(primeiro == NULL){
         printf("Nao ha elementos na pilha\n");
         return 0;
     }
@@ -115,33 +115,37 @@ int Lista_remove(Lista *lista, int *in) {
 			j++;
 			aux = aux->prox;
 		}
-    aux = primeiro;
-    if((j !=0 ) && (j != 1)){
+	aux = primeiro;
+	if((j !=0) && (j != 1)){
         for(i = 0; i < j-1; i++){
-            if(i == j-2)
+            if(i == j-2){
+                //	printf("\nPilha->info: %c\n", (aux->prox->info));
+                if((aux->prox->info) == (primeiro->info))
+                    *in = 1;
                 aux->prox = 0;
+            }
             aux = aux->prox;
         }
     }
     else{
+		*in = 1;
         primeiro = NULL;
     }
-    Lista *temp = (primeiro)->prox;
-    free(primeiro);
-    primeiro = temp;
+	if(primeiro != NULL){
+        Lista *temp = (primeiro)->prox;
+        free(primeiro);
+        primeiro = temp;
+    }
     return 1;
 }
 
 int Pilha_desempilha(Pilha *pilha, int *in) {
-    printf("\nPilha->info: %c\n", pilha->info);
     printf("\nPrim->info: %c\n", prim->info);
+    *in = 0;
+    int valido = 1;
     int j = 0, i;
     Pilha *aux = prim;
-    *in = 0;
-    if((pilha->info) == (prim->info)){
-        *in = 1;
-    }
-	if(aux == NULL){    //  lista vazia
+	if(prim == NULL){    //  lista vazia
         printf("\nLista Vazia\n");
         return 0;
 	}
@@ -151,18 +155,25 @@ int Pilha_desempilha(Pilha *pilha, int *in) {
 			aux = aux->prox;
 		}
     aux = prim;
-    if((j !=0 ) && (j != 1)){
+    if((j !=0) && (j != 1)){
         for(i = 0; i < j-1; i++){
-            if(i == j-2)
+            if(i == j-2){
+                printf("\nPilha->info: %c\n", (aux->prox->info));
+                if((aux->prox->info) == (prim->info))
+                    *in = 1;
                 aux->prox = 0;
+            }
             aux = aux->prox;
         }
     }
     else{
+        *in = 1;
         prim = NULL;
     }
-    Pilha *temp = (prim)->prox;
-    free(prim);
-    prim = temp;
+    if(prim != NULL){
+        Pilha *temp = (prim)->prox;
+        free(prim);
+        prim = temp;
+    }
     return 1;
 }
