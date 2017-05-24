@@ -54,8 +54,6 @@ int funcX(char v[1024]){
     while(Pilha_desempilha(P, &i) && Lista_remove(F, &j)){
         printf("\ni: %i\n", i);
         printf("\nj: %i\n", j);
-        i = 1;
-        j = 1;
         if(i != j){
             return 0;
         }
@@ -106,7 +104,7 @@ int Lista_remove(Lista *lista, int *in) {
         printf("Nao ha elementos na pilha\n");
         return 0;
     }
-    *in = 0;
+    *in = 1;
     if((lista->info) == (primeiro->info)){
         *in = 1;
     }
@@ -145,5 +143,8 @@ int Pilha_desempilha(Pilha *pilha, int *in) {
     else{
         prim = NULL;
     }
+    Pilha *temp = (prim)->prox;
+    free(prim);
+    prim = aux;
     return 1;
 }
