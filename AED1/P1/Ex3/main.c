@@ -100,17 +100,35 @@ void Pilha_empilha(Pilha **aux, char num) {
 }
 
 int Lista_remove(Lista *lista, int *in) {
-    if(lista == NULL){
-        printf("Nao ha elementos na pilha\n");
-        return 0;
-    }
+	int j = 0, i;
+    Lista *aux = primeiro;
     *in = 1;
     if((lista->info) == (primeiro->info)){
         *in = 1;
     }
-    Lista *aux = (primeiro)->prox;
+	if(lista == NULL){
+        printf("Nao ha elementos na pilha\n");
+        return 0;
+    }
+	else
+		while(aux != NULL){	//	enquanto não houver objetos nulos, da direita
+			j++;
+			aux = aux->prox;
+		}
+    aux = primeiro;
+    if((j !=0 ) && (j != 1)){
+        for(i = 0; i < j-1; i++){
+            if(i == j-2)
+                aux->prox = 0;
+            aux = aux->prox;
+        }
+    }
+    else{
+        primeiro = NULL;
+    }
+    Lista *temp = (primeiro)->prox;
     free(primeiro);
-    primeiro = aux;
+    primeiro = temp;
     return 1;
 }
 
