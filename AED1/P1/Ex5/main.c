@@ -3,6 +3,8 @@
 * Link para o enunciado: https://www.passeidireto.com/arquivo/29072879/prova-1-de-algoritmos-e-estrutura-de-dados-1
 */
 
+//Errado, no caso era pra fazer: 3215-231=2984
+
 #include <stdio.h>
 #include <stdlib.h>
 
