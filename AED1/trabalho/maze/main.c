@@ -37,14 +37,19 @@ int main(){
     char **tokens = str_split(index, ',');
     int linhas = atoi((*(tokens + 0)));
     int colunas = atoi((*(tokens + 1)));
-    int l, c;
+    int l, c, m = 0;
+    char rest[20];
     for(l = 0; l <= linhas; l++)
         for(c = 0; c <= colunas; c++)
             if(buff!= EOF){
                 buff = fgetc(fp);
                 pop(&prim, &p,buff, l, c);
             }
-
+    do{
+        buff = fgetc(fp);
+        rest[m++] = buff;
+    }while(buff!= EOF);
+    printf("rd: %s", rest);
     imprimir(prim);
     return 0;
 }
