@@ -38,13 +38,13 @@ int main(){
     int linhas = atoi((*(tokens + 0)));
     int colunas = atoi((*(tokens + 1)));
     int l, c;
-    for(l = 0; l < linhas; l++)
-        for(c = 0; c < colunas; c++)
+    for(l = 0; l <= linhas; l++)
+        for(c = 0; c <= colunas; c++)
             if(buff!= EOF){
                 buff = fgetc(fp);
                 pop(&prim, &p,buff, l, c);
             }
-    fclose(fp);
+
     imprimir(prim);
     return 0;
 }
@@ -113,6 +113,7 @@ void pop(Pilha **prim, Pilha **aux, char elem, int linha, int coluna){
 }
 
 void imprimir(Pilha *auxa){
+    int i = 0;
     Pilha *aux = auxa;
 	if(aux == NULL) //  lista vazia
 		printf("\nLista Vazia\n");
