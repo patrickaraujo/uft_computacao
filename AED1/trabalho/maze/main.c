@@ -32,24 +32,32 @@ int main(){
     int i = 0, j;
     Pilha *prim;
     Pilha *p = NULL;
-    fp = fopen("C:\\Users\\Patrick\\Desktop\\File\\maze.txt", "r");
+    fp = fopen("C:\\Users\\Patrick\\Documents\\C\\maze\\File\\maze.txt", "r");
     fscanf(fp, "%s", index);
     char **tokens = str_split(index, ',');
     int linhas = atoi((*(tokens + 0)));
     int colunas = atoi((*(tokens + 1)));
     int l, c, m = 0;
-    char rest[20];
-    for(l = 0; l <= linhas; l++)
-        for(c = 0; c <= colunas; c++)
-            if(buff!= EOF){
+    printf("linhas: %i", linhas);
+    printf("colunas: %i", colunas);
+    for(l = 0; l < linhas; l++)
+        for(c = 0; c < colunas; c++){
+            buff = fgetc(fp);
+            while(buff == NULL) {
                 buff = fgetc(fp);
+            }
+            if((int)buff == 10){
+                pop(&prim, &p, '#', l, c);
+            }
+            else if(buff!= EOF){
+                printf("\n%i: ",m++);
+                printf("%i\n",buff);
                 pop(&prim, &p,buff, l, c);
             }
-    do{
-        buff = fgetc(fp);
-        rest[m++] = buff;
-    }while(buff!= EOF);
-    printf("rd: %s", rest);
+
+        }
+
+    imprimir(prim);
     imprimir(prim);
     return 0;
 }
@@ -101,30 +109,34 @@ char** str_split(char* a_str, const char a_delim){
 
 void pop(Pilha **prim, Pilha **aux, char elem, int linha, int coluna){
     Pilha *p;   //  auxiliar
-	if((p = malloc(sizeof(Pilha))) == NULL)	//	erro
-		printf("\nMemory Failure");
-	else{
-		p->info = elem; //recebendo valor
-		p->linha = linha;
-		p->coluna = coluna;
-		p->prox = NULL;	//	esquerda é nulo pois a inseção é no inicio
-		if(*aux != NULL)    //  se a lista não for nula então a esquerda recebe o valor
-			(*aux)->prox = p;
+    if((p = malloc(sizeof(Pilha))) == NULL)	//	erro
+        printf("\nMemory Failure");
+    else{
+        p->info = elem; //recebendo valor
+        p->linha = linha;
+        p->coluna = coluna;
+        p->prox = NULL;	//	esquerda é nulo pois a inseção é no inicio
+        if(*aux != NULL)    //  se a lista não for nula então a esquerda recebe o valor
+            (*aux)->prox = p;
         else{
             (*prim) = p; //lista recebe valor da direita
         }
         (*aux) = p; //lista recebe valor da direita
-	}
+    }
 }
 
 void imprimir(Pilha *auxa){
     int i = 0;
     Pilha *aux = auxa;
-	if(aux == NULL) //  lista vazia
-		printf("\nLista Vazia\n");
-	else
-		while(aux != NULL){	//	enquanto não houver objetos nulos, da direita
-			printf("%c", aux->info);
-			aux = aux->prox; //o ponteiro volta imprimindo
-		}
+    if(aux == NULL) //  lista vazia
+        printf("\nLista Vazia\n");
+    else
+        while(aux != NULL){	//	enquanto não houver objetos nulos, da direita
+            printf("%c", aux->info);
+            if(i++ == 99){
+                printf("\n");
+            }
+
+            aux = aux->prox; //o ponteiro volta imprimindo
+        }
 }
