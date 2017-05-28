@@ -23,7 +23,7 @@ void imprimir();
 void erase();
 void pop(Pilha **prim, Pilha **aux, char elem, int linha, int coluna);
 char** str_split(char* a_str, const char a_delim);
-void imprimir(Pilha *auxa);
+void imprimir(Pilha *auxa, int i, int j);
 
 int main(){
     FILE *fp;
@@ -47,9 +47,9 @@ int main(){
                 buff = fgetc(fp);
             }
             if((int)buff == 10){
-                pop(&prim, &p, '#', l, c);
+                buff = fgetc(fp);
             }
-            else if(buff!= EOF){
+            if(buff!= EOF){
                 printf("\n%i: ",m++);
                 printf("%i\n",buff);
                 pop(&prim, &p,buff, l, c);
@@ -57,8 +57,8 @@ int main(){
 
         }
 
-    imprimir(prim);
-    imprimir(prim);
+    imprimir(prim, linhas, colunas);
+    imprimir(prim, linhas, colunas);
     return 0;
 }
 
@@ -125,18 +125,17 @@ void pop(Pilha **prim, Pilha **aux, char elem, int linha, int coluna){
     }
 }
 
-void imprimir(Pilha *auxa){
-    int i = 0;
+void imprimir(Pilha *auxa, int i, int j){
+    int k = 0, l = 0;
     Pilha *aux = auxa;
     if(aux == NULL) //  lista vazia
         printf("\nLista Vazia\n");
     else
-        while(aux != NULL){	//	enquanto não houver objetos nulos, da direita
-            printf("%c", aux->info);
-            if(i++ == 99){
-                printf("\n");
+        for(k = 0; k < i; k++){	//	enquanto não houver objetos nulos, da direita
+            for(l = 0; l < j; l++){
+                printf("%c", aux->info);
+                aux = aux->prox; //o ponteiro volta imprimindo
             }
-
-            aux = aux->prox; //o ponteiro volta imprimindo
+            printf("\n");
         }
 }
