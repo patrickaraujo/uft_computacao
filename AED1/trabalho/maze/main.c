@@ -37,7 +37,8 @@ int main(){
     char **tokens = str_split(index, ',');
     int linhas = atoi((*(tokens + 0)));
     int colunas = atoi((*(tokens + 1)));
-    int l, c;
+    char location[20];
+    int l, c, m = 0;
     for(l = 0; l < linhas; l++)
         for(c = 0; c < colunas; c++){
             buff = fgetc(fp);
@@ -48,7 +49,27 @@ int main(){
                 buff = fgetc(fp);
             if(buff!= EOF)
                 pop(&prim, &p,buff, l, c);
+            if((c == colunas -1)&&(l == linhas-1)){
+                while(buff != EOF){
+                    if((int)buff != 10){
+                        location[m] = buff;
+                        buff = fgetc(fp);
+                        m++;
+                    }
+                    else
+                        buff = fgetc(fp);
+                }
+            }
         }
+
+    int d;
+    for(d = 0; location[d]!='\0'; d++){
+        location[d] = location[d+1];
+    }
+    char **lIndex = str_split(location, ',');
+    int lL = atoi((*(lIndex + 0)));
+    int lC = atoi((*(lIndex + 1)));
+    printf("\nl: %i\tc: %i\n", lL, lC);
     imprimir(prim, linhas, colunas);
     return 0;
 }
