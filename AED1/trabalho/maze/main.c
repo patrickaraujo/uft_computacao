@@ -37,27 +37,18 @@ int main(){
     char **tokens = str_split(index, ',');
     int linhas = atoi((*(tokens + 0)));
     int colunas = atoi((*(tokens + 1)));
-    int l, c, m = 0;
-    printf("linhas: %i", linhas);
-    printf("colunas: %i", colunas);
+    int l, c;
     for(l = 0; l < linhas; l++)
         for(c = 0; c < colunas; c++){
             buff = fgetc(fp);
             while(buff == NULL) {
                 buff = fgetc(fp);
             }
-            if((int)buff == 10){
+            if((int)buff == 10)
                 buff = fgetc(fp);
-            }
-            if(buff!= EOF){
-                printf("\n%i: ",m++);
-                printf("%i\n",buff);
+            if(buff!= EOF)
                 pop(&prim, &p,buff, l, c);
-            }
-
         }
-
-    imprimir(prim, linhas, colunas);
     imprimir(prim, linhas, colunas);
     return 0;
 }
