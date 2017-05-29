@@ -24,6 +24,7 @@ void erase();
 void pop(Pilha **prim, Pilha **aux, char elem, int linha, int coluna);
 char** str_split(char* a_str, const char a_delim);
 void imprimir(Pilha *auxa, int i, int j);
+int inserir(Pilha **prim, int linhas, int colunas, int lL, int lC);
 
 int main(){
     FILE *fp;
@@ -67,10 +68,60 @@ int main(){
         location[d] = location[d+1];
     }
     char **lIndex = str_split(location, ',');
-    int lL = atoi((*(lIndex + 0)));
-    int lC = atoi((*(lIndex + 1)));
-    printf("\nl: %i\tc: %i\n", lL, lC);
+    int lC = atoi((*(lIndex + 0)));
+    int lL = atoi((*(lIndex + 1)));
     imprimir(prim, linhas, colunas);
+    inserir(&prim, linhas, colunas, lC, lL);
+    imprimir(prim, linhas, colunas);
+    int iniciar = 0;
+
+    do{
+        printf("\nQual direcao deseja ir?\n");
+        printf("1.\tPra cima\n2.\tPra baixo\n3.\tDireita\n4.\tEsquerda\n");
+        int op;
+        scanf("%d", &op);
+        int lC1, lL1;
+        int x;
+        switch(op) {
+            case 1:
+                lC1 = lC-1;
+                x = inserir(&prim, linhas, colunas, lC1, lL);
+                if(x==1){
+                    lC = lC1;
+                }
+                imprimir(prim, linhas, colunas);
+                break;
+            case 2:
+                lC1 = lC+1;
+                x = inserir(&prim, linhas, colunas, lC1, lL);
+                if(x==1){
+                    lC = lC1;
+                }
+                imprimir(prim, linhas, colunas);
+                break;
+            case 3:
+                lL1 = lL+1;
+                x = inserir(&prim, linhas, colunas, lC, lL1);
+                if(x==1){
+                    lL = lL1;
+                }
+                imprimir(prim, linhas, colunas);
+                break;
+            case 4:
+                lL1 = lL-1;
+                x = inserir(&prim, linhas, colunas, lC, lL1);
+                if(x==1){
+                    lL = lL1;
+                }
+                imprimir(prim, linhas, colunas);
+                break;
+        }
+        printf("\n1. Continuar\n0. Desistir\n");
+        scanf("%d", &iniciar);
+    }while(iniciar);
+
+
+
     return 0;
 }
 
@@ -150,4 +201,24 @@ void imprimir(Pilha *auxa, int i, int j){
             }
             printf("\n");
         }
+}
+
+int inserir(Pilha **prim, int linhas, int colunas, int lL, int lC){
+    Pilha *aux = (*prim);
+    int i, j;
+    if(aux == NULL){ //  lista vazia
+        printf("\nLista Vazia\n");
+        return 0;
+    }
+    else
+        for(i = 0; i < linhas; i++)
+            for(j = 0; j < colunas; j++){
+                if((j == lC) && (i == lL) && (aux->info != '#') && (aux->info != '*')){
+                    aux->info = '*';
+                    return 1;
+                }
+                else if(((j == lC) && (i == lL)))
+                    return 0;
+                aux = aux->prox;
+            }
 }
