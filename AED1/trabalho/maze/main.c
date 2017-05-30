@@ -125,6 +125,8 @@ int main(){
                 }
                 imprimir(prim, linhas, colunas);
                 break;
+            default:
+                printf("Opção inválida");
         }
         iLista(&prim, linhas, colunas);
         printf("\n1. Continuar\n0. Desistir\n");
@@ -325,7 +327,7 @@ void imprimir(Pilha *auxa, int i, int j){
 }
 
 int inserir(Pilha **prim, int linhas, int colunas, int lL, int lC){
-    printf("\nHere\nlL: %i, lC: %i\n", lL, lC);
+
     Pilha *aux = (*prim);
     int i, j;
     if(aux == NULL){ //  lista vazia
@@ -336,8 +338,15 @@ int inserir(Pilha **prim, int linhas, int colunas, int lL, int lC){
         for(i = 0; i < linhas; i++)
             for(j = 0; j < colunas; j++){
                 if((j == lC) && (i == lL) && (aux->info != '#') && (aux->info != '*') ){
-                    aux->info = '*';
-                    return 1;
+                    if(aux->direcoes.direita && aux->direcoes.cima && aux->direcoes.baixo && aux->direcoes.esquerda){
+                        printf("Sem movimentos");
+                        return 0;
+                    }
+
+                    else{
+                        aux->info = '*';
+                        return 1;
+                    }
                 }
                 else if(((j == lC) && (i == lL))){
                     printf("ffnfj");
