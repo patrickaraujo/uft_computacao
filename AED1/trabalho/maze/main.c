@@ -91,6 +91,7 @@ int main(){
         scanf("%d", &op);
         int lC1, lL1;
         int x;
+        printf("\nLL: %i, CC: %i\n", lC, lL);
         switch(op) {
             case 1:
                 lC1 = lC-1;
@@ -129,6 +130,7 @@ int main(){
         printf("\n1. Continuar\n0. Desistir\n");
         scanf("%d", &iniciar);
     }while(iniciar);
+
 
 
 
@@ -323,6 +325,7 @@ void imprimir(Pilha *auxa, int i, int j){
 }
 
 int inserir(Pilha **prim, int linhas, int colunas, int lL, int lC){
+    printf("\nHere\nlL: %i, lC: %i\n", lL, lC);
     Pilha *aux = (*prim);
     int i, j;
     if(aux == NULL){ //  lista vazia
@@ -336,8 +339,10 @@ int inserir(Pilha **prim, int linhas, int colunas, int lL, int lC){
                     aux->info = '*';
                     return 1;
                 }
-                else if(((j == lC) && (i == lL)))
+                else if(((j == lC) && (i == lL))){
+                    printf("ffnfj");
                     return 0;
+                }
                 aux = aux->prox;
             }
 }
