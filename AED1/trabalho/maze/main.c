@@ -7,13 +7,20 @@
 #include <stdlib.h>
 #include <assert.h>
 
+typedef struct way{
+    int cima, baixo, direita, esquerda;
+}Lista;
+
 typedef struct info{
     char info;
     int linha, coluna;
+    Lista direcoes;
     struct info *prox;
 }Pilha;
 
+
 Pilha *primeiro;
+
 
 int busca(Pilha* aux, int dado);
 void criar(Pilha **aux);
@@ -25,6 +32,7 @@ void pop(Pilha **prim, Pilha **aux, char elem, int linha, int coluna);
 char** str_split(char* a_str, const char a_delim);
 void imprimir(Pilha *auxa, int i, int j);
 int inserir(Pilha **prim, int linhas, int colunas, int lL, int lC);
+void iLista(Pilha **prim, int linhas, int colunas);
 
 int main(){
     FILE *fp;
@@ -48,9 +56,9 @@ int main(){
             }
             if((int)buff == 10)
                 buff = fgetc(fp);
-            if(buff!= EOF)
-                pop(&prim, &p,buff, l, c);
-            if((c == colunas -1)&&(l == linhas-1)){
+            if(buff != EOF)
+                pop(&prim, &p, buff, l, c);
+            if((c == colunas -1) && (l == linhas-1)){
                 while(buff != EOF){
                     if((int)buff != 10){
                         location[m] = buff;
@@ -68,10 +76,11 @@ int main(){
         location[d] = location[d+1];
     }
     char **lIndex = str_split(location, ',');
-    int lC = atoi((*(lIndex + 0)));
-    int lL = atoi((*(lIndex + 1)));
+    int lC = (atoi((*(lIndex + 0))) -1);
+    int lL = (atoi((*(lIndex + 1))) -1);
     imprimir(prim, linhas, colunas);
     inserir(&prim, linhas, colunas, lC, lL);
+    iLista(&prim, linhas, colunas);
     imprimir(prim, linhas, colunas);
     int iniciar = 0;
 
@@ -116,6 +125,7 @@ int main(){
                 imprimir(prim, linhas, colunas);
                 break;
         }
+        iLista(&prim, linhas, colunas);
         printf("\n1. Continuar\n0. Desistir\n");
         scanf("%d", &iniciar);
     }while(iniciar);
@@ -188,6 +198,115 @@ void pop(Pilha **prim, Pilha **aux, char elem, int linha, int coluna){
     }
 }
 
+void iLista(Pilha **prim, int linhas, int colunas){
+    printf("\n\n\n\n\n");
+    Pilha *aux = (*prim);
+    int i, j;
+    for(i = 0; i < linhas; i++){
+        for(j = 0; j < colunas; j++){
+            if(i == 0){
+                aux->direcoes.cima = 1;
+                aux->direcoes.baixo = baixo(prim, linhas, colunas, i, j);
+                aux->direcoes.esquerda = esquerda(prim, linhas, colunas, i, j);
+                aux->direcoes.direita = direita(prim, linhas, colunas, i, j);
+            }
+            else if(i == linhas-1){
+                aux->direcoes.cima = cima(prim, linhas, colunas, i, j);
+                aux->direcoes.baixo = 1;
+            }
+            if(j == 0){
+                aux->direcoes.cima = cima(prim, linhas, colunas, i, j);
+                aux->direcoes.baixo = baixo(prim, linhas, colunas, i, j);
+                aux->direcoes.direita = direita(prim, linhas, colunas, i, j);
+                aux->direcoes.esquerda = 1;
+                //aux->direcoes.direita = 0;
+            }
+            else if(j == colunas-1){
+                aux->direcoes.cima = cima(prim, linhas, colunas, i, j);
+                aux->direcoes.baixo = baixo(prim, linhas, colunas, i, j);
+                aux->direcoes.esquerda = esquerda(prim, linhas, colunas, i, j);
+                aux->direcoes.direita = 1;
+            }
+            else{
+                aux->direcoes.cima = cima(prim, linhas, colunas, i, j);
+                aux->direcoes.baixo = baixo(prim, linhas, colunas, i, j);
+                aux->direcoes.esquerda = esquerda(prim, linhas, colunas, i, j);
+                aux->direcoes.direita = direita(prim, linhas, colunas, i, j);
+            }
+            aux = aux->prox;
+        }
+    }
+
+}
+
+int baixo(Pilha **prim, int linhas, int colunas, int x, int y){
+    Pilha *aux = (*prim);
+    int i, j;
+    for(i = 0; i < linhas; i++){
+        for(j = 0; j < colunas; j++){
+            if((i == x+1) && (j == y)){
+                if((int)aux->info == 32)
+                    return 0;
+                else
+                    return 1;
+            }
+            aux = aux->prox;
+        }
+    }
+    return 1;
+}
+
+int cima(Pilha **prim, int linhas, int colunas, int x, int y){
+    Pilha *aux = (*prim);
+    int i, j;
+    for(i = 0; i < linhas; i++){
+        for(j = 0; j < colunas; j++){
+            if((i == x-1) && (j == y)){
+                if((int)aux->info == 32)
+                    return 0;
+                else
+                    return 1;
+            }
+            aux = aux->prox;
+        }
+    }
+    return 1;
+}
+
+int esquerda(Pilha **prim, int linhas, int colunas, int x, int y){
+    Pilha *aux = (*prim);
+    int i, j;
+    for(i = 0; i < linhas; i++){
+        for(j = 0; j < colunas; j++){
+            if((i == x) && (j == y-1)){
+                if((int)aux->info == 32)
+                    return 0;
+                else
+                    return 1;
+            }
+            aux = aux->prox;
+        }
+    }
+    return 1;
+}
+
+int direita(Pilha **prim, int linhas, int colunas, int x, int y){
+    Pilha *aux = (*prim);
+    int i, j;
+    for(i = 0; i < linhas; i++){
+        for(j = 0; j < colunas; j++){
+            if((i == x) && (j == y+1)){
+                if((int)aux->info == 32)
+                    return 0;
+                else
+                    return 1;
+            }
+            aux = aux->prox;
+        }
+    }
+    return 1;
+}
+
 void imprimir(Pilha *auxa, int i, int j){
     int k = 0, l = 0;
     Pilha *aux = auxa;
@@ -213,7 +332,7 @@ int inserir(Pilha **prim, int linhas, int colunas, int lL, int lC){
     else
         for(i = 0; i < linhas; i++)
             for(j = 0; j < colunas; j++){
-                if((j == lC) && (i == lL) && (aux->info != '#') && (aux->info != '*')){
+                if((j == lC) && (i == lL) && (aux->info != '#') && (aux->info != '*') ){
                     aux->info = '*';
                     return 1;
                 }
