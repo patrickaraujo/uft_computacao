@@ -25,6 +25,7 @@ ponto *Point;
 void push(ponto **aux, ponto **prim, int num);
 void pop();
 void imprimir(ponto *aux);
+void popFila(ponto **primeiro);
 
 int main(){
     ponto *P = NULL;
@@ -117,4 +118,11 @@ void imprimir(ponto *primeiro){
 			printf("\nElemento: %d\n", aux->x);
 			aux = aux->prox; //o ponteiro volta imprimindo
 		}
+}
+
+void popFila(ponto **primeiro){
+    ponto *aux = (*primeiro)->prox;
+    free(primeiro);
+    *primeiro = aux;
+
 }
