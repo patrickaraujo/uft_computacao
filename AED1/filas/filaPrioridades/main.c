@@ -24,7 +24,7 @@ Pilha *primeiro;
 
 int busca(Pilha* aux, int dado);
 void criar(Pilha **aux);
-void popMaior(Pilha *primeiro, Pilha *procurar);
+void popProcurar(Pilha *primeiro, Pilha *procurar);
 void push (Pilha **aux, int num);
 void imprimir();
 void erase();
@@ -345,19 +345,15 @@ int inserir(Pilha **prim, int linhas, int colunas, int lL, int lC){
                         printf("Sem movimentos\n");
                         return 0;
                     }
-                else if((j == lC) && (i == lL) && (aux->info == '@')){
-                        printf("You won!");
-                        exit(EXIT_SUCCESS);
-                }
                     else{
                         aux->info = '*';
                         return 1;
                     }
                 }
-                else if(((j == lC) && (i == lL))){
-                    printf("ffnfj");
-                    return 0;
-                }
+            else if((j == lC) && (i == lL) && (aux->info == 97)) {
+                printf("You won!");
+                exit(EXIT_SUCCESS);
+            }
                 aux = aux->prox;
             }
 }
