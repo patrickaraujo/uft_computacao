@@ -24,7 +24,7 @@ Pilha *primeiro;
 
 int busca(Pilha* aux, int dado);
 void criar(Pilha **aux);
-
+void popProcurar(Pilha *primeiro, Pilha *procurar);
 void push (Pilha **aux, int num);
 void imprimir();
 void erase();
@@ -294,6 +294,8 @@ int esquerda(Pilha **prim, int linhas, int colunas, int x, int y){
     return 1;
 }
 
+
+
 int direita(Pilha **prim, int linhas, int colunas, int x, int y){
     Pilha *aux = (*prim);
     int i, j;
@@ -323,6 +325,8 @@ void imprimir(Pilha *auxa, int i, int j){
                 aux = aux->prox; //o ponteiro volta imprimindo
             }
             printf("\n");
+            //  char a = '@';
+            //  printf("a: %i", a);
         }
 }
 
@@ -337,21 +341,32 @@ int inserir(Pilha **prim, int linhas, int colunas, int lL, int lC){
     else
         for(i = 0; i < linhas; i++)
             for(j = 0; j < colunas; j++){
-                if((j == lC) && (i == lL) && (aux->info != '#') && (aux->info != '*') ){
-                    if(aux->direcoes.direita && aux->direcoes.cima && aux->direcoes.baixo && aux->direcoes.esquerda){
-                        printf("Sem movimentos");
+                if((j == lC) && (i == lL) && ((aux->info != 35) && (aux->info != 42))){
+                    if(aux->info == 64){
+                        printf("You won!");
+                        exit(EXIT_SUCCESS);
+                    }
+                    else if(aux->direcoes.direita && aux->direcoes.cima && aux->direcoes.baixo && aux->direcoes.esquerda){
+                        //  printf("Direita: %i\nEsquerda: %i\nCima: %i\nBaixo: %i", aux->direcoes.direita, aux->direcoes.cima, aux->direcoes.baixo, aux->direcoes.esquerda);
+                        printf("Sem movimentos\n");
+                        //popProcurar((*prim), aux);
                         return 0;
                     }
-
                     else{
                         aux->info = '*';
                         return 1;
                     }
                 }
-                else if(((j == lC) && (i == lL))){
-                    printf("ffnfj");
-                    return 0;
-                }
+
                 aux = aux->prox;
             }
+}
+
+void popProcurar(Pilha *primeiro, Pilha *procurar){
+    Pilha *aux = primeiro;
+    while(aux != NULL){
+        if(aux->prox == procurar)
+            aux->prox = procurar->prox;
+        aux = aux->prox;
+    }
 }
