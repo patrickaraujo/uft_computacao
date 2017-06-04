@@ -19,6 +19,7 @@ typedef struct word{
 
 void push(Lista **aux, Lista **prim, char letra);
 void imprimir(Lista *auxa, int i, int j);
+void pushWords(Palavras **aux, Palavras **prim, char *palavras);
 
 int main(){
     FILE *fp;
@@ -92,6 +93,15 @@ void pushWords(Palavras **aux, Palavras **prim, char *palavras) {
             (*prim) = p;
         (*aux) = p; //lista recebe valor da direita
     }
+}
+
+void procurarPalavras(Lista *prim, Palavras *primP, int i, int j, int k){
+    int l = 0, m = 0, n = 0;
+    for(l = 0)
+}
+
+void pSVH(){
+
 }
 
 
