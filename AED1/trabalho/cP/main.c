@@ -27,6 +27,7 @@ int procurar(char *op, char *p, int tam, int a, int *in);
 void pSVAH(Lista *prim, char *palavra, int i, int j);
 void pSVH(Lista *prim, char *palavra, int i, int j);
 void pSHH(Lista *prim, char *palavra, int i, int j);
+void pSHAH(Lista *prim, char *palavra, int i, int j);
 
 int main(){
     Palavras *primPalavras;
@@ -119,7 +120,8 @@ void procurarPalavras(Lista *prim, Palavras *primP, int i, int j, int k){
 void procurarDirecoes(char *palavra, Lista *prim, int i, int j){
     pSVH(prim, palavra, i, j);
     pSVAH(prim, palavra, i, j);
-    //pSHH(prim, palavra, i, j);
+    pSHH(prim, palavra, i, j);
+    pSHAH(prim, palavra, i, j);
 }
 
 void pSVAH(Lista *prim, char *palavra, int i, int j){
@@ -188,20 +190,68 @@ void pSHH(Lista *prim, char *palavra, int i, int j){
         if (n > 0 && matriz[k][n-1] == '\n')
             matriz[k][n-1] = 0;
     }
-    char arr[i];
 
+    char arr[j][i+1];
     for(m = 0; m < j; m++) {
         for(k = 0; k < i; k++){
-            arr[k] = matriz[k][m];
+            arr[m][k] = matriz[k][m];
+            if(k == i-1){
+                arr[m][k+1] = 0;
+            }
         }
-        printf("arr[%i]: %s\n", m, arr);
         int in = 0;
-        if(procurar(arr, palavra, j+1, a+1, &in)){
+        //printf("m: %i\n", m);
+        if(procurar(arr[m], palavra, j+1, a+1, &in)){
             printf("Direcao: Posicao horizontal, sentido horario\t");
-            printf("Linha: %i\tColuna: %i\n\n", k, (j-1-in));
+            printf("Linha: %i\tColuna: %i\n\n", in, m);
         }
+
     }
 
+}
+
+void pSHAH(Lista *prim, char *palavra, int i, int j){
+    char words[j];
+    strcpy(words, palavra);
+    int a = 0, b = 0;
+    while(words[a]!='\0'){
+        a++;
+    }
+    a--;
+    char word[a];
+    strcpy(word, words);
+    Lista *aux = prim;
+    char matriz[i][j+1];
+    int k = 0, m = 0;
+    for(k = 0; k < i; k++){
+        for(m = 0; m < j; m++){
+            matriz[k][m] = aux->info;
+            if(m==j-1){
+                matriz[k][m+1] = '\0';
+            }
+            aux = aux->prox;
+        }
+        int n = strlen(matriz[k]);
+        if (n > 0 && matriz[k][n-1] == '\n')
+            matriz[k][n-1] = 0;
+    }
+
+    char arr[j][i+1];
+    char arrTD[j][i+1];
+    for(m = 0; m < j; m++) {
+        for(k = 0; k < i; k++){
+            arr[m][k] = matriz[k][m];
+            if(k == i-1){
+                arr[m][k+1] = 0;
+            }
+        }
+        strcpy(arrTD[m], strrev(arr[m]));
+        int in = 0;
+        if(procurar(arrTD[m], palavra, j+1, a+1, &in)){
+            printf("Direcao: Posicao horizontal, sentido anti-horario\t");
+            printf("Linha: %i\tColuna: %i\n\n", in, (j-m-1));
+        }
+    }
 }
 
 void pSVH(Lista *prim, char *palavra, int i, int j){
