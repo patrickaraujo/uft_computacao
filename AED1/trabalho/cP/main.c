@@ -251,7 +251,7 @@ void pSHAH(Lista *prim, char *palavra, int i, int j){
         int in = 0;
         if(procurar(arrTD[m], palavra, j+1, a+1, &in)){
             printf("Direcao: Posicao horizontal, sentido anti-horario\t");
-            printf("Linha: %i\tColuna: %i\n\n", in, (j-m-1));
+            printf("Linha: %i\tColuna: %i\n\n", i-in, m);
         }
     }
 }
@@ -334,11 +334,14 @@ void pSDH(Lista *prim, char *palavra, int i, int j){
         }
         int z = 0;
         char mat[j+1];
+        int i1 = g;
+        int i2 = y;
         while(g>=0 && y<j) {
             //int x = abs(y-g);
             //printf("%i", z);
             //printf("%i", x);
             mat[z] = matriz[g][y];
+            //printf("%i\t%i\n", g, y);
             //printf("%c", matriz[g][y]);
             g--;
             y++;
@@ -350,9 +353,8 @@ void pSDH(Lista *prim, char *palavra, int i, int j){
         //printf("\nstring: %s\n", mat);
         int in = 0;
         if(procurar(mat, palavra, j+1, a+1, &in)){
-            printf("--------------------------------------------------------------------\n");
             printf("Direcao: Posicao diagonal, sentido horario\t");
-            printf("Linha: %i\tColuna: %i\n\n", k, in);
+            printf("Linha: %i\tColuna: %i\n\n", i2, i1);
         }
         free(mat);
     }
