@@ -28,6 +28,7 @@ void pSVAH(Lista *prim, char *palavra, int i, int j);
 void pSVH(Lista *prim, char *palavra, int i, int j);
 void pSHH(Lista *prim, char *palavra, int i, int j);
 void pSHAH(Lista *prim, char *palavra, int i, int j);
+void pSDH(Lista *prim, char *palavra, int i, int j);
 
 int main(){
     Palavras *primPalavras;
@@ -122,6 +123,7 @@ void procurarDirecoes(char *palavra, Lista *prim, int i, int j){
     pSVAH(prim, palavra, i, j);
     pSHH(prim, palavra, i, j);
     pSHAH(prim, palavra, i, j);
+    pSDH(prim, palavra, i, j);
 }
 
 void pSVAH(Lista *prim, char *palavra, int i, int j){
@@ -289,6 +291,40 @@ void pSVH(Lista *prim, char *palavra, int i, int j){
         }
 
     }
+}
+
+void pSDH(Lista *prim, char *palavra, int i, int j){
+    char words[j];
+    strcpy(words, palavra);
+    int a = 0, b = 0;
+    while(words[a]!='\0'){
+        a++;
+    }
+    a--;
+    char word[a];
+    strcpy(word, words);
+    Lista *aux = prim;
+    char matriz[i][j+1];
+    int k = 0, m = 0;
+    for(k = 0; k < i; k++){
+        for(m = 0; m < j; m++){
+            matriz[k][m] = aux->info;
+            if(m==j-1){
+                matriz[k][m+1] = '\0';
+            }
+            aux = aux->prox;
+        }
+        int n = strlen(matriz[k]);
+        if (n > 0 && matriz[k][n-1] == '\n')
+            matriz[k][n-1] = 0;
+    }
+
+    for(k = 0; k < i; k++){
+        for(m = k; m >= 0; m--){
+            printf("k: %i\tm: %i\n", k, m);
+        }
+    }
+
 }
 
 int procurar(char *op, char *p, int tam, int a, int *in){
