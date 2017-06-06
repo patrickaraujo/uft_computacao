@@ -319,11 +319,11 @@ void pSDH(Lista *prim, char *palavra, int i, int j){
             matriz[k][n-1] = 0;
     }
 
-    char mat[j];
+
     int g=0, y=0;
     // Loop to print each diagonal
     for(int cnt=0; cnt<2*j-1; cnt++) {
-        printf("\n");
+        //printf("\n");
         if(cnt<j) {
             g = cnt;
             y = 0;
@@ -332,15 +332,28 @@ void pSDH(Lista *prim, char *palavra, int i, int j){
             g = j-1;
             y = (cnt+1)%j;
         }
+        int z = 0;
+        char mat[j+1];
         while(g>=0 && y<j) {
-            int x = abs(y-g);
+            //int x = abs(y-g);
+            //printf("%i", z);
             //printf("%i", x);
-            mat[x] = matriz[g][y];
-            printf("%c", matriz[g][y]);
+            mat[z] = matriz[g][y];
+            //printf("%c", matriz[g][y]);
             g--;
             y++;
+            z++;
+            if(g>=0 && y<j){
+                mat[z+1] = 0;
+            }
         }
-        //  printf("\nstring: %s\n", mat);
+        //printf("\nstring: %s\n", mat);
+        int in = 0;
+        if(procurar(mat, palavra, j+1, a+1, &in)){
+            printf("--------------------------------------------------------------------\n");
+            printf("Direcao: Posicao diagonal, sentido horario\t");
+            printf("Linha: %i\tColuna: %i\n\n", k, in);
+        }
         free(mat);
     }
 
