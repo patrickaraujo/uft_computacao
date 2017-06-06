@@ -319,10 +319,29 @@ void pSDH(Lista *prim, char *palavra, int i, int j){
             matriz[k][n-1] = 0;
     }
 
-    for(k = 0; k < i; k++){
-        for(m = k; m >= 0; m--){
-            printf("k: %i\tm: %i\n", k, m);
+    char mat[j];
+    int g=0, y=0;
+    // Loop to print each diagonal
+    for(int cnt=0; cnt<2*j-1; cnt++) {
+        printf("\n");
+        if(cnt<j) {
+            g = cnt;
+            y = 0;
         }
+        else {
+            g = j-1;
+            y = (cnt+1)%j;
+        }
+        while(g>=0 && y<j) {
+            int x = abs(y-g);
+            //printf("%i", x);
+            mat[x] = matriz[g][y];
+            printf("%c", matriz[g][y]);
+            g--;
+            y++;
+        }
+        //  printf("\nstring: %s\n", mat);
+        free(mat);
     }
 
 }
