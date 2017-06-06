@@ -323,6 +323,7 @@ void pSDH(Lista *prim, char *palavra, int i, int j){
 
 
     int g=0, y=0;
+    int zZ = 0;
     // Loop to print each diagonal
     for(int cnt=0; cnt<2*j-1; cnt++) {
         //printf("\n");
@@ -347,7 +348,7 @@ void pSDH(Lista *prim, char *palavra, int i, int j){
             //printf("%c", matriz[g][y]);
             g--;
             y++;
-            z++;
+            zZ++; z++;
             if(g>=0 && y<j){
                 mat[z+1] = 0;
             }
@@ -355,8 +356,13 @@ void pSDH(Lista *prim, char *palavra, int i, int j){
         //printf("\nstring: %s\n", mat);
         int in = 0;
         if(procurar(mat, palavra, j+1, a+1, &in)){
+            int tempo = qnt(mat, palavra);
             printf("Direcao: Posicao diagonal, sentido horario\t");
-            printf("Linha: %i\tColuna: %i\n\n", i2, i1);
+            if(zZ > 209) {
+                printf("Linha: %i\tColuna: %i\n\n", (j-tempo-1), (j-(strlen(mat)-tempo)));
+            }
+            else
+                printf("Linha: %i\tColuna: %i\n\n", tempo, i1);
         }
         free(mat);
     }
@@ -421,10 +427,10 @@ void pSDIAH(Lista *prim, char *palavra, int i, int j){
         int in = 0;
         if(procurar(mat, palavra, j+1, a+1, &in)){
             int tempo = qnt(mat, palavra);
-            printf("%s", mat);
+
             printf("Direcao: Posicao diagonal invertida, sentido anti-horario\t");
             if(zZ > 209)
-                printf("Linha: %i\tColuna: %i\tz: %i\n\n", (j-tempo-1), (z-1), tempo);
+                printf("Linha: %i\tColuna: %i\n\n", (j-tempo-1), (strlen(mat)-tempo-1));
             else
                 printf("Linha: %i\tColuna: %i\n\n", (z-tempo), (j-tempo-1));
         }
@@ -441,7 +447,7 @@ int qnt(char *op, char *p){
     if (n > 0 && palavra[n-1] == '\n')
         palavra[n-1] = 0;
     int b = strlen(op)+1;
-    printf("len: %i", b);
+
     char find[b];
     strcpy(find, op);
     int m = strlen(find);
