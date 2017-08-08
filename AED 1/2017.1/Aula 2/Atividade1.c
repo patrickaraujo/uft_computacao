@@ -12,6 +12,15 @@ void avancarVetor(int x){
         avancarVetor(z);
 }
 
+/*
+int avancarVetor(int indice){
+	if(indice == MAX)
+		return 0;
+	else
+		return vetor[indice]+avancarVetor(indice+1);
+}
+*/
+
 int main(){
     avancarVetor(0);
     return 0;
