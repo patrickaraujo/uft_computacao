@@ -10,8 +10,6 @@ void avancarVetor(int x){
     int z = x+1;
     if(z < MAX)
         avancarVetor(z);
-    else
-        printf("\nDone");
 }
 
 int main(){
