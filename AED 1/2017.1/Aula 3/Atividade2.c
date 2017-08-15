@@ -13,15 +13,6 @@ int impares(int indice){
     return impares(indice+1);
 }
 
-/*
-int avancarVetor(int indice){
-	if(indice == MAX)
-		return 0;
-	else
-		return vetor[indice]+avancarVetor(indice+1);
-}
-*/
-
 int main(){
     printf("%d\n", impares(0));
     return 0;
