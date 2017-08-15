@@ -13,15 +13,6 @@ int verificaOrdenado(int indice){
     return 0;
 }
 
-/*
-int avancarVetor(int indice){
-	if(indice == MAX)
-		return 0;
-	else
-		return vetor[indice]+avancarVetor(indice+1);
-}
-*/
-
 int main(){
     if((verificaOrdenado(0)))
         printf("Esta ordenado");
