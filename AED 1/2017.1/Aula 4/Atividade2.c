@@ -3,7 +3,7 @@
 
 void funcao(int x, int vetor[10]){
     printf("Tamanho x = %d\n", sizeof(x));
-    printf("Tamanho vetor = %d\n\n" ,sizeof(vetor));
+    printf("Tamanho vetor = %d\n\n", sizeof(vetor));
 }
 
 int main(){
