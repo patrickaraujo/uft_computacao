@@ -1,7 +1,7 @@
-#include<stdlib.h>
-#include<stdio.h>
+#include <stdlib.h>
+#include <stdio.h>
 
-# define TAM 100
+#define TAM 100
 
 void imprimeVetor(char *vetor, int tam){
     int i;
