@@ -2,11 +2,13 @@
 * @author Patrick Araújo
 *Pilha Estática em C para a aula de Algoritmos e Estrutura de Dados 1
 */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
 #define MAX 10
+
 int inicio, fim;
 int pilha[MAX];
 
@@ -21,11 +23,8 @@ void push(int x){
 }
 
 int pop(){
-    int aux;
     if( !pilhaVazia() ){
-        int x = (fim - 1);
-        aux = pilha[x];
-        pilha[x] = 0;
+        pilha[(fim - 1)] = 0;
         fim--;
         printf("Removido com sucesso\n");
         return 1;
