@@ -1,6 +1,6 @@
 /**
 * @author Patrick Araújo
-*Pilha Estática em C para a aula de Algorismo e Estrutura de Dados 1
+*Pilha Estática em C para a aula de Algoritmos e Estrutura de Dados 1
 */
 #include <stdio.h>
 #include <stdlib.h>
