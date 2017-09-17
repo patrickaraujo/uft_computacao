@@ -32,13 +32,31 @@ int pop(int *torre, int *inicio, int *fim){
 void printTorres(int *torre1, int *torre2, int *torre3, int tam){
     int i;
     for(i = 0; i < tam; i++){
-        printf("Torre 1 [%d] = %d\n", i, torre1[i]);
-        printf("Torre 2 [%d] = %d\n", i, torre2[i]);
-        printf("Torre 3 [%d] = %d\n", i, torre3[i]);
+        if(i == 0)
+            printf("Torre 1:\t%i\t", torre1[i]);
+        else
+            printf("%i\t", torre1[i]);
     }
+    printf("\n");
+    for(i = 0; i < tam; i++){
+        if(i == 0)
+            printf("Torre 2:\t%i\t", torre2[i]);
+        else
+            printf("%i\t", torre2[i]);
+    }
+    printf("\n");
+    for(i = 0; i < tam; i++){
+        if(i == 0)
+            printf("Torre 3:\t%i\t", torre3[i]);
+        else
+            printf("%i\t", torre3[i]);
+    }
+    printf("\n");
 }
 
 void change12(int *torre1, int *torre2, int tam, int *inicioT1, int *fimT1, int *inicioT2, int *fimT2){
+
+    printf("\n\ninicioT1: %i\nfimT1: %i\n\ninicioT2: %i\nfimT2: %i\n\n", *inicioT1, *fimT1, *inicioT2, *fimT2);
 
     if(!(*fimT1))
         printf("\nTorre de origem vazia!\n");
@@ -50,7 +68,7 @@ void change12(int *torre1, int *torre2, int tam, int *inicioT1, int *fimT1, int 
                 push(torre2, aux, fimT2, 3);
         }
         else
-            printf("Não e possivel");
+            printf("\nNão e possivel");
     }
 }
 
@@ -91,10 +109,10 @@ void facil(){
                 change12(&torre2, &torre3, 3, &inicioT2, &fimT2, &inicioT3, &fimT3);
             break;
             case 5:
-                change12(&torre1, &torre3, 3, &inicioT1, &fimT1, &inicioT3, &fimT3);
+                change12(&torre3, &torre1, 3, &inicioT3, &fimT3, &inicioT1, &fimT1);
             break;
             case 6:
-                change12(&torre1, &torre3, 3, &inicioT1, &fimT1, &inicioT3, &fimT3);
+                change12(&torre3, &torre2, 3, &inicioT3, &fimT3, &inicioT2, &fimT2);
             break;
             default:
                 printf("Invalido\n");
