@@ -1,7 +1,11 @@
+/**
+* @author Patrick Araújo: https://github.com/patrickaraujo
+* Trabalho Torre de Hanoi em C para a aula de Algorismo e Estrutura de Dados 1
+* Finalizado em 17/09/2017
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
-
-#define MAX 3
 
 int push(int *torre, int x, int *fim, int max){
     if ( !pilhaCheia(fim, &max) ){
@@ -59,7 +63,6 @@ void change(int *torre1, int *torre2, int *inicioT1, int *fimT1, int *inicioT2, 
     if(!(*fimT1))
         printf("\nTorre de origem vazia!\n");
     else{
-        printf("torre1[%i]: %i\ttorre2[%i]: %i", ((*fimT1)-1), (torre1[(*fimT1)-1]), (*fimT2-1), (torre2[(*fimT2-1)]));
         if((!(torre2[(*fimT2-1)])) || ((torre1[(*fimT1)-1]) <= (torre2[(*fimT2-1)]))){
             int aux = torre1[(*fimT1)-1];
             if(pop(torre1, inicioT1, fimT1))
