@@ -39,19 +39,30 @@ void printTorres(int *torre1, int *torre2, int *torre3, int tam){
 }
 
 void change12(int *torre1, int *torre2, int tam, int *inicioT1, int *fimT1, int *inicioT2, int *fimT2){
-    
-    int aux = torre1[(*fimT1)-1];
-    
-    if(pop(torre1, inicioT1, fimT1))
-        push(torre2, aux, fimT2, 3);
 
+    if(!(*fimT1))
+        printf("\nTorre de origem vazia!\n");
+    else{
+        int x = 0;
+        if((!torre2[(*fimT2-1)]) && (torre1[(*fimT1)-1]) >= (torre2[(*fimT2)])){
+            int aux = torre1[(*fimT1)-1];
+            if(pop(torre1, inicioT1, fimT1))
+                push(torre2, aux, fimT2, 3);
+        }
+        else
+            printf("Não e possivel");
+    }
 }
 
 void imprimeOP(){
     printf("\nTrocar:\n\n");
     printf("1 - Torre 1 para Torre 2\n");
     printf("2 - Torre 1 para Torre 3\n");
-    printf("3 - \n");
+    printf("3 - Torre 2 para Torre 1\n");
+    printf("4 - Torre 2 para Torre 3\n");
+    printf("5 - Torre 3 para Torre 1\n");
+    printf("6 - Torre 3 para Torre 2\n");
+    printf("7 - Para desistir\n");
 }
 
 void facil(){
@@ -73,23 +84,24 @@ void facil(){
             case 2:
                 change12(&torre1, &torre3, 3, &inicioT1, &fimT1, &inicioT3, &fimT3);
             break;
+            case 3:
+                change12(&torre2, &torre1, 3, &inicioT2, &fimT2, &inicioT1, &fimT1);
+            break;
+            case 4:
+                change12(&torre2, &torre3, 3, &inicioT2, &fimT2, &inicioT3, &fimT3);
+            break;
+            case 5:
+                change12(&torre1, &torre3, 3, &inicioT1, &fimT1, &inicioT3, &fimT3);
+            break;
+            case 6:
+                change12(&torre1, &torre3, 3, &inicioT1, &fimT1, &inicioT3, &fimT3);
+            break;
             default:
-                printf("????\n");
+                printf("Invalido\n");
         }
         i++;
-    }while(op = 4);
-
-    /*
-    for(i = 0; i < MAX; i++){
-        if(i = 0){
-            printf("Torre A")
-        }
-
-    }
-    do{
-
-    }
-    */
+    }while(op != 7);
+    exit(EXIT_SUCCESS);
 }
 
 int main(){
