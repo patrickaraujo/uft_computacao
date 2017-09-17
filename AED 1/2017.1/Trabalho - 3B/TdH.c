@@ -120,8 +120,22 @@ void facil(){
         }
         i++;
         printf("\nfim3: %i\n", fimT3);
+        if(fimT3 == 3)
+            if(decrescente(&torre3, 3)){
+                op = 7;
+                printf("\nFim de jogo\n");
+            }
     }while(op != 7);
+
     exit(EXIT_SUCCESS);
+}
+
+int decrescente(int *torre3, int tam){
+    int i;
+    for(i = 0; i < tam-1; i++)
+        if (torre3[i] < torre3[i+1])
+            return 0;
+    return 1;
 }
 
 int main(){
