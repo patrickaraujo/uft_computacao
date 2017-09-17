@@ -54,15 +54,12 @@ void printTorres(int *torre1, int *torre2, int *torre3, int tam){
     printf("\n");
 }
 
-void change12(int *torre1, int *torre2, int tam, int *inicioT1, int *fimT1, int *inicioT2, int *fimT2){
-
-    printf("\n\ninicioT1: %i\nfimT1: %i\n\ninicioT2: %i\nfimT2: %i\n\n", *inicioT1, *fimT1, *inicioT2, *fimT2);
+void change(int *torre1, int *torre2, int tam, int *inicioT1, int *fimT1, int *inicioT2, int *fimT2){
 
     if(!(*fimT1))
         printf("\nTorre de origem vazia!\n");
     else{
         int x = 0;
-        printf("torre[%i]: %i\ttorre2[%i]: %i", ((*fimT1)-1), torre1[(*fimT1)-1], (*fimT2-1), torre2[(*fimT2-1)]);
         if((!(torre2[(*fimT2-1)])) || ((torre1[(*fimT1)-1]) <= (torre2[(*fimT2-1)]))){
             int aux = torre1[(*fimT1)-1];
             if(pop(torre1, inicioT1, fimT1))
@@ -98,28 +95,27 @@ void facil(){
         scanf("%d", &op);
         switch(op){
             case 1:
-                change12(&torre1, &torre2, 3, &inicioT1, &fimT1, &inicioT2, &fimT2);
+                change(&torre1, &torre2, 3, &inicioT1, &fimT1, &inicioT2, &fimT2);
             break;
             case 2:
-                change12(&torre1, &torre3, 3, &inicioT1, &fimT1, &inicioT3, &fimT3);
+                change(&torre1, &torre3, 3, &inicioT1, &fimT1, &inicioT3, &fimT3);
             break;
             case 3:
-                change12(&torre2, &torre1, 3, &inicioT2, &fimT2, &inicioT1, &fimT1);
+                change(&torre2, &torre1, 3, &inicioT2, &fimT2, &inicioT1, &fimT1);
             break;
             case 4:
-                change12(&torre2, &torre3, 3, &inicioT2, &fimT2, &inicioT3, &fimT3);
+                change(&torre2, &torre3, 3, &inicioT2, &fimT2, &inicioT3, &fimT3);
             break;
             case 5:
-                change12(&torre3, &torre1, 3, &inicioT3, &fimT3, &inicioT1, &fimT1);
+                change(&torre3, &torre1, 3, &inicioT3, &fimT3, &inicioT1, &fimT1);
             break;
             case 6:
-                change12(&torre3, &torre2, 3, &inicioT3, &fimT3, &inicioT2, &fimT2);
+                change(&torre3, &torre2, 3, &inicioT3, &fimT3, &inicioT2, &fimT2);
             break;
             default:
                 printf("Invalido\n");
         }
         i++;
-        printf("\nfim3: %i\n", fimT3);
         if(fimT3 == 3)
             if(decrescente(&torre3, 3)){
                 op = 7;
