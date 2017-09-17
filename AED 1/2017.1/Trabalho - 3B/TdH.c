@@ -62,13 +62,14 @@ void change12(int *torre1, int *torre2, int tam, int *inicioT1, int *fimT1, int 
         printf("\nTorre de origem vazia!\n");
     else{
         int x = 0;
-        if((!torre2[(*fimT2-1)]) && (torre1[(*fimT1)-1]) >= (torre2[(*fimT2)])){
+        printf("torre[%i]: %i\ttorre2[%i]: %i", ((*fimT1)-1), torre1[(*fimT1)-1], (*fimT2-1), torre2[(*fimT2-1)]);
+        if((!(torre2[(*fimT2-1)])) || ((torre1[(*fimT1)-1]) <= (torre2[(*fimT2-1)]))){
             int aux = torre1[(*fimT1)-1];
             if(pop(torre1, inicioT1, fimT1))
                 push(torre2, aux, fimT2, 3);
         }
         else
-            printf("\nNão e possivel");
+            printf("\nNao e possivel");
     }
 }
 
@@ -118,6 +119,7 @@ void facil(){
                 printf("Invalido\n");
         }
         i++;
+        printf("\nfim3: %i\n", fimT3);
     }while(op != 7);
     exit(EXIT_SUCCESS);
 }
