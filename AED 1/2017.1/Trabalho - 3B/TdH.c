@@ -86,17 +86,21 @@ void jogar(int tam){
     int torre1[tam];
     int torre2[tam];
     int torre3[tam];
+    char niv[15] = "Nivel";
     if(tam == 3){
+        strcpy(niv, "Nivel Facil");
         memcpy(torre1, (int[]) {5, 3, 1}, sizeof torre1);
         memcpy(torre2, (int[]) {NULL, NULL, NULL}, sizeof torre2);
         memcpy(torre3, (int[]) {NULL, NULL, NULL}, sizeof torre3);
     }
     else if(tam == 7){
+        strcpy(niv, "Nivel Medio");
         memcpy(torre1, (int[]) {9, 7, 5, 3, 1}, sizeof torre1);
         memcpy(torre2, (int[]) {NULL, NULL, NULL, NULL, NULL}, sizeof torre2);
         memcpy(torre3, (int[]) {NULL, NULL, NULL, NULL, NULL}, sizeof torre3);
     }
     else if(tam == 9){
+        strcpy(niv, "Nivel Dificil");
         memcpy(torre1, (int[]) {13, 11, 9, 7, 5, 3, 1}, sizeof torre1);
         memcpy(torre2, (int[]) {NULL, NULL, NULL, NULL, NULL, NULL, NULL}, sizeof torre2);
         memcpy(torre3, (int[]) {NULL, NULL, NULL, NULL, NULL, NULL, NULL}, sizeof torre3);
@@ -105,6 +109,7 @@ void jogar(int tam){
     int op, inicioT1 = 0, fimT1 = tam, inicioT2 = 0, fimT2 = 0, inicioT3 = 0, fimT3 = 0, i = 0;
 
     do{
+        printf("\n%s\n", niv);
         printf("\nJogada: %i\n", i);
         printTorres(torre1, torre2, torre3, tam);
         imprimeOP();
@@ -133,6 +138,7 @@ void jogar(int tam){
                 printf("Invalido\n");
         }
         i++;
+        system("cls");
         if(fimT3 == tam)
             if(decrescente(torre3, tam)){
                 op = 7;
