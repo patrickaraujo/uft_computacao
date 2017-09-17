@@ -54,12 +54,12 @@ void printTorres(int *torre1, int *torre2, int *torre3, int tam){
     printf("\n");
 }
 
-void change(int *torre1, int *torre2, int tam, int *inicioT1, int *fimT1, int *inicioT2, int *fimT2){
+void change(int *torre1, int *torre2, int *inicioT1, int *fimT1, int *inicioT2, int *fimT2){
 
     if(!(*fimT1))
         printf("\nTorre de origem vazia!\n");
     else{
-        int x = 0;
+        printf("torre1[%i]: %i\ttorre2[%i]: %i", ((*fimT1)-1), (torre1[(*fimT1)-1]), (*fimT2-1), (torre2[(*fimT2-1)]));
         if((!(torre2[(*fimT2-1)])) || ((torre1[(*fimT1)-1]) <= (torre2[(*fimT2-1)]))){
             int aux = torre1[(*fimT1)-1];
             if(pop(torre1, inicioT1, fimT1))
@@ -81,43 +81,59 @@ void imprimeOP(){
     printf("7 - Para desistir\n");
 }
 
-void facil(){
-    int op, inicioT1 = 0, fimT1 = 3, inicioT2 = 0, fimT2 = 0, inicioT3 = 0, fimT3 = 0, i = 0;
-    int torre1[3] = {5, 3, 1};
-    int torre2[3] = {NULL, NULL, NULL};
-    int torre3[3] = {NULL, NULL, NULL};
+void jogar(int tam){
+    int torre1[tam];
+    int torre2[tam];
+    int torre3[tam];
+    if(tam == 3){
+        memcpy(torre1, (int[]) {5, 3, 1}, sizeof torre1);
+        memcpy(torre2, (int[]) {NULL, NULL, NULL}, sizeof torre2);
+        memcpy(torre3, (int[]) {NULL, NULL, NULL}, sizeof torre3);
+    }
+    else if(tam == 7){
+        memcpy(torre1, (int[]) {9, 7, 5, 3, 1}, sizeof torre1);
+        memcpy(torre2, (int[]) {NULL, NULL, NULL, NULL, NULL}, sizeof torre2);
+        memcpy(torre3, (int[]) {NULL, NULL, NULL, NULL, NULL}, sizeof torre3);
+    }
+    else if(tam == 9){
+        memcpy(torre1, (int[]) {13, 11, 9, 7, 5, 3, 1}, sizeof torre1);
+        memcpy(torre2, (int[]) {NULL, NULL, NULL, NULL, NULL, NULL, NULL}, sizeof torre2);
+        memcpy(torre3, (int[]) {NULL, NULL, NULL, NULL, NULL, NULL, NULL}, sizeof torre3);
+    }
+
+    int op, inicioT1 = 0, fimT1 = tam, inicioT2 = 0, fimT2 = 0, inicioT3 = 0, fimT3 = 0, i = 0;
 
     do{
         printf("\nJogada: %i\n", i);
-        printTorres(&torre1, &torre2, torre3, 3);
+        printTorres(torre1, torre2, torre3, tam);
         imprimeOP();
         printf("Opcao: ");
         scanf("%d", &op);
         switch(op){
             case 1:
-                change(&torre1, &torre2, 3, &inicioT1, &fimT1, &inicioT2, &fimT2);
+                change(torre1, torre2, &inicioT1, &fimT1, &inicioT2, &fimT2);
             break;
             case 2:
-                change(&torre1, &torre3, 3, &inicioT1, &fimT1, &inicioT3, &fimT3);
+                change(torre1, torre3, &inicioT1, &fimT1, &inicioT3, &fimT3);
             break;
             case 3:
-                change(&torre2, &torre1, 3, &inicioT2, &fimT2, &inicioT1, &fimT1);
+                change(torre2, torre1, &inicioT2, &fimT2, &inicioT1, &fimT1);
             break;
             case 4:
-                change(&torre2, &torre3, 3, &inicioT2, &fimT2, &inicioT3, &fimT3);
+                change(torre2, torre3, &inicioT2, &fimT2, &inicioT3, &fimT3);
             break;
             case 5:
-                change(&torre3, &torre1, 3, &inicioT3, &fimT3, &inicioT1, &fimT1);
+                change(torre3, torre1, &inicioT3, &fimT3, &inicioT1, &fimT1);
             break;
             case 6:
-                change(&torre3, &torre2, 3, &inicioT3, &fimT3, &inicioT2, &fimT2);
+                change(torre3, torre2, &inicioT3, &fimT3, &inicioT2, &fimT2);
             break;
             default:
                 printf("Invalido\n");
         }
         i++;
-        if(fimT3 == 3)
-            if(decrescente(&torre3, 3)){
+        if(fimT3 == tam)
+            if(decrescente(torre3, tam)){
                 op = 7;
                 printf("\nFim de jogo\n");
             }
@@ -125,6 +141,7 @@ void facil(){
 
     exit(EXIT_SUCCESS);
 }
+
 
 int decrescente(int *torre3, int tam){
     int i;
@@ -147,15 +164,15 @@ int main(){
         scanf("%d", &nivel);
         switch(nivel) {
             case 1:
-                facil();
+                jogar(3);
                 system("pause");
                 break;
             case 2:
-
+                jogar(5);
                 system("pause");
                 break;
             case 3:
-
+                jogar(7);
                 system("pause");
             break;
             default:
