@@ -15,7 +15,6 @@ int push(int *torre, int x, int *fim, int max){
     return 0;
 }
 
-
 int pilhaVazia(int *inicio, int *fim){
     return ((*inicio) == (*fim));
 }
@@ -59,7 +58,6 @@ void printTorres(int *torre1, int *torre2, int *torre3, int tam){
 }
 
 void change(int *torre1, int *torre2, int *inicioT1, int *fimT1, int *inicioT2, int *fimT2){
-
     if(!(*fimT1))
         printf("\nTorre de origem vazia!\n");
     else{
@@ -144,7 +142,6 @@ void jogar(int tam){
 
     exit(EXIT_SUCCESS);
 }
-
 
 int decrescente(int *torre3, int tam){
     int i;
