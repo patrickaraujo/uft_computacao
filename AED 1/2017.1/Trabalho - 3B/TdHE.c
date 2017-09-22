@@ -7,12 +7,13 @@ typedef struct no{
 }ponto;
 
 void push (ponto **Point, int num);
-int pop(ponto **torre);
+void jogar(int tam);
+int compara(ponto *torreO, ponto *torreD);
 void imprimir(ponto *Point);
+int verifica(ponto *Point, int tam);
 void printTorres(ponto *torre1, ponto *torre2, ponto *torre3);
 void imprimeOP();
-void jogar(int tam);
-void change (ponto *torreO, ponto *torreD);
+int pop(ponto **torre);
 
 int main(){
     int nivel;
@@ -116,12 +117,14 @@ void jogar(int tam){
                 printf("Invalido\n");
         }
         i++;
-        //system("cls");
-            if(decrescente(torre3, tam)){
-                printTorres(torre1, torre2, torre3);
-                op = 7;
-                printf("\nFim de jogo\n");
-            }
+        system("cls");
+        if(verifica(torre3, tam)){
+            printf("\n%s\n", niv);
+            printf("\nJogada: %i\n", i);
+            printTorres(torre1, torre2, torre3);
+            op = 7;
+            printf("\nFim de jogo\n");
+        }
     }while(op != 7);
     exit(EXIT_SUCCESS);
 }
@@ -149,7 +152,7 @@ void imprimir(ponto *Point){
         printf("\tPilha vazia");
 }
 
-int decrescente(ponto *Point, int tam){
+int verifica(ponto *Point, int tam){
     int i = 0, j = 0, k;
     ponto *aux;
     if(Point != NULL){
