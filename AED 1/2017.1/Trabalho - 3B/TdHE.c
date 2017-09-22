@@ -6,11 +6,11 @@ typedef struct no{
     struct no *anterior;
 }ponto;
 
-void push (ponto **Point, int num);
+int push (ponto **Point, int num);
 void jogar(int tam);
 int compara(ponto *torreO, ponto *torreD);
 void imprimir(ponto *Point);
-int verifica(ponto *Point, int tam);
+int pointerLength(ponto *Point);
 void printTorres(ponto *torre1, ponto *torre2, ponto *torre3);
 void imprimeOP();
 int pop(ponto **torre);
@@ -48,21 +48,6 @@ int main(){
     return 0;
 }
 
-void push (ponto **Point, int num){
-    if(num != -1){
-        ponto *pont = malloc(sizeof(ponto));
-        if(pont == NULL)
-            printf("Memoria insulficiente\n");
-        else{
-            pont->anterior = *Point;
-            pont->num = num;
-        }
-        *Point = pont;
-    }
-    else
-        printf("Nao ha elementos na pilha\n");
-}
-
 void jogar(int tam){
     ponto *torre1 = NULL;
     ponto *torre2 = NULL;
@@ -80,7 +65,7 @@ void jogar(int tam){
         strcpy(niv, "Nivel Dificil");
         push(&torre1, 13);  push(&torre1, 11);  push(&torre1, 9);   push(&torre1, 7);   push(&torre1, 5);   push(&torre1, 3);   push(&torre1, 1);
     }
-    int op, inicioT1 = 0, fimT1 = tam, inicioT2 = 0, fimT2 = 0, inicioT3 = 0, fimT3 = 0, i = 0;
+    int op, i = 0;
     do{
         printf("\n%s\n", niv);
         printf("\nJogada: %i\n", i);
@@ -91,34 +76,40 @@ void jogar(int tam){
         switch(op){
             case 1:
                 if(compara(torre1, torre2))
-                    push(&torre2, pop(&torre1));
+                    if(!push(&torre2, pop(&torre1)))
+                        printf("Não foi possivel mover da Torre 1 para Torre 2");
             break;
             case 2:
                 if(compara(torre1, torre3))
-                    push(&torre3, pop(&torre1));
+                    if(!push(&torre3, pop(&torre1)))
+                        printf("Não foi possivel mover da Torre 1 para Torre 3");
             break;
             case 3:
                 if(compara(torre2, torre1))
-                    push(&torre1, pop(&torre2));
+                    if(!push(&torre1, pop(&torre2)))
+                        printf("Não foi possivel mover da Torre 2 para Torre 1");
             break;
             case 4:
                 if(compara(torre2, torre3))
-                    push(&torre3, pop(&torre2));
+                    if(!push(&torre3, pop(&torre2)))
+                        printf("Não foi possivel mover da Torre 2 para Torre 3");
             break;
             case 5:
                 if(compara(torre3, torre1))
-                    push(&torre1, pop(&torre3));
+                    if(!push(&torre1, pop(&torre3)))
+                        printf("Não foi possivel mover da Torre 3 para Torre 1");
             break;
             case 6:
-                if(compara(torre3, torre1))
-                    push(&torre2, pop(&torre3));
+                if(compara(torre3, torre2))
+                    if(!push(&torre2, pop(&torre3)))
+                        printf("Não foi possivel mover da Torre 3 para Torre 2");
             break;
             default:
                 printf("Invalido\n");
         }
         i++;
         system("cls");
-        if(verifica(torre3, tam)){
+        if(pointerLength(torre3) == tam){
             printf("\n%s\n", niv);
             printf("\nJogada: %i\n", i);
             printTorres(torre1, torre2, torre3);
@@ -132,40 +123,16 @@ void jogar(int tam){
 int compara(ponto *torreO, ponto *torreD){
     if(torreD == NULL)
         return 1;
-    return (torreD->num>torreO->num);
+    return (torreD->num > torreO->num);
 }
 
-void imprimir(ponto *Point){
+int pointerLength(ponto *Point){
     int i = 0, j = 0, k;
     ponto *aux;
-    if(Point != NULL){
+    if(Point != NULL)
         for(aux = Point; aux != NULL; aux = aux->anterior)
             i++;
-        int auxiliar[i];
-        for(aux = Point; aux != NULL; aux = aux->anterior)
-            auxiliar[j++] = aux->num;
-        int def[--j];
-        for(k = j; k >= 0; k--)
-            printf("\t%i", auxiliar[k]);
-    }
-    else
-        printf("\tPilha vazia");
-}
-
-int verifica(ponto *Point, int tam){
-    int i = 0, j = 0, k;
-    ponto *aux;
-    if(Point != NULL){
-        for(aux = Point; aux != NULL; aux = aux->anterior)
-            i++;
-        if(i == tam){
-            int auxiliar[i];
-            for(aux = Point; aux != NULL; aux = aux->anterior)
-                if(aux->num < aux->anterior->num)
-                    return 1;
-        }
-    }
-    return 0;
+    return i;
 }
 
 void printTorres(ponto *torre1, ponto *torre2, ponto *torre3){
@@ -176,6 +143,21 @@ void printTorres(ponto *torre1, ponto *torre2, ponto *torre3){
     printf("\nTorre 3:");
     imprimir(torre3);
     printf("\n");
+}
+
+void imprimir(ponto *Point){
+    int j = 0, k;
+    ponto *aux;
+    if(Point != NULL){
+        int auxiliar[pointerLength(Point)];
+        for(aux = Point; aux != NULL; aux = aux->anterior)
+            auxiliar[j++] = aux->num;
+        j--;
+        for(k = j; k >= 0; k--)
+            printf("\t%i", auxiliar[k]);
+    }
+    else
+        printf("\tPilha vazia");
 }
 
 void imprimeOP(){
@@ -189,14 +171,26 @@ void imprimeOP(){
     printf("7 - Para desistir\n");
 }
 
+int push (ponto **Point, int num){
+    if(num){
+        ponto *pont = malloc(sizeof(ponto));
+        if(pont != NULL){
+            pont->anterior = *Point;
+            pont->num = num;
+            *Point = pont;
+            return 1;
+        }
+    }
+    return 0;
+}
+
 int pop(ponto **torre) {
-    if((*torre) == NULL)
-        return -1;
-    else{
+    if((*torre) != NULL){
         int auxiliar = (*torre)->num;
         ponto *aux = (*torre)->anterior;
         free(*torre);
         (*torre) = aux;
         return auxiliar;
     }
+    return 0;
 }
