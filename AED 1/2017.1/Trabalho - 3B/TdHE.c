@@ -7,6 +7,7 @@ typedef struct no{
 }ponto;
 
 void push (ponto **Point, int num);
+int pop(ponto **torre);
 void imprimir(ponto *Point);
 void printTorres(ponto *torre1, ponto *torre2, ponto *torre3);
 void imprimeOP();
@@ -47,14 +48,18 @@ int main(){
 }
 
 void push (ponto **Point, int num){
-    ponto *pont = malloc(sizeof(ponto));
-    if(pont == NULL)
-        printf("Memoria insulficiente\n");
-    else{
-       pont->anterior = *Point;
-       pont->num = num;
+    if(num != -1){
+        ponto *pont = malloc(sizeof(ponto));
+        if(pont == NULL)
+            printf("Memoria insulficiente\n");
+        else{
+            pont->anterior = *Point;
+            pont->num = num;
+        }
+        *Point = pont;
     }
-    *Point = pont;
+    else
+        printf("Nao ha elementos na pilha\n");
 }
 
 void jogar(int tam){
@@ -84,43 +89,47 @@ void jogar(int tam){
         scanf("%d", &op);
         switch(op){
             case 1:
-                push(&torre2, torre1->num);
-                pop(&torre1);
+                if(compara(torre1, torre2))
+                    push(&torre2, pop(&torre1));
             break;
             case 2:
-                push(&torre3, torre1->num);
-                pop(&torre1);
+                if(compara(torre1, torre3))
+                    push(&torre3, pop(&torre1));
             break;
             case 3:
-                push(&torre1, torre2->num);
-                pop(&torre2);
+                if(compara(torre2, torre1))
+                    push(&torre1, pop(&torre2));
             break;
             case 4:
-                push(&torre3, torre2->num);
-                pop(&torre2);
+                if(compara(torre2, torre3))
+                    push(&torre3, pop(&torre2));
             break;
             case 5:
-                push(&torre1, torre3->num);
-                pop(&torre3);
+                if(compara(torre3, torre1))
+                    push(&torre1, pop(&torre3));
             break;
             case 6:
-                push(&torre2, torre3->num);
-                pop(&torre3);
+                if(compara(torre3, torre1))
+                    push(&torre2, pop(&torre3));
             break;
             default:
                 printf("Invalido\n");
         }
         i++;
         //system("cls");
-        /*
-        if(fimT3 == tam)
             if(decrescente(torre3, tam)){
+                printTorres(torre1, torre2, torre3);
                 op = 7;
                 printf("\nFim de jogo\n");
             }
-        */
     }while(op != 7);
     exit(EXIT_SUCCESS);
+}
+
+int compara(ponto *torreO, ponto *torreD){
+    if(torreD == NULL)
+        return 1;
+    return (torreD->num>torreO->num);
 }
 
 void imprimir(ponto *Point){
@@ -132,16 +141,28 @@ void imprimir(ponto *Point){
         int auxiliar[i];
         for(aux = Point; aux != NULL; aux = aux->anterior)
             auxiliar[j++] = aux->num;
-        j--;
-        int def[j];
-        for(k = 0; k <= j; k++){
-            def[k] = auxiliar[j-k];
-            printf("\t%i", def[k]);
+        int def[--j];
+        for(k = j; k >= 0; k--)
+            printf("\t%i", auxiliar[k]);
+    }
+    else
+        printf("\tPilha vazia");
+}
+
+int decrescente(ponto *Point, int tam){
+    int i = 0, j = 0, k;
+    ponto *aux;
+    if(Point != NULL){
+        for(aux = Point; aux != NULL; aux = aux->anterior)
+            i++;
+        if(i == tam){
+            int auxiliar[i];
+            for(aux = Point; aux != NULL; aux = aux->anterior)
+                if(aux->num < aux->anterior->num)
+                    return 1;
         }
     }
-    else{
-        printf("\tPilha vazia\n");
-    }
+    return 0;
 }
 
 void printTorres(ponto *torre1, ponto *torre2, ponto *torre3){
@@ -165,14 +186,14 @@ void imprimeOP(){
     printf("7 - Para desistir\n");
 }
 
-void pop(ponto **torre) {
-    ponto *aux;
-
-    if(torre == NULL)
-        printf("Nao ha elementos na pilha\n");
+int pop(ponto **torre) {
+    if((*torre) == NULL)
+        return -1;
     else{
-        aux = (*torre)->anterior;
+        int auxiliar = (*torre)->num;
+        ponto *aux = (*torre)->anterior;
         free(*torre);
         (*torre) = aux;
+        return auxiliar;
     }
 }
