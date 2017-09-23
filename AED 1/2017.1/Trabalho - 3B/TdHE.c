@@ -1,7 +1,7 @@
 /**
 * @author Patrick Araújo: https://github.com/patrickaraujo
 * Trabalho Torre de Hanoi em C para a aula de Algoritmos e Estrutura de Dados 1 usando pilhas encadeadas
-* Assignment Tower of Hanoi in C language from the subject Algorithms and Data Structures 1 with Stacks
+* Assignment Tower of Hanoi in C language from the subject Algorithms and Data Structures 1 using Stacks
 * Finalizado em 22/09/2017/Concluded in 09/22/2017
 */
 
