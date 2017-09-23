@@ -1,3 +1,9 @@
+/**
+* @author Patrick Araújo: https://github.com/patrickaraujo
+* Trabalho Torre de Hanoi em C para a aula de Algoritmos e Estrutura de Dados 1
+* Finalizado em 22/09/2017
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -77,32 +83,32 @@ void jogar(int tam){
             case 1:
                 if(compara(torre1, torre2))
                     if(!push(&torre2, pop(&torre1)))
-                        printf("NÃ£o foi possivel mover da Torre 1 para Torre 2");
+                        printf("Não foi possivel mover da Torre 1 para Torre 2");
             break;
             case 2:
                 if(compara(torre1, torre3))
                     if(!push(&torre3, pop(&torre1)))
-                        printf("NÃ£o foi possivel mover da Torre 1 para Torre 3");
+                        printf("Não foi possivel mover da Torre 1 para Torre 3");
             break;
             case 3:
                 if(compara(torre2, torre1))
                     if(!push(&torre1, pop(&torre2)))
-                        printf("NÃ£o foi possivel mover da Torre 2 para Torre 1");
+                        printf("Não foi possivel mover da Torre 2 para Torre 1");
             break;
             case 4:
                 if(compara(torre2, torre3))
                     if(!push(&torre3, pop(&torre2)))
-                        printf("NÃ£o foi possivel mover da Torre 2 para Torre 3");
+                        printf("Não foi possivel mover da Torre 2 para Torre 3");
             break;
             case 5:
                 if(compara(torre3, torre1))
                     if(!push(&torre1, pop(&torre3)))
-                        printf("NÃ£o foi possivel mover da Torre 3 para Torre 1");
+                        printf("Não foi possivel mover da Torre 3 para Torre 1");
             break;
             case 6:
                 if(compara(torre3, torre2))
                     if(!push(&torre2, pop(&torre3)))
-                        printf("NÃ£o foi possivel mover da Torre 3 para Torre 2");
+                        printf("Não foi possivel mover da Torre 3 para Torre 2");
             break;
             default:
                 printf("Invalido\n");
