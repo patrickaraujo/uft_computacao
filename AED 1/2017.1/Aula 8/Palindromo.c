@@ -13,14 +13,12 @@ typedef struct no{
     struct no *anterior;
 }ponto;
 
-void push (ponto **Point, char letra);
+void inserir(ponto **main, char *word, int tam);
+int pop(ponto **Point);
 void imprimir(ponto *Point);
-
-void inserir(ponto **main, char *word, int tam){
-    int i;
-    for(i = 0; i < tam; i++)
-        push(main, word[i]);
-}
+int pointerLength(ponto *Point);
+int compara(ponto *Point);
+void imprimir(ponto *Point);
 
 int main(){
     ponto *palavra = NULL;
@@ -38,6 +36,12 @@ int main(){
         printf(" nao e palindromo");
 
     return 0;
+}
+
+void inserir(ponto **main, char *word, int tam){
+    int i;
+    for(i = 0; i < tam; i++)
+        push(main, word[i]);
 }
 
 void push (ponto **Point, char letra) {
