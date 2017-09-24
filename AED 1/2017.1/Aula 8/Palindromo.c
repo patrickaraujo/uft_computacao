@@ -34,7 +34,6 @@ int main(){
         printf(" e palindromo");
     else
         printf(" nao e palindromo");
-
     return 0;
 }
 
