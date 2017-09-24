@@ -1,3 +1,10 @@
+/**
+* @author Patrick Araújo: https://github.com/patrickaraujo
+* Exercício Palindromo em C para a aula de Algoritmos e Estrutura de Dados 1 usando pilhas encadeadas
+* Assignment Palindrome in C language from the subject Algorithms and Data Structures 1 using Stacks
+* Finalizado em 23/09/2017/Concluded in 09/23/2017
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -23,7 +30,12 @@ int main(){
     fgets(word, sizeof(word), stdin);
     int tam = strlen(&word)-1;
     inserir(&palavra, &word, tam);
+    printf("\n");
     imprimir(palavra);
+    if(compara(palavra))
+        printf(" e palindromo");
+    else
+        printf(" nao e palindromo");
 
     return 0;
 }
@@ -35,35 +47,59 @@ void push (ponto **Point, char letra) {
     else{
        pont->anterior = *Point;
        pont->letra = letra;
+       *Point = pont;
     }
-    *Point = pont;
 }
 
-void pop() {
+int pop(ponto **Point) {
+    if(Point != NULL){
+        ponto *aux = (*Point)->anterior;
+        free(*Point);
+        (*Point) = aux;
+        return 1;
+    }
+    return 0;
+}
+
+int pointerLength(ponto *Point){
+    int i = 0, j = 0, k;
     ponto *aux;
-
-/*    if(Point == NULL)
-        printf("Nao ha elementos na pilha\n");
-    else{
-        aux = Point->prox;
-        free(Point);
-        // ver isso
-        Point = aux;
-    }
+    if(Point != NULL)
+        for(aux = Point; aux != NULL; aux = aux->anterior)
+            i++;
+    return i;
 }
-char top(no_char *p){
-    if(p!=NULL)
-        return p->conteudo;
-    return '\0';
-    */
+
+int compara(ponto *Point){
+    int j = 0, k;
+    ponto *aux;
+    if(Point != NULL){
+        char auxiliar[pointerLength(Point)];
+        for(aux = Point; aux != NULL; aux = aux->anterior)
+            auxiliar[j++] = aux->letra;
+        j--;
+        aux = Point;
+        for(k = j; k >= 0; k--){
+            if(aux->letra != auxiliar[k])
+                return 0;
+            aux = aux->anterior;
+        }
+        return 1;
+    }
+    return 0;
 }
 
 void imprimir(ponto *Point){
+    int j = 0, k;
     ponto *aux;
-    if(Point != NULL)
-        for(aux = Point; aux != NULL; aux = aux->anterior){
-            printf("%c", aux->letra);
-        }
+    if(Point != NULL){
+        char auxiliar[pointerLength(Point)];
+        for(aux = Point; aux != NULL; aux = aux->anterior)
+            auxiliar[j++] = aux->letra;
+        j--;
+        for(k = j; k >= 0; k--)
+            printf("%c", auxiliar[k]);
+    }
     else
-        printf("Pilha vazia\n");
+        printf("\tPilha vazia");
 }
