@@ -1,6 +1,6 @@
 /**
-* @author Patrick Araújo
-*Pilha Estática em C para a aula de Algoritmos e Estrutura de Dados 1
+*   @author Patrick Araújo
+*   Fila Sequencial Estática em C para a aula de Algoritmos e Estrutura de Dados 1
 */
 
 #include <stdio.h>
@@ -10,43 +10,43 @@
 #define MAX 10
 
 int inicio, fim;
-int pilha[MAX];
+int fila[MAX];
 
 void push(int x){
-    if ( !pilhaCheia() ){
+    if ( !filaCheia() ){
         printf("Inserindo: %i\n", x);
-        pilha[fim++] = x;
+        fila[fim++] = x;
     }
     else
-        printf("Pilha está cheia!\n");
+        printf("Fila está cheia!\n");
 }
 
 int pop(){
-    if( !pilhaVazia() ){
+    if( !filaVazia() ){
         int i;
         for(i = 0; i < fim; i++)
-            pilha[i] = pilha[i+1];
+            fila[i] = fila[i+1];
         fim--;
         printf("Removido com sucesso\n");
         return 1;
     }
-    printf("Pilha vazia\n");
-    return -1;
+    printf("Fila vazia\n");
+    return 0;
 }
 
-int pilhaVazia(){
+int filaVazia(){
     return (inicio == fim);
 }
 
-int pilhaCheia(){
+int filaCheia(){
     return (fim == MAX);
 }
 
-void imprimePilha(){
+void imprimeFila(){
     int i;
     printf("\nElementos do vetor:\n");
     for(i = 0; i < MAX; i++){
-        printf("%d\n", pilha[i]);
+        printf("%d\n", fila[i]);
     }
     printf("\n");
 }
@@ -60,12 +60,12 @@ int main(){
     push(36);
     push(37);
     push(38);
-    imprimePilha();
+    imprimeFila();
 
     pop();
-    imprimePilha();
+    imprimeFila();
     pop();
     pop();
-    imprimePilha();
+    imprimeFila();
     return 0;
 }
