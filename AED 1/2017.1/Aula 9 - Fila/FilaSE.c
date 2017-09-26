@@ -13,13 +13,11 @@ int inicio, fim;
 int fila[MAX];
 
 void push(int x){
-    if ( !filaCheia() ){
-        printf("Inserindo: %i\n", x);
-        fila[fim++] = x;
+    if ( filaCheia() ){
+        fim = inicio; //  fila circular
     }
-    else{
-        fim = inicio;   //  fila circular
-    }
+    printf("Inserindo: %i\n", x);
+    fila[fim++] = x;
 }
 
 int pop(){
@@ -56,28 +54,24 @@ void imprimeFila(){
 int main(){
     inicio = 0;
     fim = 0;
-    push(12);
-    push(34);
-    push(35);
-    push(36);
-    push(37);
-    push(38);
-    imprimeFila();
-
-    pop();
-    imprimeFila();
-    pop();
-    pop();
-    push(39);
-    push(40);
-    push(41);
-    push(42);
-    push(43);
-    push(44);
-    push(45);
-    push(46);
-    push(47);
-
-    imprimeFila();
+    int num, op;
+    do{
+        printf("Insercao de numeros\n1 - Para inserir\n2 - Para retirar\nO - Desistir\n\nOpcao: ");
+        scanf("%d", &op);
+        switch(op){
+            case 1:
+                printf("Numero: ");
+                scanf("%d", &num);
+                push(num);
+            break;
+            case 2:
+                pop();
+            break;
+            imprimeFila();
+            default:
+                printf("Opcao invalida");
+        }
+        imprimeFila();
+    }while(op);
     return 0;
 }
