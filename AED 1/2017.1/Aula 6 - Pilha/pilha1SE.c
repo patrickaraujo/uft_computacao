@@ -1,11 +1,10 @@
 /**
-* @author Patrick Araújo
-*Pilha Sequencial Estática em C para a aula de Algoritmos e Estrutura de Dados 1
+*   @author Patrick Araújo
+*   Pilha Sequencial Estática em C para a aula de Algoritmos e Estrutura de Dados 1
 */
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 
 #define MAX 10
 
@@ -30,16 +29,18 @@ int push(int x){
 
 int pop(){
     if( !pilhaVazia() ){
-        pilha[(fim - 1)] = 0;
+        int retorno = pilha[(fim - 1)];
+        pilha[(fim - 1)] = NULL;
         fim--;
-        return 1;
+        return retorno;
     }
-    return -1;
+    return 0;
 }
 
 void desempilha(){
-    if(pop() == 1)
-        printf("Removido com sucesso\n");
+    int removido = pop();
+    if(removido)
+        printf("%i removido com sucesso\n", removido);
     else
         printf("Pilha vazia\n");
 }
