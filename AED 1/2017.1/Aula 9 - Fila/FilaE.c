@@ -1,6 +1,6 @@
 /**
 *   @author Patrick Araújo: https://github.com/patrickaraujo
-*   Listas Encadeada em C para a aula de Algoritmos e Estrutura de Dados 1
+*   Lista Encadeada em C para a aula de Algoritmos e Estrutura de Dados 1
 */
 
 #include <stdio.h>
@@ -12,17 +12,17 @@ typedef struct reg {
     struct reg *prox;
 }fila;
 
-void enqueue (fila **aux, fila **primeiro, int x);
-void dequeue(fila **primeiro);
+int enqueue (fila **aux, fila **primeiro, int x);
+int dequeue(fila **primeiro);
 
-void imprimir(fila *auxa){
-    fila *aux = auxa;
-	if(aux == NULL) //  lista vazia
+void imprimir(fila *aux){
+    fila *temp = aux;
+	if(aux == NULL)
 		printf("\nLista Vazia\n");
 	else
-		while(aux != NULL){	//	enquanto não houver objetos nulos, da direita
-			printf("\nElemento: %d\n", aux->info);
-			aux = aux->prox; //o ponteiro volta imprimindo
+		while(temp != NULL){
+			printf("\nElemento: %d\n", temp->info);
+			temp = temp->prox;
 		}
 }
 
@@ -57,33 +57,34 @@ int main(){
             default:
                 printf("\nOpção inválida");
         }
-        //  limpa a tela
-        //system("cls");
     }
-
     system("pause");
     return 0;
 }
 
-void enqueue (fila **main, fila **primeiro, int x) {
+int enqueue (fila **main, fila **primeiro, int x) {
     fila *aux;    //  auxiliar
 	if((aux = malloc(sizeof(fila))) == NULL)	//	erro
-		printf("\nMemory Failure");
+		return NULL;
 	else{
-		aux->info = x;  //  recebendo valor
-		aux->prox = NULL;   //  esquerda é nulo pois a inseção é no inicio
-		if(*main != NULL)   //  se a lista não for nula então a esquerda recebe o valor
+		aux->info = x;
+		aux->prox = NULL;
+		if(*main != NULL)
 			(*main)->prox = aux;
 		else
             (*primeiro) = aux;
-		*main = aux;    //  lista recebe valor da direita
+		*main = aux;
+		return 1;
 	}
 }
 
-void dequeue(fila **primeiro) {
+int dequeue(fila **primeiro) {
 	if(*primeiro != NULL){
+        int aux = (*primeiro)->info;
         fila *temp = (*primeiro)->prox;
         free(primeiro);
         *primeiro = temp;
+        return aux;
     }
+    return NULL;
 }
