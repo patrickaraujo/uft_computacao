@@ -24,7 +24,7 @@ void push(int x){
 
 int pop(){
     if( !pilhaVazia() ){
-        pilha[(fim - 1)] = 0;
+        pilha[(fim - 1)] = NULL;
         fim--;
         printf("Removido com sucesso\n");
         return 1;
