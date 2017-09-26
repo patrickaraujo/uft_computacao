@@ -1,6 +1,6 @@
 /**
 *   @author Patrick Araújo: https://github.com/patrickaraujo
-*   Fila Sequencial Estática Circular em C para a aula de Algoritmos e Estrutura de Dados 1
+*   Fila Sequencial Estática em C para a aula de Algoritmos e Estrutura de Dados 1
 */
 
 #include <stdio.h>
