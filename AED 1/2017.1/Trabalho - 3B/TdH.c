@@ -1,7 +1,7 @@
 /**
-* @author Patrick Araújo: https://github.com/patrickaraujo
-* Trabalho Torre de Hanoi em C para a aula de Algoritmos e Estrutura de Dados 1
-* Finalizado em 17/09/2017
+*   @author Patrick Araújo: https://github.com/patrickaraujo
+*   Trabalho Torre de Hanoi em C para a aula de Algoritmos e Estrutura de Dados 1
+*   Finalizado em 17/09/2017
 */
 
 #include <stdio.h>
