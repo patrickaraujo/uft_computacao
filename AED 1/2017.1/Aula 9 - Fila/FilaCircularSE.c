@@ -12,7 +12,7 @@
 int inicio, fim;
 int fila[MAX];
 
-void push(int x){
+void enqueue(int x){
     if ( filaCheia() ){
         fim = inicio; //  fila circular
     }
@@ -20,7 +20,7 @@ void push(int x){
     fila[fim++] = x;
 }
 
-int pop(){
+int dequeue(){
     int temp = fila[0];
     if( temp ){
         int i;
@@ -59,10 +59,10 @@ int main(){
             case 1:
                 printf("Numero: ");
                 scanf("%d", &num);
-                push(num);
+                enqueue(num);
             break;
             case 2:
-                pop();
+                dequeue();
             break;
             imprimeFila();
             default:
