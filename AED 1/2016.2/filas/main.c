@@ -1,6 +1,6 @@
 /**
-* @author Patrick Araújo
-*Listas com descritor em C para a aula de Algorismo e Estrutura de Dados 1
+*	@author Patrick Araújo: https://github.com/patrickaraujo
+*	Listas Encadeada em C para a aula de Algoritmos e Estrutura de Dados 1
 */
 
 #include <stdio.h>
