@@ -17,18 +17,20 @@ void push(int x){
         printf("Inserindo: %i\n", x);
         fila[fim++] = x;
     }
-    else
-        printf("Fila está cheia!\n");
+    else{
+        fim = inicio;   //  fila circular
+    }
 }
 
 int pop(){
+    int temp = fila[0];
     if( !filaVazia() ){
         int i;
         for(i = 0; i < fim; i++)
             fila[i] = fila[i+1];
         fim--;
         printf("Removido com sucesso\n");
-        return 1;
+        return temp;
     }
     printf("Fila vazia\n");
     return 0;
@@ -66,6 +68,16 @@ int main(){
     imprimeFila();
     pop();
     pop();
+    push(39);
+    push(40);
+    push(41);
+    push(42);
+    push(43);
+    push(44);
+    push(45);
+    push(46);
+    push(47);
+
     imprimeFila();
     return 0;
 }
