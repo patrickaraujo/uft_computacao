@@ -1,5 +1,5 @@
 /**
-*   @author Patrick Araújo
+*   @author Patrick Araújo: https://github.com/patrickaraujo
 *   Pilha Sequencial Estática em C para a aula de Algoritmos e Estrutura de Dados 1
 */
 
