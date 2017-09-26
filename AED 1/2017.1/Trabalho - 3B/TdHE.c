@@ -25,6 +25,8 @@ int pop(ponto **torre);
 int main(){
     int nivel;
     do{
+        printf("Jogo Torre de Hanoi\n\n");
+        printf("0 - Instrucoes\n");
         printf("\nNIVEL\n\n");
         printf("1 - Facil\n");
         printf("2 - Medio\n");
@@ -34,6 +36,11 @@ int main(){
         printf("Informe a Opcao: ");
         scanf("%d", &nivel);
         switch(nivel) {
+            case 0:
+                nivel = 5;
+                printf("Todas as jogadas sao realizadas movendo os valores para outras torres,\nsendo que o valor na \ntorre de origem tem que ser menor que o valor na torre de destino.\nCaso a Torre 3 se encontre com todos os valores em ordem crescente e \nas outras torres se encontrem\nvazias voce concluiu o jogo!\n");
+                system("pause");
+                break;
             case 1:
                 jogar(3);
                 system("pause");
