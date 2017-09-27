@@ -12,9 +12,9 @@ typedef struct reg {
     struct reg *prox;
 }fila;
 
-int enqueue (fila **main, fila **primeiro, int x);
+int enqueue (fila **ultimo, fila **primeiro, int x);
 int dequeue(fila **primeiro, fila **ultimo);
-void imprimir(fila *aux);
+void imprimir(fila *main);
 
 int main(){
     fila *P = NULL;
@@ -52,45 +52,48 @@ int main(){
     return 0;
 }
 
-int enqueue (fila **main, fila **primeiro, int x) {
+int enqueue (fila **ultimo, fila **primeiro, int x) {
     fila *aux;    //  auxiliar
 	if((aux = malloc(sizeof(fila))) == NULL)	//	erro
 		return NULL;
 	else{
 		aux->info = x;
-		if(*main != NULL){
+		if(*ultimo != NULL){
 			aux->prox = *primeiro;
-			(*main)->prox = aux;
+			(*ultimo)->prox = aux;
 		}
 		else{
             aux->prox = aux;
             (*primeiro) = aux;
         }
-		*main = aux;
+		*ultimo = aux;
 		return 1;
 	}
 }
 
 int dequeue(fila **primeiro, fila **ultimo){
 	if(*primeiro != NULL){
-
         int removido = (*primeiro)->info;
-        fila *temp = (*primeiro)->prox;
-        free(primeiro);
-        *primeiro = temp;
-        (*ultimo)->prox = temp;
+        if((*primeiro)->prox == (*primeiro))
+            (*primeiro) = NULL;
+        else{
+            fila *temp = (*primeiro)->prox;
+            free(primeiro);
+            *primeiro = temp;
+            (*ultimo)->prox = temp;
+        }
         return removido;
     }
     return NULL;
 }
 
-void imprimir(fila *aux){
-    fila *temp = aux;
-	if(aux == NULL)
+void imprimir(fila *main){
+    fila *temp = main;
+	if(main == NULL)
 		printf("\nLista Vazia\n");
 	else
-		do{ //  while(temp != NULL && (temp->prox != aux))
+		do{ //  while(temp != NULL && (temp->prox != main))
 			printf("\nElemento: %d\n", temp->info);
 			temp = temp->prox;
-		}while(temp != aux);
+		}while(temp != main);
 }
