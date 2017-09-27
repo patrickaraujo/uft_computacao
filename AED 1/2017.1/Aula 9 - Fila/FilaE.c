@@ -45,8 +45,9 @@ int main(){
                 system("pause");
             break;
             default:
-                printf("\nOpção inválida");
+                printf("\nOpcao invalida");
         }
+        system("cls");
     }
     system("pause");
     return 0;
