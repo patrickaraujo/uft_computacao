@@ -17,7 +17,7 @@ void enqueue(int x){
         fila[fim++] = x;
         return 1;
     }
-    return 0;
+    return NULL;
 }
 
 int dequeue(){
@@ -32,7 +32,7 @@ int dequeue(){
         return temp;
     }
     printf("Fila vazia\n");
-    return 0;
+    return NULL;
 }
 
 int filaCheia(){
@@ -42,9 +42,8 @@ int filaCheia(){
 void imprimeFila(){
     int i;
     printf("\nElementos do vetor:\n");
-    for(i = 0; i < MAX; i++){
+    for(i = 0; i < MAX; i++)
         printf("%d\n", fila[i]);
-    }
     printf("\n");
 }
 
@@ -64,7 +63,6 @@ int main(){
             case 2:
                 dequeue();
             break;
-            imprimeFila();
             default:
                 printf("Opcao invalida");
         }
