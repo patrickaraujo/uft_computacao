@@ -12,9 +12,8 @@ int inicio, fim;
 int fila[MAX];
 
 void enqueue(int x){
-    if ( filaCheia() ){
-        fim = inicio; //  fila circular
-    }
+    if ( filaCheia() )
+        fim = inicio;   //  fila circular
     printf("Inserindo: %i\n", x);
     fila[fim++] = x;
 }
@@ -31,7 +30,7 @@ int dequeue(){
         return temp;
     }
     printf("Fila vazia\n");
-    return 0;
+    return NULL;
 }
 
 int filaCheia(){
@@ -41,9 +40,8 @@ int filaCheia(){
 void imprimeFila(){
     int i;
     printf("\nElementos do vetor:\n");
-    for(i = 0; i < MAX; i++){
+    for(i = 0; i < MAX; i++)
         printf("%d\n", fila[i]);
-    }
     printf("\n");
 }
 
