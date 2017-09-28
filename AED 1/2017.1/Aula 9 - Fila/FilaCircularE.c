@@ -6,7 +6,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
 typedef struct reg {
     int info;
     struct reg *prox;
@@ -20,7 +19,7 @@ int main(){
     fila *P = NULL;
     fila *prim;
     int choice, x;
-
+    
     while(choice != 4){
         printf("\n\tMENU\t\n\n");
         printf("1 - Para Empilhar(PUSH)\n");
@@ -54,8 +53,8 @@ int main(){
 }
 
 int enqueue (fila **ultimo, fila **primeiro, int x) {
-    fila *aux;    //  auxiliar
-	if((aux = malloc(sizeof(fila))) == NULL)	//	erro
+    fila *aux;  //  auxiliar
+	if((aux = malloc(sizeof(fila))) == NULL)    //  erro
 		return NULL;
 	else{
 		aux->info = x;
