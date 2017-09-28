@@ -24,7 +24,7 @@ int push(int x){
         pilha[fim++] = x;
         return 1;
     }
-    return 0;
+    return NULL;
 }
 
 int pop(){
@@ -34,7 +34,7 @@ int pop(){
         fim--;
         return retorno;
     }
-    return 0;
+    return NULL;
 }
 
 void desempilha(){
@@ -56,9 +56,8 @@ int pilhaCheia(){
 void imprimePilha(){
     int i;
     printf("\nElementos do vetor:\n");
-    for(i = 0; i < MAX; i++){
+    for(i = 0; i < MAX; i++)
         printf("%d\n", pilha[i]);
-    }
     printf("\n");
 }
 
@@ -73,7 +72,7 @@ int main(){
         printf("3 - Mostrar elementos da pilha\n");
         printf("4 - Para Sair\n");
         printf("\n\n");
-        printf("Informe A Opcao: ");
+        printf("Informe a opcao: ");
         scanf("%d", &choice);
         switch(choice) {
             case 1:
