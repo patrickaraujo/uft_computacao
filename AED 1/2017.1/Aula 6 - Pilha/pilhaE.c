@@ -61,7 +61,7 @@ int push (ponto **Point, int num){
         *Point = pont;
         return 1;
     }
-    return 0;
+    return NULL;
 }
 
 int pop(ponto **main){
@@ -72,7 +72,7 @@ int pop(ponto **main){
         (*main) = aux;
         return auxiliar;
     }
-    return 0;
+    return NULL;
 }
 
 void imprimir(ponto *Point){
