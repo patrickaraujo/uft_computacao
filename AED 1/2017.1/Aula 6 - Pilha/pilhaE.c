@@ -11,7 +11,7 @@ typedef struct reg {
     struct reg *anterior;
 }ponto;
 
-int push (ponto **Point, int num);
+int push (ponto **main, int num);
 int pop(ponto **main);
 void imprimir(ponto *Point);
 int pointerLength(ponto *Point);
@@ -53,12 +53,12 @@ int main(){
     return 0;
 }
 
-int push (ponto **Point, int num){
-    ponto *pont = malloc(sizeof(ponto));
-    if(pont != NULL){
-        pont->anterior = *Point;
-        pont->info = num;
-        *Point = pont;
+int push (ponto **main, int num){
+    ponto *aux = malloc(sizeof(ponto));
+    if(aux != NULL){
+        aux->anterior = *main;
+        aux->info = num;
+        *main = aux;
         return 1;
     }
     return NULL;
