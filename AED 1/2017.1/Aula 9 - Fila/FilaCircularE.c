@@ -19,7 +19,7 @@ int main(){
     fila *P = NULL;
     fila *prim;
     int choice, x;
-    
+
     while(choice != 4){
         printf("\n\tMENU\t\n\n");
         printf("1 - Para Empilhar(PUSH)\n");
@@ -54,11 +54,11 @@ int main(){
 
 int enqueue (fila **ultimo, fila **primeiro, int x) {
     fila *aux;  //  auxiliar
-	if((aux = malloc(sizeof(fila))) == NULL)    //  erro
+	if(!(aux = malloc(sizeof(fila))))    //  erro
 		return NULL;
 	else{
 		aux->info = x;
-		if(*ultimo != NULL){
+		if(*ultimo){
 			aux->prox = *primeiro;
 			(*ultimo)->prox = aux;
 		}
@@ -72,7 +72,7 @@ int enqueue (fila **ultimo, fila **primeiro, int x) {
 }
 
 int dequeue(fila **primeiro, fila **ultimo){
-	if(*primeiro != NULL){
+	if(*primeiro){
         int removido = (*primeiro)->info;
         if((*primeiro)->prox == (*primeiro))
             (*primeiro) = NULL;
@@ -89,7 +89,7 @@ int dequeue(fila **primeiro, fila **ultimo){
 
 void imprimir(fila *main){
     fila *temp = main;
-	if(main == NULL)
+	if(!main)
 		printf("\nLista Vazia\n");
 	else
 		do{ //  while(temp != NULL && (temp->prox != main))
