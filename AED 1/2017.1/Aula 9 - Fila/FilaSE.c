@@ -5,7 +5,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 
 #define MAX 10
 
@@ -21,8 +20,7 @@ void enqueue(int x){
 }
 
 int dequeue(){
-    int temp = fila[0];
-    if( temp ){
+    if( fila[0] ){
         int i;
         for(i = 0; fila[i+1] != NULL; i++)
             fila[i] = fila[i+1];
