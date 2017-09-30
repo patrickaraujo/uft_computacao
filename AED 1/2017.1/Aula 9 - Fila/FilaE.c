@@ -12,7 +12,7 @@ typedef struct reg {
     struct reg *prox;
 }fila;
 
-int enqueue (fila **aux, fila **primeiro, int x);
+int enqueue (fila **ultimo, fila **primeiro, int x);
 int dequeue(fila **primeiro);
 void imprimir(fila *main);
 
@@ -55,12 +55,12 @@ int main(){
 
 int enqueue (fila **ultimo, fila **primeiro, int x) {
     fila *aux;    //  auxiliar
-	if((aux = malloc(sizeof(fila))) == NULL)	//	erro
+	if(!(aux = malloc(sizeof(fila))))	//	erro
 		return NULL;
 	else{
 		aux->info = x;
 		aux->prox = NULL;
-		if(*ultimo != NULL)
+		if(*ultimo)
 			(*ultimo)->prox = aux;
 		else
             (*primeiro) = aux;
@@ -70,7 +70,7 @@ int enqueue (fila **ultimo, fila **primeiro, int x) {
 }
 
 int dequeue(fila **primeiro) {
-	if(*primeiro != NULL){
+	if(*primeiro){
         int aux = (*primeiro)->info;
         fila *temp = (*primeiro)->prox;
         free(primeiro);
@@ -82,10 +82,10 @@ int dequeue(fila **primeiro) {
 
 void imprimir(fila *main){
     fila *temp = main;
-	if(main == NULL)
+	if(!main)
 		printf("\nLista Vazia\n");
 	else
-		while(temp != NULL){
+		while(temp){
 			printf("\nElemento: %d\n", temp->info);
 			temp = temp->prox;
 		}
