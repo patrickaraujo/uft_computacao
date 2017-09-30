@@ -55,7 +55,7 @@ int main(){
 
 int push (ponto **main, int num){
     ponto *aux = malloc(sizeof(ponto));
-    if(!aux){
+    if(aux){
         aux->anterior = *main;
         aux->info = num;
         *main = aux;
@@ -65,7 +65,7 @@ int push (ponto **main, int num){
 }
 
 int pop(ponto **main){
-	if(!(*main)){
+	if(*main){
         int auxiliar = (*main)->info;
         ponto *aux = (*main)->anterior;
         free(*main);
@@ -78,9 +78,9 @@ int pop(ponto **main){
 void imprimir(ponto *Point){
     int j = 0, k;
     ponto *aux;
-    if(!Point){
+    if(Point){
         int auxiliar[pointerLength(Point)];
-        for(aux = Point; !aux; aux = aux->anterior)
+        for(aux = Point; aux; aux = aux->anterior)
             auxiliar[j++] = aux->info;
         j--;
         for(k = j; k >= 0; k--)
@@ -94,7 +94,7 @@ int pointerLength(ponto *Point){
     int i = 0, j = 0, k;
     ponto *aux;
     if(!Point)
-        for(aux = Point; aux != NULL; aux = aux->anterior)
+        for(aux = Point; aux; aux = aux->anterior)
             i++;
     return i;
 }
