@@ -13,8 +13,8 @@ typedef struct reg {
 
 int push (ponto **main, int num);
 int pop(ponto **main);
-void imprimir(ponto *Point);
-int pointerLength(ponto *Point);
+void imprimir(ponto *main);
+int pointerLength(ponto *main);
 
 int main(){
     ponto *P = NULL;
@@ -66,35 +66,35 @@ int push (ponto **main, int num){
 
 int pop(ponto **main){
 	if(*main){
-        int auxiliar = (*main)->info;
+        int retorno = (*main)->info;
         ponto *aux = (*main)->anterior;
         free(*main);
         (*main) = aux;
-        return auxiliar;
+        return retorno;
     }
     return NULL;
 }
 
-void imprimir(ponto *Point){
+void imprimir(ponto *main){
     int j = 0, k;
     ponto *aux;
-    if(Point){
-        int auxiliar[pointerLength(Point)];
-        for(aux = Point; aux; aux = aux->anterior)
-            auxiliar[j++] = aux->info;
+    if(main){
+        int array[pointerLength(main)];
+        for(aux = main; aux; aux = aux->anterior)
+            array[j++] = aux->info;
         j--;
         for(k = j; k >= 0; k--)
-            printf("\nElemento: %d\n", auxiliar[k]);
+            printf("\nElemento: %d\n", array[k]);
     }
     else
         printf("Pilha vazia\n");
 }
 
-int pointerLength(ponto *Point){
+int pointerLength(ponto *main){
     int i = 0, j = 0, k;
     ponto *aux;
-    if(!Point)
-        for(aux = Point; aux; aux = aux->anterior)
+    if(!main)
+        for(aux = main; aux; aux = aux->anterior)
             i++;
     return i;
 }
