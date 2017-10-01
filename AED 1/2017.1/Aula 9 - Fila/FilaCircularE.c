@@ -76,10 +76,10 @@ int dequeue(fila **primeiro, fila **ultimo){
         if((*primeiro)->prox == (*primeiro))
             (*primeiro) = NULL;
         else{
-            fila *temp = (*primeiro)->prox;
+            fila *aux = (*primeiro)->prox;
             free(*primeiro);
-            *primeiro = temp;
-            (*ultimo)->prox = temp;
+            *primeiro = aux;
+            (*ultimo)->prox = aux;
         }
         return removido;
     }
@@ -87,12 +87,12 @@ int dequeue(fila **primeiro, fila **ultimo){
 }
 
 void imprimir(fila *main){
-    fila *temp = main;
+    fila *aux = main;
 	if(!main)
 		printf("\nLista Vazia\n");
 	else
-		do{ //  while(temp != NULL && (temp->prox != main))
-			printf("\nElemento: %d\n", temp->info);
-			temp = temp->prox;
-		}while(temp != main);
+		do{ //  while(aux != NULL && (aux->prox != main))
+			printf("\nElemento: %d\n", aux->info);
+			aux = aux->prox;
+		}while(aux != main);
 }
