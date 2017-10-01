@@ -54,7 +54,7 @@ int main(){
 
 int enqueue (fila **ultimo, fila **primeiro, int x) {
     fila *aux = malloc(sizeof(fila));    //  auxiliar
-	if(aux){	//	erro
+	if(aux){
 		aux->info = x;
 		aux->prox = NULL;
 		if(*ultimo)
