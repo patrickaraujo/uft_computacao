@@ -78,7 +78,7 @@ int dequeue(fila **primeiro, fila **ultimo){
             (*primeiro) = NULL;
         else{
             fila *temp = (*primeiro)->prox;
-            free(primeiro);
+            free(*primeiro);
             *primeiro = temp;
             (*ultimo)->prox = temp;
         }
