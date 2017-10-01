@@ -19,9 +19,9 @@ void empilha(int x){
         printf("Pilha Cheia\n");
 }
 
-int push(int x){
+int push(int num){
     if ( !pilhaCheia() ){
-        pilha[fim++] = x;
+        pilha[fim++] = num;
         return 1;
     }
     return NULL;
