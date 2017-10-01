@@ -70,21 +70,21 @@ int enqueue (fila **ultimo, fila **primeiro, int x) {
 int dequeue(fila **primeiro) {
 	if(*primeiro){
         int retorno = (*primeiro)->info;
-        fila *temp = (*primeiro)->prox;
+        fila *aux = (*primeiro)->prox;
         free(primeiro);
-        *primeiro = temp;
+        *primeiro = aux;
         return retorno;
     }
     return NULL;
 }
 
 void imprimir(fila *main){
-    fila *temp = main;
+    fila *aux = main;
 	if(!main)
 		printf("\nLista Vazia\n");
 	else
-		while(temp){
-			printf("\nElemento: %d\n", temp->info);
-			temp = temp->prox;
+		while(aux){
+			printf("\nElemento: %d\n", aux->info);
+			aux = aux->prox;
 		}
 }
