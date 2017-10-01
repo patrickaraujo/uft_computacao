@@ -72,7 +72,7 @@ int enqueue (fila **ultimo, fila **primeiro, int x) {
 
 int dequeue(fila **primeiro, fila **ultimo){
 	if(*primeiro){
-        int removido = (*primeiro)->info;
+        int retorno = (*primeiro)->info;
         if((*primeiro)->prox == (*primeiro))
             (*primeiro) = NULL;
         else{
@@ -81,7 +81,7 @@ int dequeue(fila **primeiro, fila **ultimo){
             *primeiro = aux;
             (*ultimo)->prox = aux;
         }
-        return removido;
+        return retorno;
     }
     return NULL;
 }
