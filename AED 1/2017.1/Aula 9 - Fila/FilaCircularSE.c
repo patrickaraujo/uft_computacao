@@ -22,7 +22,7 @@ int dequeue(){
     int temp = fila[0];
     if( temp ){
         int i;
-        for(i = 0; fila[i+1] != NULL; i++)
+        for(i = 0; fila[i+1]; i++)
             fila[i] = fila[i+1];
         fila[i] = NULL;
         fim = i;
