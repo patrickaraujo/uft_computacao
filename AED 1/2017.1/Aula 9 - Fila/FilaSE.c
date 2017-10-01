@@ -20,15 +20,15 @@ void enqueue(int x){
 }
 
 int dequeue(){
-    int temp = fila[0];
-    if( temp ){
+    int aux = fila[0];
+    if( aux ){
         int i;
         for(i = 0; fila[i+1]; i++)
             fila[i] = fila[i+1];
         fila[i] = NULL;
         fim = i;
     }
-    return temp;
+    return aux;
 }
 
 int filaCheia(){
