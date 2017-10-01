@@ -27,11 +27,8 @@ int dequeue(){
             fila[i] = fila[i+1];
         fila[i] = NULL;
         fim = i;
-        printf("Removido com sucesso\n");
-        return temp;
     }
-    printf("Fila vazia\n");
-    return NULL;
+    return temp;
 }
 
 int filaCheia(){
