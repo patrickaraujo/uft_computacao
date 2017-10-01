@@ -69,11 +69,11 @@ int enqueue (fila **ultimo, fila **primeiro, int x) {
 
 int dequeue(fila **primeiro) {
 	if(*primeiro){
-        int aux = (*primeiro)->info;
+        int retorno = (*primeiro)->info;
         fila *temp = (*primeiro)->prox;
         free(primeiro);
         *primeiro = temp;
-        return aux;
+        return retorno;
     }
     return NULL;
 }
