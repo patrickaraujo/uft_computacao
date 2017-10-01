@@ -1,6 +1,6 @@
 /**
 *   @author Patrick Araújo: https://github.com/patrickaraujo
-*   Exercício Palindromo em C para a aula de Algoritmos e Estrutura de Dados 1 usando pilhas encadeadas
+*   Exercício Palindromo em C para a aula de Algoritmo e Estrutura de Dados 1 usando pilhas encadeadas
 *   Assignment Palindrome in C language from the subject Algorithms and Data Structures 1 using Stacks
 *   Finalizado em 23/09/2017 - Concluded in 09/23/2017
 */
