@@ -80,9 +80,9 @@ void inserir(){
 }
 
 int enqueue (fila **ultimo, fila **primeiro, string nome) {
-    fila *aux = malloc(sizeof(fila));    //  auxiliar
+    fila *aux = (fila*)malloc(sizeof(fila));    //  auxiliar
 	if(aux){
-        strcpy(aux->nome, nome);
+        aux->name = nome;
 		aux->prox = NULL;
 		if(*ultimo)
 			(*ultimo)->prox = aux;
@@ -95,5 +95,9 @@ int enqueue (fila **ultimo, fila **primeiro, string nome) {
 }
 
 void remover(){
+
+}
+
+void imprimir(){
 
 }
