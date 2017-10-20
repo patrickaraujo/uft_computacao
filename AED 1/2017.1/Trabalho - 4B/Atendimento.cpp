@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <cstring>
 #include <stdlib.h>
 #include <iostream>
 #include <string>
@@ -6,7 +7,7 @@
 using namespace std;
 
 typedef struct reg {
-    string name;
+    char *name;
     struct reg *prox;
 }fila;
 
@@ -19,6 +20,7 @@ fila *pUrN;
 
 void inserir();
 int enqueue (fila **ultimo, fila **primeiro, string nome);
+char* dequeue(fila **primeiro);
 void remover();
 void imprimir();
 
@@ -27,8 +29,9 @@ int main(){
 
     int op;
     do{
-        cout << "Qual a opcao?\n\n1\tInserir paciente\n2\tRemover paciente\n3\tImprimir pacientes\n\n0\tSair\n\nOpcao: ";
+        cout << "Qual a opcao?\n\n1\tInserir paciente\n2\tAtender/Remover paciente\n3\tImprimir pacientes\n\n0\tSair\n\nOpcao: ";
         cin >> op;
+        cin.ignore(1,'\n');
         switch(op){
             case 1:
                 inserir();
@@ -38,8 +41,10 @@ int main(){
             break;
             case 3:
                 imprimir();
+                system("pause");
             break;
         }
+        system("cls");
     }while(op);
 
     /*
@@ -82,7 +87,8 @@ void inserir(){
 int enqueue (fila **ultimo, fila **primeiro, string nome) {
     fila *aux = (fila*)malloc(sizeof(fila));    //  auxiliar
 	if(aux){
-        aux->name = nome;
+        aux->name = (char *)malloc(strlen(nome.c_str())+1);
+        strcpy(aux->name, nome.c_str());
 		aux->prox = NULL;
 		if(*ultimo)
 			(*ultimo)->prox = aux;
@@ -94,10 +100,54 @@ int enqueue (fila **ultimo, fila **primeiro, string nome) {
 	return NULL;
 }
 
-void remover(){
+char* dequeue(fila **primeiro) {
+	if(*primeiro){
+        char *retorno = (*primeiro)->name;
+        fila *aux = (*primeiro)->prox;
+        free(primeiro);
+        *primeiro = aux;
+        return retorno;
+    }
+    return NULL;
+}
 
+void remover(){
+    if(pEm)
+        dequeue(&pEm);
+    else if(pUr)
+        dequeue(&pUr);
+    else if(pUrN)
+        dequeue(&pUrN);
+    else
+        cout << "Nenhum paciente";
 }
 
 void imprimir(){
-
+    fila *aux1 = pEm;
+    printf("\nLista de Atendimento\n\n");
+	if(!pEm)
+		printf("\nEmergencia Vazia\n");
+	else
+		while(aux1){
+			printf("\nEmergencia: %s\n", aux1->name);
+			aux1 = aux1->prox;
+		}
+    fila *aux2 = pUr;
+	if(!pUr)
+		printf("\nUrgencia Vazia\n");
+	else
+		while(aux2){
+			printf("\nUrgencia: %s\n", aux2->name);
+			aux2 = aux2->prox;
+		}
+    fila *aux3 = pUrN;
+	if(!pUrN)
+		printf("\nNao-urgencia Vazia\n\n");
+	else{
+		while(aux3){
+			printf("\nNao-urgencia: %s\n", aux3->name);
+			aux3 = aux3->prox;
+		}
+		printf("\n");
+    }
 }
