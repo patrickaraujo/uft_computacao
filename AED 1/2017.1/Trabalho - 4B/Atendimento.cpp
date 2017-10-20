@@ -1,3 +1,10 @@
+/**
+*   @author Patrick Araújo: https://github.com/patrickaraujo
+*   Trabalho 2, Controle de Atendimento em C++ para a aula de Algoritmos e Estrutura de Dados 1 usando pilhas encadeadas
+*   Assignment Waiting List in C++ language from the subject Algorithms and Data Structures 1 using Stacks
+*   Finalizado em 20/10/2017 - Concluded in 10/20/2017
+*/
+
 #include <stdio.h>
 #include <cstring>
 #include <stdlib.h>
@@ -26,7 +33,6 @@ void imprimir();
 
 int main(){
     em = NULL;  ur = NULL;  urN = NULL;
-
     int op;
     do{
         cout << "Qual a opcao?\n\n1\tInserir paciente\n2\tAtender/Remover paciente\n3\tImprimir pacientes\n\n0\tSair\n\nOpcao: ";
@@ -46,13 +52,6 @@ int main(){
         }
         system("cls");
     }while(op);
-
-    /*
-    string mystr;
-    cout << "What's your name? ";
-    getline (cin, mystr);
-    cout << "Hello world!" << endl;
-    */
     return 0;
 }
 
@@ -81,7 +80,6 @@ void inserir(){
                 cout << "\nOpcao invalida\n";
         }
     }while(prioridade < 0 || prioridade > 3);
-
 }
 
 int enqueue (fila **ultimo, fila **primeiro, string nome) {
