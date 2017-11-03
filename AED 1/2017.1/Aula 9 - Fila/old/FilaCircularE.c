@@ -22,9 +22,9 @@ int main(){
 
     while(choice != 4){
         printf("\n\tMENU\t\n\n");
-        printf("1 - Para Empilhar(PUSH)\n");
-        printf("2 - Para Desempilhar(POP)\n");
-        printf("3 - Mostrar elementos da pilha\n");
+        printf("1 - Para inserir elemento\n");
+        printf("2 - Para remover topo\n");
+        printf("3 - Mostrar todos elementos\n");
         printf("4 - Para Sair\n");
         printf("\n\n");
         printf("Informe A Opcao: ");
