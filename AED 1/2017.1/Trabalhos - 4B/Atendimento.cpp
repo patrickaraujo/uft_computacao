@@ -19,14 +19,11 @@ typedef struct reg {
 }fila;
 
 fila *em;
-fila *pEm;
 fila *ur;
-fila *pUr;
 fila *urN;
-fila *pUrN;
 
 void inserir();
-int enqueue (fila **ultimo, fila **primeiro, string nome);
+int enqueue (fila **main, string nome);
 char* dequeue(fila **primeiro);
 void remover();
 void imprimir();
@@ -68,13 +65,13 @@ void inserir(){
                 cout << "\nPaciente nao inserido\n";
             break;
             case 1:
-                enqueue(&em, &pEm, nome);
+                enqueue(&em, nome);
             break;
             case 2:
-                enqueue(&ur, &pUr, nome);
+                enqueue(&ur, nome);
             break;
             case 3:
-                enqueue(&urN, &pUrN, nome);
+                enqueue(&urN, nome);
             break;
             default:
                 cout << "\nOpcao invalida\n";
@@ -82,64 +79,68 @@ void inserir(){
     }while(prioridade < 0 || prioridade > 3);
 }
 
-int enqueue (fila **ultimo, fila **primeiro, string nome) {
+int enqueue (fila **main, string nome) {
     fila *aux = (fila*)malloc(sizeof(fila));    //  auxiliar
 	if(aux){
         aux->name = (char *)malloc(strlen(nome.c_str())+1);
         strcpy(aux->name, nome.c_str());
 		aux->prox = NULL;
-		if(*ultimo)
-			(*ultimo)->prox = aux;
+		if(*main){
+            fila *temp = *main;
+            while(temp->prox){
+                temp = temp->prox;
+            }
+            temp->prox = aux;
+		}
 		else
-            (*primeiro) = aux;
-		*ultimo = aux;
+            *main = aux;
 		return 1;
     }
 	return NULL;
 }
 
-char* dequeue(fila **primeiro) {
-	if(*primeiro){
-        char *retorno = (*primeiro)->name;
-        fila *aux = (*primeiro)->prox;
-        free(primeiro);
-        *primeiro = aux;
+char* dequeue(fila **main) {
+	if(*main){
+        char *retorno = (*main)->name;
+        fila *aux = *main;
+        *main = aux->prox;
+        free(aux);
         return retorno;
     }
     return NULL;
 }
 
 void remover(){
-    if(pEm)
-        dequeue(&pEm);
-    else if(pUr)
-        dequeue(&pUr);
-    else if(pUrN)
-        dequeue(&pUrN);
+    if(em)
+        dequeue(&em);
+    else if(ur)
+        dequeue(&ur);
+    else if(urN)
+        dequeue(&urN);
     else
         cout << "Nenhum paciente";
 }
 
 void imprimir(){
-    fila *aux1 = pEm;
+    fila *aux1 = em;
     printf("\nLista de Atendimento\n\n");
-	if(!pEm)
+	if(!em)
 		printf("\nEmergencia Vazia\n");
 	else
 		while(aux1){
 			printf("\nEmergencia: %s\n", aux1->name);
 			aux1 = aux1->prox;
 		}
-    fila *aux2 = pUr;
-	if(!pUr)
+    fila *aux2 = ur;
+	if(!ur)
 		printf("\nUrgencia Vazia\n");
 	else
 		while(aux2){
 			printf("\nUrgencia: %s\n", aux2->name);
 			aux2 = aux2->prox;
 		}
-    fila *aux3 = pUrN;
-	if(!pUrN)
+    fila *aux3 = urN;
+	if(!urN)
 		printf("\nNao-urgencia Vazia\n\n");
 	else{
 		while(aux3){
