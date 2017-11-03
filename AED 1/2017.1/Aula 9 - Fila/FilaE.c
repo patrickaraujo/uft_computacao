@@ -52,16 +52,20 @@ int main(){
     return 0;
 }
 
-int enqueue (fila **ultimo, fila **primeiro, int x) {
+int enqueue (fila **main, int x){
     fila *aux = malloc(sizeof(fila));    //  auxiliar
 	if(aux){
 		aux->info = x;
 		aux->prox = NULL;
-		if(*ultimo)
-			(*ultimo)->prox = aux;
+		if(*main){
+            fila *temp = *main;
+            while(temp->prox){
+                temp = temp->prox;
+            }
+            temp->prox = aux;
+		}
 		else
-            (*primeiro) = aux;
-		*ultimo = aux;
+            *main = aux;
 		return 1;
     }
 	return NULL;
