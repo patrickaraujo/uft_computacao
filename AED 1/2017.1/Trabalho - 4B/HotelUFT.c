@@ -7,118 +7,80 @@
 #include <stdlib.h>
 
 typedef struct no {
-    int info;
+    int num;
     int oc;
     struct reg *prox;
 }Quartos;
 
 typedef struct reg {
-    int info;
+    char *name;
+    char *endereco;
+    char *observacoes;
     struct reg *prox;
-}Lista;
+}Hospede;
 
-void imprimir(Lista *main);
-Lista* cria_lista();
-int insere_lista_ordenada(Lista **main, int num);
-int remove_lista(Lista **li, int num);
-Lista* find(Lista *main, int valor);
-int tamanho_lista(Lista *main);
+int verifica(int quarto, int pavimentos){
+    if((quarto/100) <= pavimentos && (quarto/100) >= 1)
+        if((quarto%100) <= 10 && (quarto%100) >= 1)
+            return 1;
+    return NULL;
+}
 
-Quartos* quartos(int andares, int qntQ){
-    int i, j;
-    for(i = 0; i < andares; i++){
-        for(j = 0; j < qntQ; j++){
-            quartos
-        }
-    }
+char* EntraString(){
+    char tecla;
+    char *retorno = NULL;
+    int tam = 0;
+    do {
+        tecla = getchar();
+        if(retorno == NULL)
+            retorno = (char*)malloc(sizeof(char));
+        else
+            retorno = (char*)realloc(retorno,tam+1);
+        retorno[tam] = tecla;
+        tam++;
+    } while(tecla != '\n');
+    retorno[tam-1] = '\0';
+    return retorno;
 }
 
 int main(){
-    int quartos[60] = {101, 102, 103, 104, 105, 106, 10}
-    
+    int op, quarto, telefone, pavimentos = 6, obs;
+    char *nome, *endereco, *observacoes;
+    do{
+        printf("Qual a opcao?\n\n1\tAdicionar hospede\n2\tRemover hospede\n3\tConsulta de quarto\n\n0\tSair\n\nOpcao: ");
+        scanf("%d", &op);
+
+        switch(op){
+            case 1:
+                do{
+                    printf("\nQual o quarto?:\t");
+                    scanf("%d", &quarto);
+                    free(getchar());
+                }while(!verifica(quarto, pavimentos));
+                printf("\nInformacoes do Hospede\n\nNome: \t");
+                nome = EntraString();
+                printf("\nEndereco: \t");
+                endereco = EntraString();
+                printf("\nTelefone: \t");
+                scanf("%d", &telefone); free(getchar());
+                printf("\nObservacoes?\n1\tSIM\n0\tNAO");
+                scanf("%d", &obs); free(getchar());
+                if(obs)
+                    observacoes = EntraString();
+                system("pause");
+
+                //  inserir();
+            break;
+            case 2:
+                //  remover();
+            break;
+            case 3:
+                //  imprimir();
+                system("pause");
+            break;
+        }
+        system("cls");
+    }while(op);
+
     return 0;
-}
-
-int insere_lista_ordenada(Lista **main, int num){
-    Lista *aux = malloc(sizeof(Lista));
-    if(aux){
-        aux->info = num;
-        if(*main){
-            Lista *ant, *atual = *main;
-            while(atual && atual->info < num){
-                ant = atual;
-                atual = atual->prox;
-            }
-            if(atual == *main){//insere início
-                aux->prox = (*main);
-                *main = aux;
-            }
-            else{
-                aux->prox = atual;
-                ant->prox = aux;
-            }
-            return 1;
-        }
-        else{
-            aux->prox = NULL;
-            *main = aux;
-            return 1;
-        }
-    }
-    return 0;
-}
-
-int remove_lista(Lista **main, int num){
-    if(*main){
-        Lista *ant, *aux = *main;
-        while(aux && aux->info != num){
-            ant = aux;
-            aux = aux->prox;
-        }
-        if(!aux)//não encontrado
-            return 0;
-        if(aux == *main)//remover o primeiro?
-            *main = aux->prox;
-        else
-            ant->prox = aux->prox;
-        free(aux);
-        return 1;
-    }
-    return 0;
-}
-
-Lista* find(Lista *main, int valor){
-	Lista *retorno = main;
-	if(main)
-        while(retorno){
-            if((retorno->info) == valor)
-                return retorno;
-            retorno = retorno->prox;
-        }
-    return NULL;
-}
-
-
-void imprimir(Lista *main){
-    Lista *aux = main;
-	if(!main)
-		printf("\nLista Vazia\n");
-	else
-		while(aux){
-			printf("\nElemento: %d\n", aux->info);
-			aux = aux->prox;
-		}
-}
-
-int tamanho_lista(Lista *main){
-    if(main){
-        int cont = 0;
-        Lista *aux = main;
-        while(aux){
-            cont++;
-            aux = aux->prox;
-        }
-        return cont;
-    }
-    return NULL;
 }
