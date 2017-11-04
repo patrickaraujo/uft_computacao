@@ -15,7 +15,9 @@ void imprimir(Lista *main);
 Lista* cria_lista();
 int insere_lista_ordenada(Lista **main, int num);
 int remove_lista(Lista **li, int num);
+int lista_vazia(Lista *main);
 Lista* find(Lista *main, int valor);
+void libera_lista(Lista **main);
 int tamanho_lista(Lista *main);
 
 int main(){
@@ -146,4 +148,20 @@ int tamanho_lista(Lista *main){
         return cont;
     }
     return NULL;
+}
+
+int lista_vazia(Lista *main){
+    if(main)
+        return 1;
+    return NULL;
+}
+
+void libera_lista(Lista **main){
+    Lista *aux;
+    while(*main){
+        aux = *main;
+        *main = (*main)->prox;
+        free(aux);
+    }
+    free(*main);
 }
