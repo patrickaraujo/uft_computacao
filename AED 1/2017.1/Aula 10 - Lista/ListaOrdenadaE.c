@@ -12,7 +12,6 @@ typedef struct reg {
 }Lista;
 
 void imprimir(Lista *main);
-Lista* cria_lista();
 int insere_lista_ordenada(Lista **main, int num);
 int remove_lista(Lista **li, int num);
 int lista_vazia(Lista *main);
