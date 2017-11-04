@@ -33,13 +33,13 @@ int main(){
             case 1:
                 printf("Digite o numero a inserir\n");
                 scanf("%d", &x);
-                enqueue(&P, x);
+                enqueue(&main, x);
             break;
             case 2:
-                dequeue(&P);
+                dequeue(&main);
             break;
             case 3:
-                imprimir(P);
+                imprimir(main);
                 system("pause");
             break;
             default:
