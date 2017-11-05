@@ -51,7 +51,7 @@ int main(){
     return 0;
 }
 
-int enqueue (fila **main, int x) {
+int enqueue (fila **main, int x) {	//	insere_lista_final
     fila *aux = malloc(sizeof(fila));  //  auxiliar
 	if(aux){
         aux->info = x;
