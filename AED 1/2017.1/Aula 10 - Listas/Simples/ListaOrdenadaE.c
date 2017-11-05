@@ -152,8 +152,8 @@ int tamanho_lista(Lista *main){
 
 int lista_vazia(Lista *main){
     if(main)
-        return 1;
-    return NULL;
+        return NULL;
+    return 1;
 }
 
 void libera_lista(Lista **main){
