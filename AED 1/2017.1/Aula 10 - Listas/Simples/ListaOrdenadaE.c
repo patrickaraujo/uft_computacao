@@ -53,7 +53,7 @@ int main(){
             case 4:
                 printf("Digite o numero a ser achado\n");
                 scanf("%d", &x);
-                printf("Indice: %x", find(main, x));
+                printf("\nIndice: %x\n", find(main, x));
                 system("pause");
             break;
             default:
@@ -101,14 +101,15 @@ int remove_lista(Lista **main, int num){
             ant = aux;
             aux = aux->prox;
         }
-        if(!aux)//não encontrado
+        if(!aux)    //  não encontrado
             return 0;
-        if(aux == *main)//remover o primeiro?
+        int retorno = aux->info;
+        if(aux == *main)    //  remover o primeiro?
             *main = aux->prox;
         else
             ant->prox = aux->prox;
         free(aux);
-        return 1;
+        return retorno;
     }
     return 0;
 }
