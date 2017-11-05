@@ -25,8 +25,8 @@ int main(){
 
     while(choice != 5){
         printf("\n\tMENU\t\n\n");
-        printf("1 - Para inserir elemento no topo\n");
-        printf("2 - Para remover elemento final\n");
+        printf("1 - Para inserir elemento\n");
+        printf("2 - Para remover elemento\n");
         printf("3 - Mostrar todos elementos\n");
         printf("4 - Achar indice de um numero\n");
         printf("5 - Para Sair\n");
