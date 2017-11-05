@@ -14,17 +14,22 @@ typedef struct reg {
 int insere_lista_inicio(Lista **main, int x);
 int remove_lista_final(Lista **main);
 void imprimir(Lista *main);
+int lista_vazia(Lista *main);
+int tamanho_lista(Lista *main);
+Lista* find(Lista *main, int valor);
+void libera_lista(Lista **main);
 
 int main(){
     Lista *main = NULL;
     int choice, x;
 
-    while(choice != 4){
+    while(choice != 5){
         printf("\n\tMENU\t\n\n");
-        printf("1 - Para inserir elemento\n");
-        printf("2 - Para remover topo\n");
+        printf("1 - Para inserir elemento no topo\n");
+        printf("2 - Para remover elemento final\n");
         printf("3 - Mostrar todos elementos\n");
-        printf("4 - Para Sair\n");
+        printf("4 - Achar indice de um numero\n");
+        printf("5 - Para Sair\n");
         printf("\n\n");
         printf("Informe A Opcao: ");
         scanf("%d", &choice);
@@ -40,6 +45,13 @@ int main(){
             break;
             case 3:
                 imprimir(main);
+                printf("\nTamanho:\t%i\n", tamanho_lista(main));
+                system("pause");
+            break;
+            case 4:
+                printf("Digite o numero a ser achado\n");
+                scanf("%d", &x);
+                printf("\nIndice: %x\n", find(main, x));
                 system("pause");
             break;
             default:
@@ -93,6 +105,36 @@ int remove_lista_final(Lista **main){	//	remove_lista_inicio
     return NULL;
 }
 
+int tamanho_lista(Lista *main){
+    if(main){
+        int cont = 0;
+        Lista *aux = main;
+        do{
+            cont++;
+            aux = aux->prox;
+        }while(aux != main);
+        return cont;
+    }
+    return NULL;
+}
+
+Lista* find(Lista *main, int valor){
+	Lista *retorno = main;
+	if(main)
+        do{
+            if((retorno->info) == valor)
+                return retorno;
+            retorno = retorno->prox;
+        }while(retorno != main);
+    return NULL;
+}
+
+int lista_vazia(Lista *main){
+    if(main)
+        return NULL;
+    return 1;
+}
+
 void imprimir(Lista *main){
     Lista *aux = main;
 	if(!main)
@@ -102,4 +144,17 @@ void imprimir(Lista *main){
 			printf("\nElemento: %d\n", aux->info);
 			aux = aux->prox;
 		}while(aux != main);
+}
+
+void libera_lista(Lista **main){
+    if(*main){
+        Lista *temp, *aux = *main;
+        while((*main) != aux->prox){
+            temp = aux;
+            aux = aux->prox;
+            free(temp);
+        }
+        free(aux);
+        *main = NULL;
+    }
 }
