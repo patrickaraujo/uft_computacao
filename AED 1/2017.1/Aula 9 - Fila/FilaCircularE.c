@@ -72,7 +72,7 @@ int enqueue (fila **main, int x) {	//	insere_lista_final
     return NULL;
 }
 
-int dequeue(fila **main){
+int dequeue(fila **main){	//	remove_lista_inicio
 	if(*main){
         int retorno = (*main)->info;
         if((*main)->prox == (*main))
