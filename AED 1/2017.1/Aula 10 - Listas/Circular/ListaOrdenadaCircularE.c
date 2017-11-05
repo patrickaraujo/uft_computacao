@@ -99,7 +99,7 @@ int insere_lista_ordenada(Lista **main, int x) {
         return NULL;
 }
 
-int remove_lista(Lista **main, int x){	//	remove_lista_inicio
+int remove_lista(Lista **main, int x){
 	if(*main){
         int retorno;
         Lista *aux = (*main);
