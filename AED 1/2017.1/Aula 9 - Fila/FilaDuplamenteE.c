@@ -1,6 +1,6 @@
 /**
 *   @author Patrick Araújo: https://github.com/patrickaraujo
-*   Fila Encadeada em C para a aula de Algoritmos e Estrutura de Dados 1
+*   Fila Duplamente Encadeada em C para a aula de Algoritmos e Estrutura de Dados 1
 */
 
 #include <stdio.h>
