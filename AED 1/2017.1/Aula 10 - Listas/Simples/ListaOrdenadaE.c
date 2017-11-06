@@ -102,7 +102,7 @@ int remove_lista(Lista **main, int num){
             aux = aux->prox;
         }
         if(!aux)    //  não encontrado
-            return 0;
+            return NULL;
         int retorno = aux->info;
         if(aux == *main)    //  remover o primeiro?
             *main = aux->prox;
@@ -111,7 +111,7 @@ int remove_lista(Lista **main, int num){
         free(aux);
         return retorno;
     }
-    return 0;
+    return NULL;
 }
 
 Lista* find(Lista *main, int valor){
