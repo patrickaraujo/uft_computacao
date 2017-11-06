@@ -101,15 +101,15 @@ int remove_lista(Lista **main, int num){
             ant = aux;
             aux = aux->prox;
         }
-        if(!aux)    //  não encontrado
-            return NULL;
-        int retorno = aux->info;
-        if(aux == *main)    //  remover o primeiro?
-            *main = aux->prox;
-        else
-            ant->prox = aux->prox;
-        free(aux);
-        return retorno;
+        if(aux){
+            int retorno = aux->info;
+            if(aux == *main)    //  remover o primeiro?
+                *main = aux->prox;
+            else
+                ant->prox = aux->prox;
+            free(aux);
+            return retorno;
+        }
     }
     return NULL;
 }
