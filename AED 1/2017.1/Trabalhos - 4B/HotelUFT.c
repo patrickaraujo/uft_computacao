@@ -27,7 +27,6 @@ char* EntraString();
 Quartos* find(Quartos *main, int num);
 void print(Quartos *main);
 int remove_lista(Quartos **main, int num);
-
 int insere_lista_ordenada(Quartos **main, int quarto, char *nome, char *endereco, char *telefone, char *obs);
 
 int main(){
@@ -37,7 +36,6 @@ int main(){
     do{
         printf("Qual a opcao?\n\n1\tAdicionar hospede\n2\tRemover hospede\n3\tConsulta de quarto\n\n0\tSair\n\nOpcao: ");
         scanf("%d", &op);
-
         switch(op){
             case 1:
                 do{
