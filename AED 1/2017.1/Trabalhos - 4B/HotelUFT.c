@@ -43,6 +43,8 @@ int main(){
                 do{
                     printf("\nQual o quarto?:\t");
                     scanf("%d", &quarto);
+                    if(find(main, quarto))
+                        quarto = NULL;
                     free(getchar());
                 }while(!verifica(quarto, pavimentos));
                 printf("\nInformacoes do Hospede\n\nNome: \t");
@@ -145,7 +147,7 @@ char* EntraString(){
 int verifica(int quarto, int pavimentos){
     if((quarto/100) <= pavimentos && (quarto/100) >= 1)
         if((quarto%100) <= 10 && (quarto%100) >= 1)
-            return 1;
+                return 1;
     return NULL;
 }
 
