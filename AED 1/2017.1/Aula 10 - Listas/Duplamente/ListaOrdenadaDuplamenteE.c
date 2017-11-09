@@ -1,6 +1,6 @@
 /**
 *   @author Patrick Araújo: https://github.com/patrickaraujo
-*   Lista Duplamente Encadeada em C para a aula de Algoritmos e Estrutura de Dados 1
+*   Lista Ordenada Duplamente Encadeada em C para a aula de Algoritmos e Estrutura de Dados 1
 */
 
 #include <stdio.h>
