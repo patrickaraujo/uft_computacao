@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 
-
 void funcao(int *m){
     int i, j;
     for(i = 0; i < 3; i++){
