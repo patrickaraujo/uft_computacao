@@ -21,10 +21,11 @@ typedef struct reg{
 }Lista;
 
 int insere_lista_ordenada(no **main, int periodo, char *disciplina, char *professor, char *ementa);
-int remove_lista(Lista **main, int x);
+char* remove_lista(no **main, char *nome);
 void imprimir(no *main);
+int imprimirDisciplina(no *main);
 int lista_vazia(Lista *main);
-Lista* find(Lista *main, int valor);
+no* find(no *main, char *nome);
 void libera_lista(Lista **main);
 int tamanho_lista(Lista *main);
 char* EntraString();
@@ -46,7 +47,7 @@ int main(){
         scanf("%d", &choice);
         switch(choice) {
             case 1:
-                printf("Periodo:\t");
+                printf("\nPeriodo:\t");
                 scanf("%d", &periodo);
                 free(getchar());
                 printf("Nome da disciplina:\t");
@@ -58,11 +59,24 @@ int main(){
                 insere_lista_ordenada(&main, periodo, nome, professor, ementa);
             break;
             case 2:
-                printf("Digite o numero a remover\n");
-                scanf("%d", &periodo);
-                //  remove_lista(&main, periodo);
+                free(getchar());
+                printf("Qual disciplina?\n");
+                nome = EntraString();
+                remove_lista(&main, nome);
             break;
             case 3:
+                free(getchar());
+                int c;
+                no *temp;
+                do{
+                    printf("Qual disciplina?\n");
+                    nome = EntraString();
+                    temp = find(main, nome);
+                    c = imprimirDisciplina(temp);
+                }while(!c && temp);
+                system("pause");
+            break;
+            case 4:
                 imprimir(main);
                 system("pause");
             break;
@@ -106,15 +120,17 @@ int insere_lista_ordenada(no **main, int periodo, char *nome, char *professor, c
 
         if(*main){
             no *temp, *atual = (*main);
-            while(atual && atual->dados->periodo <= periodo){
+            while(atual && (atual->dados->periodo <= periodo)){
                 if((atual->dados->periodo == periodo) && ((strcmp(atual->dados->nome, nome) < 0))){
                     temp = atual;
                     atual = atual->proximo;
                 }
-                else{
+                else if(atual->dados->periodo < periodo){
                     temp = atual;
                     atual = atual->proximo;
                 }
+                else
+                    break;
             }
             if(atual == (*main)){
                 aux->anterior = NULL;
@@ -141,23 +157,22 @@ int insere_lista_ordenada(no **main, int periodo, char *nome, char *professor, c
     return NULL;
 }
 
-int remove_lista(Lista **main, int x){
+char* remove_lista(no **main, char *nome){
     if(*main){
-        Lista *aux = (*main);
-        while(aux && aux->info != x){
-            aux = aux->prox;
+        no *aux = (*main);
+        while(aux && (strcmp(aux->dados->nome, nome))){
+            aux = aux->proximo;
         }
         if(aux){
-            if(!(aux->ant))
-                (*main) = aux->prox;
+            if(!(aux->anterior))
+                (*main) = aux->proximo;
             else
-                aux->ant->prox = aux->prox;
-            if(aux->prox)
-                aux->prox->ant = aux->ant;
-            int retorno = aux->info;
+                aux->anterior->proximo = aux->proximo;
+            if(aux->proximo)
+                aux->proximo->anterior = aux->anterior;
+            char *retorno = aux->dados->nome;
+            printf("removido: %s", retorno);
             free(aux);
-            printf("\nremovido:\t%i\n", retorno);
-            system("pause");
             return retorno;
         }
 
@@ -181,13 +196,13 @@ void libera_lista(Lista **main){
     free(*main);
 }
 
-Lista* find(Lista *main, int valor){
-	Lista *retorno = main;
+no* find(no *main, char *nome){
+	no *retorno = main;
 	if(main)
         while(retorno){
-            if((retorno->info) == valor)
+            if(!strcmp(retorno->dados->nome, nome))
                 return retorno;
-            retorno = retorno->prox;
+            retorno = retorno->proximo;
         }
     return NULL;
 }
@@ -205,10 +220,51 @@ int tamanho_lista(Lista *main){
     return NULL;
 }
 
+int imprimirDisciplina(no *main){
+    int op;
+	if(main){
+        printf("\nPeriodo:\t%i", main->dados->periodo);
+        printf("\nDisciplina:\t%s", main->dados->nome);
+        printf("\nProfessor:\t%s", main->dados->professor);
+        printf("\nEmenta:\t%s\n", main->dados->ementa);
+
+        do{
+            printf("\nSelecione uma opcao:\n\n1.\tAnterior\n2.\tProximo\n3.\tVoltar\n4.\tMenu\n");
+            scanf("%d", &op);
+            switch(op){
+                case 1:
+                    system("cls");
+                    if(!(main->anterior)){
+                        no *aux = main;
+                        while(aux->proximo){
+                            aux = aux->proximo;
+                        }
+                        imprimirDisciplina(aux);
+                    }
+                    else
+                        imprimirDisciplina(main->anterior);
+                break;
+                case 2:
+                    imprimirDisciplina(main->proximo);
+                break;
+                case 3:
+                    return 0;
+                break;
+                case 4:
+                    return 1;
+                break;
+            default:
+                printf("\nOpcao invalida");
+            }
+        }while(op < 1 || op > 4);
+	}
+	return 0;
+}
+
 void imprimir(no *main){
-    no *aux = main;
+	no *aux = main;
 	if(!main)
-		printf("\nLista Vazia\n");
+        printf("\nLista Vazia\n");
 	else
 		while(aux){
 			printf("\nDisciplina: %s\nPeriodo: %i\n", aux->dados->nome, aux->dados->periodo);
