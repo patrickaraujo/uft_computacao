@@ -1,3 +1,10 @@
+/**
+*   @author Patrick Araújo: https://github.com/patrickaraujo
+*   Trabalho 4, Cadastro de Disciplinas em C para a aula de Algoritmos e Estrutura de Dados 1 usando Listas Ordenadas Duplamente Encadeadas
+*   Assignment Subject Register in C language from the subject Algorithms and Data Structures 1 using Doubly Ordered Linked Lists
+*   Finalizado em 19/11/2017 - Concluded in 11/19/2017
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -14,27 +21,17 @@ typedef struct no{
     struct no *proximo;
 }no;
 
-typedef struct reg{
-    int info;
-    struct reg *ant;
-    struct reg *prox;
-}Lista;
-
 int insere_lista_ordenada(no **main, int periodo, char *disciplina, char *professor, char *ementa);
 char* remove_lista(no **main, char *nome);
 void imprimir(no *main);
-int imprimirDisciplina(no *main);
-int lista_vazia(Lista *main);
+int imprimirDisciplina(no *main, int x);
 no* find(no *main, char *nome);
-void libera_lista(Lista **main);
-int tamanho_lista(Lista *main);
 char* EntraString();
 
 int main(){
     char *nome, *professor, *ementa;
-    no *main = NULL;
-    int choice, periodo;
-    //  ret = strcmp(str1, str2);
+    no *main = NULL, *temp;
+    int choice, periodo, c;
     while(choice != 5){
         printf("\n\tMENU\t\n\n");
         printf("1 - Para inserir disciplina\n");
@@ -43,7 +40,7 @@ int main(){
         printf("4 - Mostrar disciplinas por periodo\n");
         printf("5 - Para Sair\n");
         printf("\n\n");
-        printf("Informe A Opcao: ");
+        printf("Informe a Opcao: ");
         scanf("%d", &choice);
         switch(choice) {
             case 1:
@@ -60,21 +57,18 @@ int main(){
             break;
             case 2:
                 free(getchar());
-                printf("Qual disciplina?\n");
+                printf("\n\nQual disciplina?:\t");
                 nome = EntraString();
                 remove_lista(&main, nome);
             break;
             case 3:
-                free(getchar());
-                int c;
-                no *temp;
-                do{
-                    printf("Qual disciplina?\n");
+                c = 0;
+                while(!c){
+                    free(getchar());
+                    printf("\nQual disciplina?:\t");
                     nome = EntraString();
-                    temp = find(main, nome);
-                    c = imprimirDisciplina(temp);
-                }while(!c && temp);
-                system("pause");
+                    c = imprimirDisciplina(find(main, nome), c);
+                }
             break;
             case 4:
                 imprimir(main);
@@ -117,7 +111,6 @@ int insere_lista_ordenada(no **main, int periodo, char *nome, char *professor, c
         strcpy(aux->dados->professor, professor);
         aux->dados->ementa = malloc(sizeof(ementa));
         strcpy(aux->dados->ementa, ementa);
-
         if(*main){
             no *temp, *atual = (*main);
             while(atual && (atual->dados->periodo <= periodo)){
@@ -180,22 +173,6 @@ char* remove_lista(no **main, char *nome){
     return NULL;
 }
 
-int lista_vazia(Lista *main){
-    if(main)
-        return NULL;
-    return 1;
-}
-
-void libera_lista(Lista **main){
-    Lista *aux;
-    while(*main){
-        aux = *main;
-        *main = (*main)->prox;
-        free(aux);
-    }
-    free(*main);
-}
-
 no* find(no *main, char *nome){
 	no *retorno = main;
 	if(main)
@@ -207,58 +184,53 @@ no* find(no *main, char *nome){
     return NULL;
 }
 
-int tamanho_lista(Lista *main){
-    if(main){
-        int cont = 0;
-        Lista *aux = main;
-        while(aux){
-            cont++;
-            aux = aux->prox;
-        }
-        return cont;
-    }
-    return NULL;
-}
-
-int imprimirDisciplina(no *main){
+int imprimirDisciplina(no *main, int x){
     int op;
 	if(main){
+        x++;
         printf("\nPeriodo:\t%i", main->dados->periodo);
         printf("\nDisciplina:\t%s", main->dados->nome);
         printf("\nProfessor:\t%s", main->dados->professor);
         printf("\nEmenta:\t%s\n", main->dados->ementa);
-
+        no *aux = main;
         do{
-            printf("\nSelecione uma opcao:\n\n1.\tAnterior\n2.\tProximo\n3.\tVoltar\n4.\tMenu\n");
+            printf("\nSelecione uma opcao:\n\n1.\tAnterior\n2.\tProximo\n3.\tVoltar\n4.\tMenu\n\nOpcao:\t");
             scanf("%d", &op);
             switch(op){
                 case 1:
                     system("cls");
                     if(!(main->anterior)){
-                        no *aux = main;
-                        while(aux->proximo){
+                        while(aux->proximo)
                             aux = aux->proximo;
-                        }
-                        imprimirDisciplina(aux);
+                        return imprimirDisciplina(aux, x);
                     }
                     else
-                        imprimirDisciplina(main->anterior);
+                        return imprimirDisciplina(main->anterior, x);
                 break;
                 case 2:
-                    imprimirDisciplina(main->proximo);
+                    system("cls");
+                    if(!(main->proximo)){
+                        aux = main;
+                        while(aux->anterior)
+                            aux = aux->anterior;
+                        return imprimirDisciplina(aux, x);
+                    }
+                    else
+                        return imprimirDisciplina(main->proximo, x);
                 break;
                 case 3:
-                    return 0;
+                    return imprimirDisciplina(NULL, (0*x));
                 break;
                 case 4:
-                    return 1;
+                    return imprimirDisciplina(NULL, (x/x));
                 break;
             default:
                 printf("\nOpcao invalida");
             }
+            free(aux);
         }while(op < 1 || op > 4);
 	}
-	return 0;
+    return 1;
 }
 
 void imprimir(no *main){
