@@ -24,6 +24,7 @@ typedef struct no{
 int insere_lista_ordenada(no **main, int periodo, char *disciplina, char *professor, char *ementa);
 char* remove_lista(no **main, char *nome);
 void imprimir(no *main);
+void imprimirPeriodo(no *main, int x);
 int imprimirDisciplina(no *main, int x);
 no* find(no *main, char *nome);
 char* EntraString();
@@ -71,7 +72,9 @@ int main(){
                 }
             break;
             case 4:
-                imprimir(main);
+                printf("\nQual periodo?:\t");
+                scanf("%d", &periodo);
+                imprimirPeriodo(main, periodo);
                 system("pause");
             break;
             default:
@@ -231,6 +234,62 @@ int imprimirDisciplina(no *main, int x){
         }while(op < 1 || op > 4);
 	}
     return 1;
+}
+
+void imprimirPeriodo(no *main, int x){
+
+	no *aux = main, *ant;
+	int op;
+	if(main){
+        printf("\n\nPeriodo:\t%i", x);
+        while(aux){
+            if(aux->dados->periodo == x){
+                printf("\nMateria:\t%s", aux->dados->nome);
+                ant = aux;
+            }
+            aux = aux->proximo;
+        }
+        do{
+            printf("\n\nSelecione uma opcao:\n\n1.\tAnterior\n2.\tProximo\n3.\tDetalhar\n4.\tMenu\n\nOpcao:\t");
+            scanf("%d", &op);
+            no *ant2;
+            switch(op){
+                case 1:
+                    system("cls");
+                    while(ant && ant->dados->periodo == x){
+                        ant2 = ant;
+                        ant = ant->anterior;
+                    }
+                    if(ant2->anterior){
+                        imprimirPeriodo(main, ant2->anterior->dados->periodo);
+                    }
+                    else{
+                        while(ant2->proximo){
+                            ant2 = ant2->proximo;
+                        }
+                        imprimirPeriodo(main, ant2->dados->periodo);
+                    }
+                break;
+                case 2:
+                    system("cls");
+                    while(ant && ant->dados->periodo == x){
+                        ant2 = ant;
+                        ant = ant->proximo;
+                    }
+                    if(ant2->proximo){
+                        imprimirPeriodo(main, ant2->proximo->dados->periodo);
+                    }
+                    else{
+                        while(ant2->anterior){
+                            ant2 = ant2->anterior;
+                        }
+                        imprimirPeriodo(main, ant2->dados->periodo);
+                    }
+                break;
+            }
+        }while(op < 1 || op > 4);
+
+    }
 }
 
 void imprimir(no *main){
