@@ -1,3 +1,10 @@
+/**
+*   @author Patrick Araújo: https://github.com/patrickaraujo
+*   Trabalho 4, Cadastro de Disciplinas em C++ para a aula de Algoritmos e Estrutura de Dados 1 usando Listas Ordenadas Duplamente Encadeadas
+*   Assignment Subject Register in C++ language from the subject Algorithms and Data Structures 1 using Doubly Ordered Linked Lists
+*   Finalizado em 21/11/2017 - Concluded in 11/21/2017
+*/
+
 #include <stdio.h>
 #include <cstring>
 #include <stdlib.h>
@@ -257,11 +264,10 @@ void mPeriodo(no *main, int x){
 	int c = x;
 	if(main && verificaNUM(main, x)){
         do{
-            no *aux = main;
+            no *aux = main, *ant;
             found = imprimirPeriodo(aux, x);
             printf("\n\nOPCAO\n1\t->\tAnterior\n2\t->\tProximo\n3\t->\tDetalhar\n4\t->\tMenu\n\nSelecione uma opcao:\t");
             scanf("%d", &op);
-            no *ant;
             switch(op){
                 case 1:
                     system("cls");
@@ -283,20 +289,18 @@ void mPeriodo(no *main, int x){
                 break;
                 case 2:
                     system("cls");
-                    while(aux && aux->dados->periodo == c){
-                        ant = aux;
-                        ant = aux->proximo;
+                    while(aux){
+                        if(aux->dados->periodo == x)
+                            ant = aux;
+                        aux = aux->proximo;
                     }
-                    if(ant->proximo){
-                        aux = main;
-                        c = ant->proximo->dados->periodo;
-                    }
+                    if(ant->proximo)
+                        x = ant->proximo->dados->periodo;
                     else{
                         while(ant->anterior){
                             ant = ant->anterior;
                         }
-                        aux = main;
-                        c = ant->dados->periodo;
+                        x = ant->dados->periodo;
                     }
                 break;
             }
