@@ -2,7 +2,7 @@
 *   @author Patrick Araújo: https://github.com/patrickaraujo
 *   Trabalho 4, Cadastro de Disciplinas em C para a aula de Algoritmos e Estrutura de Dados 1 usando Listas Ordenadas Duplamente Encadeadas
 *   Assignment Subject Register in C language from the subject Algorithms and Data Structures 1 using Doubly Ordered Linked Lists
-*   Finalizado em 20/11/2017 - Concluded in 11/20/2017
+*   Finalizado em 19/11/2017 - Concluded in 11/19/2017
 */
 
 #include <stdio.h>
@@ -227,6 +227,7 @@ int imprimirDisciplina(no *main){
                     }
                 break;
                 case 3:
+                    free(getchar());
                     procurarDisciplina(main);
                     return 1;
                 break;
