@@ -22,10 +22,13 @@ typedef struct no{
 int insere_lista_ordenada(no **main, int periodo, string disciplina, string professor, string ementa);
 char* remove_lista(no **main, string nome);
 void imprimir(no *main);
-void imprimirPeriodo(no *main, int x);
-void procurarDisciplina(no *main);
-int imprimirDisciplina(no *main);
+char* imprimirPeriodo(no *main, int x);
+void mPeriodo(no *main, int x);
+int procurarDisciplina(no *main);
+void mDisciplinas(no *main);
+void imprimirDisciplina(no *main);
 no* procurar(no *main, char *nome);
+int verificaNUM(no *main, int x);
 
 int main(){
     string nome, professor, ementa;
@@ -33,13 +36,13 @@ int main(){
     int choice, periodo, c;
     while(choice != 5){
         printf("\n\tMENU\t\n\n");
-        printf("1 - Para inserir disciplina\n");
-        printf("2 - Para remover disciplina\n");
-        printf("3 - Busca de disciplina\n");
-        printf("4 - Mostrar disciplinas por periodo\n");
-        printf("5 - Para Sair\n");
+        printf("1\t->\tPara inserir disciplina\n");
+        printf("2\t->\tPara remover disciplina\n");
+        printf("3\t->\tBusca de disciplina\n");
+        printf("4\t->\tMostrar disciplinas por periodo\n");
+        printf("5\t->\tPara Sair\n");
         printf("\n\n");
-        printf("Informe a Opcao: ");
+        printf("Informe a opcao: ");
         cin >> choice;
         cin.ignore(1,'\n');
         switch(choice) {
@@ -67,7 +70,7 @@ int main(){
                 printf("\nQual periodo?:\t");
                 cin >> periodo;
                 cin.ignore(1,'\n');
-                imprimirPeriodo(main, periodo);
+                mPeriodo(main, periodo);
                 system("pause");
             break;
             default:
@@ -143,7 +146,7 @@ char* remove_lista(no **main, string nome){
             if(aux->proximo)
                 aux->proximo->anterior = aux->anterior;
             char *retorno = aux->dados->nome;
-            printf("removido: %s", retorno);
+            printf("Materia %s removida", retorno);
             free(aux);
             return retorno;
         }
@@ -163,23 +166,25 @@ no* procurar(no *main, string nome){
     return NULL;
 }
 
-void procurarDisciplina(no *main){
-    int c = 1;
+int procurarDisciplina(no *main){
     string nome;
-    while(c){
-        printf("\nQual disciplina?:\t");
-        getline (cin, nome);
-        c = imprimirDisciplina(procurar(main, nome));
+    printf("\nQual disciplina?:\t");
+    getline (cin, nome);
+    no *aux = procurar(main, nome);
+    if(aux){
+        mDisciplinas(aux);
+        return 1;
     }
+    return 0;
 }
 
-int imprimirDisciplina(no *main){
+void mDisciplinas(no *main){
     int op;
 	if(main){
-        imprimir(main);
+        imprimirDisciplina(main);
         no *aux = main;
         do{
-            printf("\nSelecione uma opcao:\n\n1.\tAnterior\n2.\tProximo\n3.\tVoltar\nOutro numero:\tMenu\n\nOpcao:\t");
+            printf("\nOPCOES\n1\t->\tAnterior\n2\t->\tProximo\n3\t->\tMostrar disciplinas por periodo\nOutro numero\t->\tMenu\n\nSelecione uma opcao:\t");
             scanf("%d", &op);
             switch(op){
                 case 1:
@@ -187,11 +192,11 @@ int imprimirDisciplina(no *main){
                     if(!(aux->anterior)){
                         while(aux->proximo)
                             aux = aux->proximo;
-                        imprimir(aux);
+                        imprimirDisciplina(aux);
                     }
                     else{
                         aux = aux->anterior;
-                        imprimir(aux);
+                        imprimirDisciplina(aux);
                     }
                 break;
                 case 2:
@@ -199,92 +204,115 @@ int imprimirDisciplina(no *main){
                     if(!(aux->proximo)){
                         while(aux->anterior)
                             aux = aux->anterior;
-                        imprimir(aux);
+                        imprimirDisciplina(aux);
                     }
                     else{
                         aux = aux->proximo;
-                        imprimir(aux);
+                        imprimirDisciplina(aux);
                     }
                 break;
-                case 3:
-                    procurarDisciplina(main);
-                    return 1;
-                break;
-            default:
-                return 0;
             }
-        }while(op != 3);
+        }while(op >= 1 && op <= 2);
+        if(op == 3)
+            mPeriodo(main, aux->dados->periodo);
 	}
-    return 0;
 }
 
-void imprimirPeriodo(no *main, int x){
-    string toFind;
-	no *aux = main, *ant;
-	int op, i = 0;
-	if(main){
-        printf("\n\nPeriodo:\t%i", x);
-        while(aux){
-            if(aux->dados->periodo == x){
-                printf("\nMateria:\t%s", aux->dados->nome);
-                ant = aux;
+char* imprimirPeriodo(no *main, int x){
+    int i = 0;
+    no *aux = main;
+    char *retorno;
+    if(main)
+        printf("\nPeriodo:\t%i\n", x);
+        while(main){
+            if(main->dados->periodo == x){
+                printf("\nMateria:\t%s", main->dados->nome);
                 if(!i){
-                    string change(ant->dados->nome);
-                    toFind = change;
+                    retorno = (char *) malloc(sizeof(main->dados->nome));
+                    strcpy(retorno, aux->dados->nome);
                 }
                 i++;
             }
+            main = main->proximo;
+        }
+    main = aux;
+    return retorno;
+}
+
+int verificaNUM(no *main, int x){
+    no *aux = main;
+	if(main)
+        while(aux){
+            if(aux->dados->periodo == x)
+                return aux->dados->periodo;
             aux = aux->proximo;
         }
+    printf("\nNao encontrado\n");
+    return NULL;
+}
+
+void mPeriodo(no *main, int x){
+    char *found;
+	int op;
+	int c = x;
+	if(main && verificaNUM(main, x)){
         do{
-            printf("\n\nSelecione uma opcao:\n\n1.\tAnterior\n2.\tProximo\n3.\tDetalhar\n4.\tMenu\n\nOpcao:\t");
+            no *aux = main;
+            found = imprimirPeriodo(aux, x);
+            printf("\n\nOPCAO\n1\t->\tAnterior\n2\t->\tProximo\n3\t->\tDetalhar\n4\t->\tMenu\n\nSelecione uma opcao:\t");
             scanf("%d", &op);
-            no *ant2;
+            no *ant;
             switch(op){
                 case 1:
                     system("cls");
-                    while(ant && ant->dados->periodo == x){
-                        ant2 = ant;
-                        ant = ant->anterior;
-                    }
-                    if(ant2->anterior){
-                        imprimirPeriodo(main, ant2->anterior->dados->periodo);
-                    }
-                    else{
-                        while(ant2->proximo){
-                            ant2 = ant2->proximo;
+                    while(aux){
+                        if(aux->dados->periodo == x){
+                            ant = aux;
+                            break;
                         }
-                        imprimirPeriodo(main, ant2->dados->periodo);
+                        aux = aux->proximo;
+                    }
+                    if(ant->anterior)
+                        x = ant->anterior->dados->periodo;
+                    else{
+                        while(ant->proximo){
+                            ant = ant->proximo;
+                        }
+                        x = ant->dados->periodo;
                     }
                 break;
                 case 2:
                     system("cls");
-                    while(ant && ant->dados->periodo == x){
-                        ant2 = ant;
-                        ant = ant->proximo;
+                    while(aux && aux->dados->periodo == c){
+                        ant = aux;
+                        ant = aux->proximo;
                     }
-                    if(ant2->proximo){
-                        imprimirPeriodo(main, ant2->proximo->dados->periodo);
+                    if(ant->proximo){
+                        aux = main;
+                        c = ant->proximo->dados->periodo;
                     }
                     else{
-                        while(ant2->anterior){
-                            ant2 = ant2->anterior;
+                        while(ant->anterior){
+                            ant = ant->anterior;
                         }
-                        imprimirPeriodo(main, ant2->dados->periodo);
+                        aux = main;
+                        c = ant->dados->periodo;
                     }
                 break;
-                case 3:
-                    imprimirDisciplina(procurar(main, toFind));
-                break;
             }
-        }while(op < 1 || op > 4);
+        }while(op >= 1 &&  op <= 2);
+        if(op == 3){
+            string toFind(found);
+            cin.ignore(1,'\n');
+            mDisciplinas(procurar(main, toFind));
+        }
     }
 }
 
-void imprimir(no *main){
+void imprimirDisciplina(no *main){
     if(main){
-        printf("\nPeriodo:\t%i", main->dados->periodo);
         printf("\nDisciplina:\t%s", main->dados->nome);
+        printf("\nPeriodo:\t%i", main->dados->periodo);
         printf("\nProfessor:\t%s", main->dados->professor);
         printf("\nEmenta:\t%s\n", main->dados->ementa);
     }
