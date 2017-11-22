@@ -29,7 +29,7 @@ typedef struct no{
 int insere_lista_ordenada(no **main, int periodo, string disciplina, string professor, string ementa);
 char* remove_lista(no **main, string nome);
 void imprimir(no *main);
-char* imprimirPeriodo(no *main, int x);
+string imprimirPeriodo(no *main, int x);
 void mPeriodo(no *main, int x);
 int procurarDisciplina(no *main);
 void mDisciplinas(no *main);
@@ -78,7 +78,6 @@ int main(){
                 cin >> periodo;
                 cin.ignore(1,'\n');
                 mPeriodo(main, periodo);
-                system("pause");
             break;
             default:
                 printf("\nOpcao invalida");
@@ -188,9 +187,9 @@ int procurarDisciplina(no *main){
 void mDisciplinas(no *main){
     int op;
 	if(main){
-        imprimirDisciplina(main);
         no *aux = main;
         do{
+            imprimirDisciplina(aux);
             printf("\nOPCOES\n1\t->\tAnterior\n2\t->\tProximo\n3\t->\tMostrar disciplinas por periodo\nOutro numero\t->\tMenu\n\nSelecione uma opcao:\t");
             scanf("%d", &op);
             switch(op){
@@ -199,24 +198,17 @@ void mDisciplinas(no *main){
                     if(!(aux->anterior)){
                         while(aux->proximo)
                             aux = aux->proximo;
-                        imprimirDisciplina(aux);
                     }
-                    else{
+                    else
                         aux = aux->anterior;
-                        imprimirDisciplina(aux);
-                    }
                 break;
                 case 2:
                     system("cls");
-                    if(!(aux->proximo)){
+                    if(!(aux->proximo))
                         while(aux->anterior)
                             aux = aux->anterior;
-                        imprimirDisciplina(aux);
-                    }
-                    else{
+                    else
                         aux = aux->proximo;
-                        imprimirDisciplina(aux);
-                    }
                 break;
             }
         }while(op >= 1 && op <= 2);
@@ -225,44 +217,12 @@ void mDisciplinas(no *main){
 	}
 }
 
-char* imprimirPeriodo(no *main, int x){
-    int i = 0;
-    no *aux = main;
-    char *retorno;
-    if(main)
-        printf("\nPeriodo:\t%i\n", x);
-        while(main){
-            if(main->dados->periodo == x){
-                printf("\nMateria:\t%s", main->dados->nome);
-                if(!i){
-                    retorno = (char *) malloc(sizeof(main->dados->nome));
-                    strcpy(retorno, aux->dados->nome);
-                }
-                i++;
-            }
-            main = main->proximo;
-        }
-    main = aux;
-    return retorno;
-}
-
-int verificaNUM(no *main, int x){
-    no *aux = main;
-	if(main)
-        while(aux){
-            if(aux->dados->periodo == x)
-                return aux->dados->periodo;
-            aux = aux->proximo;
-        }
-    printf("\nNao encontrado\n");
-    return NULL;
-}
-
 void mPeriodo(no *main, int x){
-    char *found;
 	int op;
 	int c = x;
+	printf("int x: %i", x);
 	if(main && verificaNUM(main, x)){
+        string found;
         do{
             no *aux = main, *ant;
             found = imprimirPeriodo(aux, x);
@@ -306,11 +266,41 @@ void mPeriodo(no *main, int x){
             }
         }while(op >= 1 &&  op <= 2);
         if(op == 3){
-            string toFind(found);
             cin.ignore(1,'\n');
-            mDisciplinas(procurar(main, toFind));
+            mDisciplinas(procurar(main, found));
         }
     }
+}
+
+string imprimirPeriodo(no *main, int x){
+    int i = 0;
+    no *aux = main;
+    string retorno;
+    if(main)
+        printf("\nPeriodo:\t%i\n", x);
+        while(main){
+            if(main->dados->periodo == x){
+                printf("\nMateria:\t%s", main->dados->nome);
+                if(!i)
+                    retorno.assign(main->dados->nome);
+                i++;
+            }
+            main = main->proximo;
+        }
+    main = aux;
+    return retorno;
+}
+
+int verificaNUM(no *main, int x){
+    no *aux = main;
+	if(main)
+        while(aux){
+            if(aux->dados->periodo == x)
+                return aux->dados->periodo;
+            aux = aux->proximo;
+        }
+    printf("\nNao encontrado\n");
+    return NULL;
 }
 
 void imprimirDisciplina(no *main){
