@@ -39,8 +39,8 @@ int verificaNUM(no *main, int x);
 
 int main(){
     string nome, professor, ementa;
-    no *main = NULL, *temp;
-    int choice, periodo, c;
+    no *main = NULL;
+    int choice, periodo;
     while(choice != 5){
         printf("\n\tMENU\t\n\n");
         printf("1\t->\tPara inserir disciplina\n");
@@ -219,7 +219,6 @@ void mDisciplinas(no *main){
 
 void mPeriodo(no *main, int x){
 	int op;
-	int c = x;
 	if(main && verificaNUM(main, x)){
         string found;
         do{
