@@ -2,7 +2,7 @@
 *   @author Patrick Araújo: https://github.com/patrickaraujo
 *   Trabalho 4, Cadastro de Disciplinas em C++ para a aula de Algoritmos e Estrutura de Dados 1 usando Listas Ordenadas Duplamente Encadeadas
 *   Assignment Subject Register in C++ language from the subject Algorithms and Data Structures 1 using Doubly Ordered Linked Lists
-*   Finalizado em 21/11/2017 - Concluded in 11/21/2017
+*   Finalizado em 22/11/2017 - Concluded in 11/22/2017
 */
 
 #include <stdio.h>
@@ -220,7 +220,6 @@ void mDisciplinas(no *main){
 void mPeriodo(no *main, int x){
 	int op;
 	int c = x;
-	printf("int x: %i", x);
 	if(main && verificaNUM(main, x)){
         string found;
         do{
