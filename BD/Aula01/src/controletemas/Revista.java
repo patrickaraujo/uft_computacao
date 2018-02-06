@@ -118,7 +118,7 @@ public class Revista {
         List asList = Arrays.asList(tTemas);
         Set<String> mySet = new HashSet<String>(asList);
         for(String s: mySet){
-            writer.write("{tema:\""+s+"\",ocorrencias:\""+Collections.frequency(asList,s)+"\"}\n");
+            writer.write("{tema: \""+s+"\", ocorrencias: \""+Collections.frequency(asList,s)+"\"},\n");
         }        
         writer.close();
     }    
