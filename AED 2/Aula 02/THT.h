@@ -47,4 +47,40 @@ void insere (TBT **T, int x){
     }
 }
 
+int empty(TBT *main){
+    //  Retorna 1 se a árvore for vazia e 0 caso contrário
+    return main == NULL;
+}
+
+void print(TBT* main){
+    //  Essa função imprime os elementos de forma recursiva
+
+    printf("(");    //  notação para organizar na hora de mostrar os elementos
+    if(!empty(main)) {  //  se a árvore não for vazia...
+        //  Mostra os elementos em pré-ordem
+        printf("%d ", main->info);  //  mostra a raiz
+        print(main->esq);   //  mostra a sae (subárvore à esquerda)
+        print(main->dir);   //  mostra a sad (subárvore à direita)
+    }
+    printf(")");    //  notação para organizar na hora de mostrar os elementos
+}
+
+int busca(TBT* main, int num) {
+    if(empty(main))   //  Se a árvore estiver vazia, então retorna 0
+        return 0;
+    //  O operador lógico || interrompe a busca quando o elemento for encontrado
+    return main->info == num || busca(main->esq, num) || busca(main->dir, num);
+}
+
+int maior(int a, int b){
+    return ( (a>b) ? b : a);
+}
+
+int alturaR(TBT *main){
+    if((main == NULL) || (main->esq == NULL && main->dir == NULL))
+        return NULL;
+    else
+        return ( 1 + maior( altura(main->esq), altura(main->dir) ) );
+}
+
 #endif // TBT_H_INCLUDED
