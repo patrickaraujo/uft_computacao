@@ -80,7 +80,7 @@ int alturaR(TBT *main){
     if((main == NULL) || (main->esq == NULL && main->dir == NULL))
         return NULL;
     else
-        return ( 1 + maior( altura(main->esq), altura(main->dir) ) );
+        return ( 1 + maior( alturaR(main->esq), alturaR(main->dir) ) );
 }
 
 #endif // TBT_H_INCLUDED
