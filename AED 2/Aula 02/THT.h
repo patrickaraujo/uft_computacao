@@ -73,14 +73,35 @@ int busca(TBT* main, int num) {
 }
 
 int maior(int a, int b){
-    return ( (a>b) ? b : a);
+    return ( (a>b) ? a : b);
 }
 
 int alturaR(TBT *main){
-    if((main == NULL) || (main->esq == NULL && main->dir == NULL))
+    if((main == NULL) || (!(main->esq) && (!(main->dir))))
         return NULL;
     else
         return ( 1 + maior( alturaR(main->esq), alturaR(main->dir) ) );
+}
+
+int altura(TBT *main){  //  função altura iterativa
+    int altura1 = 0, altura2 = 0;
+    TBT *aux = main;
+    while((aux->esq) || (aux->dir)){
+        altura1++;
+        if(!(aux->esq))
+            aux = aux->dir;
+        else
+            aux = aux->esq;
+    }
+    aux = main;
+    while((aux->esq) || (aux->dir)){
+        altura2++;
+        if(!(aux->dir))
+            aux = aux->esq;
+        else
+            aux = aux->dir;
+    }
+    return (maior(altura1, altura2));
 }
 
 #endif // TBT_H_INCLUDED
