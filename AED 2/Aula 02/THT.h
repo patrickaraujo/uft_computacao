@@ -104,4 +104,69 @@ int altura(TBT *main){  //  função altura iterativa
     return (maior(altura1, altura2));
 }
 
+int contarFolhas(TBT *main){
+   if(!main)
+        return 0;
+   if((!(main->esq)) && (!(main->dir)))
+        return 1;
+   return contarFolhas(main->esq) + contarFolhas(main->dir);
+}
+
+void exibirEmOrdem(TBT *main){
+    if(main){
+        exibirEmOrdem(main->esq);
+        printf("\n%i", main->info);
+        exibirEmOrdem(main->dir);
+    }
+}
+
+void exibirPreOrdem(TBT *main){
+    if(main){
+        printf("\n%i", main->info);
+        exibirPreOrdem(main->esq);
+        exibirPreOrdem(main->dir);
+    }
+}
+
+void exibirPosOrdem(TBT *main){
+    if(main){
+        exibirPosOrdem(main->esq);
+        exibirPosOrdem(main->dir);
+        printf("\n%i", main->info);
+    }
+}
+
+int cheia(TBT *main){
+    // If empty tree
+    if (!(main))
+        return 1;
+
+    // If leaf node
+    if ((!(main->esq)) && (!(main->dir)))
+        return 1;
+
+    // If both left and right are not NULL, and left & right subtrees
+    // are full
+    if ((main->esq) && (main->dir))
+        return (cheia(main->esq) && cheia(main->dir));
+
+    // We reach here when none of the above if conditions work
+    return NULL;
+}
+
+void espelho(TBT *main) {
+    if(main){
+        TBT *temp;
+
+        /* do the subtrees */
+        espelho(main->esq);
+        espelho(main->dir);
+
+        /* swap the pointers in this node */
+        temp = main->esq;
+        main->esq  = main->dir;
+        main->dir = temp;
+    }
+}
+
 #endif // TBT_H_INCLUDED
