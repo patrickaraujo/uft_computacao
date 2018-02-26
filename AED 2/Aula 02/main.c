@@ -13,7 +13,7 @@ int main(){
     insereR(&main, 17);
     insereR(&main, 2);
     insereR(&main, 7);
-    insereR(&main, 9);
+    insereR(&main, 19);
     insereR(&main, 20);
     print(main);
     int p = 0;
@@ -35,8 +35,16 @@ int main(){
         printf("Sim!");
     else
         printf("Nao");
-    printf("\n\nEspelho:\t");
-    espelho(main);
+    int r = 19;
+
+    printf("\n\nRemovendo: %i\t", r);
+    remover(&main, r);
     print(main);
+
+
+    printf("\n\nEspelho:\t");
+    TBT *mirror = espelho(main);
+    print(mirror);
+
     return 0;
 }
