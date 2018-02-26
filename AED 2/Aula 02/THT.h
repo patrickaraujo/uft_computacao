@@ -72,7 +72,7 @@ int busca(TBT* main, int num) {
     return main->info == num || busca(main->esq, num) || busca(main->dir, num);
 }
 
-int maior(int a, int b){
+int bigger(int a, int b){
     return ( (a>b) ? a : b);
 }
 
@@ -80,7 +80,7 @@ int alturaR(TBT *main){
     if((main == NULL) || (!(main->esq) && (!(main->dir))))
         return NULL;
     else
-        return ( 1 + maior( alturaR(main->esq), alturaR(main->dir) ) );
+        return ( 1 + bigger( alturaR(main->esq), alturaR(main->dir) ) );
 }
 
 int altura(TBT *main){  //  função altura iterativa
@@ -101,7 +101,7 @@ int altura(TBT *main){  //  função altura iterativa
         else
             aux = aux->dir;
     }
-    return (maior(altura1, altura2));
+    return (bigger(altura1, altura2));
 }
 
 int contarFolhas(TBT *main){
@@ -154,19 +154,59 @@ int cheia(TBT *main){
     return NULL;
 }
 
-void espelho(TBT *main) {
+TBT* espelho(TBT *main) {
     if(main){
-        TBT *temp;
+        TBT *retorno = (TBT*) malloc(sizeof(TBT));
 
-        /* do the subtrees */
-        espelho(main->esq);
-        espelho(main->dir);
-
-        /* swap the pointers in this node */
-        temp = main->esq;
-        main->esq  = main->dir;
-        main->dir = temp;
+        retorno->info = main->info;
+        retorno->esq = espelho(main->dir);
+        retorno->dir = espelho (main->esq);
+        return retorno;
     }
+    return NULL;
+}
+
+TBT *maior(TBT **main){
+    if((*main)->dir)
+        return maior(&((*main)->dir));
+    else{
+        TBT *pAux = *main;
+        if((*main)->esq)
+            (*main) = (*main)->esq;
+        else
+            (*main) = NULL;
+        return (pAux);
+    }
+}
+
+void remover(TBT **main, int x){
+    if(*main)
+        if(x < (*main)->info)
+            remover(&((*main)->esq), x);
+        else if(x > (*main)->info)
+            remover(&((*main)->dir), x);
+        else{
+            TBT *pAux = (*main);
+            if( (!(pAux->esq)) && (!(pAux->dir)) )
+                pAux = NULL;    //  free(pAux);
+            else
+                if(!(pAux->esq)){
+                    (*main) = pAux->dir;
+                    pAux = NULL;    //  free(pAux);
+                }
+                else if(!(pAux->dir)){
+                    (*main) = pAux->esq;
+                    pAux = NULL;    //  free(pAux);
+                }
+                else{
+                    pAux = maior(&((*main)->esq));
+                    pAux->esq = (*main)->esq;
+                    pAux->dir = (*main)->dir;
+                    (*main)->dir = (*main)->esq = NULL;
+                    (*main) = NULL; //  free(*main);
+                    (*main) = pAux;
+                }
+        }
 }
 
 #endif // TBT_H_INCLUDED
