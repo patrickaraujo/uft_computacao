@@ -166,9 +166,9 @@ TBT* espelho(TBT *main) {
     return NULL;
 }
 
-TBT *maior(TBT **main){
+TBT *maiorD(TBT **main){
     if((*main)->dir)
-        return maior(&((*main)->dir));
+        return maiorD(&((*main)->dir));
     else{
         TBT *pAux = *main;
         if((*main)->esq)
@@ -179,34 +179,109 @@ TBT *maior(TBT **main){
     }
 }
 
-void remover(TBT **main, int x){
+TBT *remove_atual(TBT *main) {
+    TBT *no1, *no2;
+    if(!(main->esq)){
+        no2 = main->dir;
+        free(main);
+        return no2;
+    }
+    no1 = main;
+    no2 = main->esq;
+    while(no2->dir){
+        no1 = no2;
+        no2 = no2->dir;
+    }
+    if(no1 != main){
+        no1->dir = no2->esq;
+        no2->esq = main->esq;
+    }
+    no2->dir = main->dir;
+    free(main);
+    return no2;
+}
+
+int remover(TBT **main, int valor){
+    if(*main){
+        TBT *ant = NULL;
+        TBT *atual = *main;
+        while(atual){
+            if(valor == atual->info){
+                if(atual == *main)
+                    *main = remove_atual(atual);
+                else{
+                    if(ant->dir == atual)
+                        ant->dir = remove_atual(atual);
+                    else
+                        ant->esq = remove_atual(atual);
+                }
+                return 1;
+            }
+            ant = atual;
+            if(valor > atual->info)
+                atual = atual->dir;
+            else
+                atual = atual->esq;
+        }
+    }
+    return 0;
+}
+
+void removerR(TBT **main, int x){
     if(*main)
         if(x < (*main)->info)
-            remover(&((*main)->esq), x);
+            removerR(&((*main)->esq), x);
         else if(x > (*main)->info)
-            remover(&((*main)->dir), x);
+            removerR(&((*main)->dir), x);
         else{
             TBT *pAux = (*main);
-            if( (!(pAux->esq)) && (!(pAux->dir)) )
+            if( (!(pAux->esq)) && (!(pAux->dir)) )  //  se nao houver filhos...
                 pAux = NULL;    //  free(pAux);
             else
                 if(!(pAux->esq)){
-                    (*main) = pAux->dir;
+                    (*main) = pAux->dir;    //  so tem filho da esquerda
                     pAux = NULL;    //  free(pAux);
                 }
-                else if(!(pAux->dir)){
+                else if(!(pAux->dir)){  //  so tem o filho da direita
                     (*main) = pAux->esq;
                     pAux = NULL;    //  free(pAux);
                 }
-                else{
-                    pAux = maior(&((*main)->esq));
+                else{   //  Escolhi fazer o maior filho direito da subarvore esquerda.
+                    pAux = maiorD(&((*main)->esq)); //  pAux = menorE(&(*main)->dir);
                     pAux->esq = (*main)->esq;
                     pAux->dir = (*main)->dir;
                     (*main)->dir = (*main)->esq = NULL;
                     (*main) = NULL; //  free(*main);
                     (*main) = pAux;
+                    pAux = NULL;
                 }
         }
+}
+
+TBT *maiorD(TBT **main){    //  maiorDireita
+    if((*main)->dir)
+        return maiorD(&((*main)->dir));
+    else{
+        TBT *pAux = *main;
+        if((*main)->esq)
+            (*main) = (*main)->esq;
+        else
+            (*main) = NULL;
+        return (pAux);
+    }
+}
+
+TBT *menorE(TBT **main){    //  menorEsquerda
+    if((*main)->esquerda)
+       return menorE(&(*main)->esq);
+    else{
+       TBT *aux = *main;
+       if((*main)->dir) //  se nao houver essa verificacao, esse nó vai perder todos os seus filhos da direita!
+          *main = (*main)->dir;
+       else
+          *main = NULL;
+       return aux;
+    }
 }
 
 #endif // TBT_H_INCLUDED
