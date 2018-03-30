@@ -1,11 +1,12 @@
 /**
 *   @author Patrick Araújo: https://github.com/patrickaraujo
-*   https://gist.github.com/marcoscastro/3e4abc13dec4eddb7894
+*   Árvore Binária de Busca
 */
 
 #include <stdio.h>
 #include <stdlib.h>
 #include "TBT.h"
+#include "TBT.c"
 
 int main(){
     TBT *main = NULL;
@@ -15,9 +16,9 @@ int main(){
     insereR(&main, 7);
     insereR(&main, 19);
     insereR(&main, 20);
-    print(main);
+    imprimir(main);
     int p = 0;
-    printf("\nAltura: %i\n", altura(main));
+    printf("\nAltura: %i\n", alturaI(main));
     printf("\nContar folhas: %i\n", contarFolhas(main));
     if(busca(main, p))
         printf("%i esta na arvore", p);
@@ -38,13 +39,12 @@ int main(){
     int r = 19;
 
     printf("\n\nRemovendo: %i\t", r);
-    remover(&main, r);
-    print(main);
-
+    removerI(&main, r);
+    imprimir(main);
 
     printf("\n\nEspelho:\t");
     TBT *mirror = espelho(main);
-    print(mirror);
+    imprimir(mirror);
 
     return 0;
 }
