@@ -694,6 +694,21 @@
        clipPathUnits="userSpaceOnUse"><path
          style="clip-rule:evenodd"
          id="path1970"
+         d="M 2.455e-5,0 H 1647.5 V 595 H 2.455e-5 Z" /></clipPath><clipPath
+       id="clipPath1984"
+       clipPathUnits="userSpaceOnUse"><path
+         style="clip-rule:evenodd"
+         id="path1982"
+         d="M 2.455e-5,0 H 1647.5 V 595 H 2.455e-5 Z" /></clipPath><clipPath
+       id="clipPath1996"
+       clipPathUnits="userSpaceOnUse"><path
+         style="clip-rule:evenodd"
+         id="path1994"
+         d="M 2.455e-5,0 H 1647.5 V 595 H 2.455e-5 Z" /></clipPath><clipPath
+       id="clipPath2004"
+       clipPathUnits="userSpaceOnUse"><path
+         style="clip-rule:evenodd"
+         id="path2002"
          d="M 2.455e-5,0 H 1647.5 V 595 H 2.455e-5 Z" /></clipPath></defs><g
      transform="matrix(1.3333333,0,0,-1.3333333,0,793.33333)"
      id="g10"><g
@@ -2267,7 +2282,7 @@
        d="m 446.5,87.95 7.04,-3.52 -7.04,-3.52 z" /><path
        id="path1730"
        style="fill:none;stroke:#4672c4;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-       d="m 396.85,159.6 h 49.61 v -35.47 h 146.45 c 0,1.3 1.06,2.36 2.37,2.36 1.3,0 2.36,-1.06 2.36,-2.36 h 15.35 V 109.5 h 7.79" /><path
+       d="m 396.85,159.6 h 49.61 v -31.93 h 146.45 c 0,1.3 1.06,2.36 2.37,2.36 1.3,0 2.36,-1.06 2.36,-2.36 h 8.27 V 109.5 h 14.87" /><path
        id="path1732"
        style="fill:#4672c4;fill-opacity:1;fill-rule:evenodd;stroke:none"
        d="m 619.9,113.02 7.04,-3.52 -7.04,-3.52 z" /><path
@@ -2435,11 +2450,11 @@
          clip-path="url(#clipPath1852)"
          id="g1848"><text
            id="text1856"
-           style="font-variant:normal;font-weight:bold;font-size:18.02499962px;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#4672c4;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(-4.4e-8,1,1,4.4e-8,99.2,375.58)"><tspan
+           style="font-variant:normal;font-weight:normal;font-size:18.02499962px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#4672c4;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(-4.4e-8,1,1,4.4e-8,99.2,402.48)"><tspan
              id="tspan1854"
              y="0"
-             x="0 12.022675 24.045349 37.005325 43.007648 48.0186 58.040501 68.008324 78.030228">PPC: 2012</tspan></text>
+             x="0 12.022675 24.045349 37.059399 42.070351 47.081299 57.103199 67.125099 77.147003">PPC: 2012</tspan></text>
 </g></g><path
        id="path1858"
        style="fill:#a8d08d;fill-opacity:1;fill-rule:evenodd;stroke:none"
@@ -2552,8 +2567,31 @@
          id="g1968"><text
            id="text1976"
            style="font-variant:normal;font-weight:bold;font-size:18px;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#4672c4;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(-4.4e-8,1,1,4.4e-8,100.47,118.4)"><tspan
+           transform="matrix(-4.4e-8,1,1,4.4e-8,100.47,105.65)"><tspan
              id="tspan1974"
              y="0"
-             x="0 12.996 18 28.007999 39.006001 49.014 54.018002 64.026001 69.029999 80.028 90.036003 95.040001 108.036 119.034 135.036 146.034 157.032 163.026 173.034 183.04201 193.05">Ciência da Computação</tspan></text>
+             x="0 12.996 18 28.007999 39.006001 49.014 54.018002 64.026001 69.029999 80.028 90.036003 95.040001 108.036 119.034 135.036 146.034 157.032 163.026 173.034 183.04201 193.05 204.048">Ciência da Computação </tspan></text>
+</g></g><g
+       id="g1978"><g
+         clip-path="url(#clipPath1984)"
+         id="g1980"><text
+           id="text1988"
+           style="font-variant:normal;font-weight:bold;font-size:18px;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#4672c4;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(-4.4e-8,1,1,4.4e-8,100.47,314.88)"><tspan
+             id="tspan1986"
+             y="0"
+             x="0">-</tspan></text>
+</g></g><g
+       id="g1990"><g
+         clip-path="url(#clipPath1996)"
+         id="g1992" /></g><g
+       id="g1998"><g
+         clip-path="url(#clipPath2004)"
+         id="g2000"><text
+           id="text2008"
+           style="font-variant:normal;font-weight:bold;font-size:18px;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#4672c4;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(-4.4e-8,1,1,4.4e-8,100.47,325.88)"><tspan
+             id="tspan2006"
+             y="0"
+             x="0 12.996 23.993999">UFT</tspan></text>
 </g></g></g></svg>
