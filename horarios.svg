@@ -1,619 +1,162 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   viewBox="0 0 1122.5601 793.76001"
-   height="793.76001"
-   width="1122.5601"
-   xml:space="preserve"
-   id="svg2"
-   version="1.1"><metadata
-     id="metadata8"><rdf:RDF><cc:Work
-         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
-     id="defs6"><clipPath
-       id="clipPath18"
-       clipPathUnits="userSpaceOnUse"><path
-         style="clip-rule:evenodd"
-         id="path16"
-         d="M 18.96,278.45 H 797.64 V 540.36 H 18.96 Z" /></clipPath><clipPath
-       id="clipPath28"
-       clipPathUnits="userSpaceOnUse"><path
-         style="clip-rule:evenodd"
-         id="path26"
-         d="M 18.96,278.45 H 797.64 V 540.36 H 18.96 Z" /></clipPath><clipPath
-       id="clipPath42"
-       clipPathUnits="userSpaceOnUse"><path
-         style="clip-rule:evenodd"
-         id="path40"
-         d="M 18.96,278.45 H 797.64 V 540.36 H 18.96 Z" /></clipPath><clipPath
-       id="clipPath52"
-       clipPathUnits="userSpaceOnUse"><path
-         style="clip-rule:evenodd"
-         id="path50"
-         d="M 18.96,278.45 H 797.64 V 540.36 H 18.96 Z" /></clipPath><clipPath
-       id="clipPath64"
-       clipPathUnits="userSpaceOnUse"><path
-         style="clip-rule:evenodd"
-         id="path62"
-         d="M 18.96,278.45 H 797.64 V 540.36 H 18.96 Z" /></clipPath><clipPath
-       id="clipPath74"
-       clipPathUnits="userSpaceOnUse"><path
-         style="clip-rule:evenodd"
-         id="path72"
-         d="M 18.96,278.45 H 797.64 V 540.36 H 18.96 Z" /></clipPath><clipPath
-       id="clipPath86"
-       clipPathUnits="userSpaceOnUse"><path
-         style="clip-rule:evenodd"
-         id="path84"
-         d="M 18.96,278.45 H 797.64 V 540.36 H 18.96 Z" /></clipPath><clipPath
-       id="clipPath96"
-       clipPathUnits="userSpaceOnUse"><path
-         style="clip-rule:evenodd"
-         id="path94"
-         d="M 18.96,278.45 H 797.64 V 540.36 H 18.96 Z" /></clipPath><clipPath
-       id="clipPath108"
-       clipPathUnits="userSpaceOnUse"><path
-         style="clip-rule:evenodd"
-         id="path106"
-         d="M 18.96,278.45 H 797.64 V 540.36 H 18.96 Z" /></clipPath><clipPath
-       id="clipPath118"
-       clipPathUnits="userSpaceOnUse"><path
-         style="clip-rule:evenodd"
-         id="path116"
-         d="M 18.96,278.45 H 797.64 V 540.36 H 18.96 Z" /></clipPath><clipPath
-       id="clipPath130"
-       clipPathUnits="userSpaceOnUse"><path
-         style="clip-rule:evenodd"
-         id="path128"
-         d="M 18.96,278.45 H 797.64 V 540.36 H 18.96 Z" /></clipPath><clipPath
-       id="clipPath140"
-       clipPathUnits="userSpaceOnUse"><path
-         style="clip-rule:evenodd"
-         id="path138"
-         d="M 18.96,278.45 H 797.64 V 540.36 H 18.96 Z" /></clipPath><clipPath
-       id="clipPath152"
-       clipPathUnits="userSpaceOnUse"><path
-         style="clip-rule:evenodd"
-         id="path150"
-         d="M 18.96,278.45 H 797.64 V 540.36 H 18.96 Z" /></clipPath><clipPath
-       id="clipPath348"
-       clipPathUnits="userSpaceOnUse"><path
-         style="clip-rule:evenodd"
-         id="path346"
-         d="m 18.96,315.07 h 778.2 v 11.88 H 18.96 Z" /></clipPath><clipPath
-       id="clipPath360"
-       clipPathUnits="userSpaceOnUse"><path
-         style="clip-rule:evenodd"
-         id="path358"
-         d="m 18.96,505.18 h 778.2 v 11.904 H 18.96 Z" /></clipPath><clipPath
-       id="clipPath372"
-       clipPathUnits="userSpaceOnUse"><path
-         style="clip-rule:evenodd"
-         id="path370"
-         d="m 18.96,528.96 h 778.2 v 11.4 H 18.96 Z" /></clipPath><clipPath
-       id="clipPath384"
-       clipPathUnits="userSpaceOnUse"><path
-         style="clip-rule:evenodd"
-         id="path382"
-         d="m 18.96,457.66 h 778.2 v 11.88 H 18.96 Z" /></clipPath><clipPath
-       id="clipPath396"
-       clipPathUnits="userSpaceOnUse"><path
-         style="clip-rule:evenodd"
-         id="path394"
-         d="m 18.96,410.14 h 778.2 v 11.88 H 18.96 Z" /></clipPath><clipPath
-       id="clipPath408"
-       clipPathUnits="userSpaceOnUse"><path
-         style="clip-rule:evenodd"
-         id="path406"
-         d="m 18.96,362.59 h 778.2 v 11.88 H 18.96 Z" /></clipPath><clipPath
-       id="clipPath420"
-       clipPathUnits="userSpaceOnUse"><path
-         style="clip-rule:evenodd"
-         id="path418"
-         d="M 17.04,276.41 H 799.68 V 542.28 H 17.04 Z" /></clipPath></defs><g
-     transform="matrix(1.3333333,0,0,-1.3333333,0,793.76)"
-     id="g10"><g
-       id="g12"><g
-         clip-path="url(#clipPath18)"
-         id="g14"><path
-           id="path20"
-           style="fill:#ffc000;fill-opacity:1;fill-rule:evenodd;stroke:none"
-           d="m 18.48,528.84 h 778.8 v 12 H 18.48 Z" /></g></g><g
-       id="g22"><g
-         clip-path="url(#clipPath28)"
-         id="g24"><path
-           id="path30"
-           style="fill:#7030a0;fill-opacity:1;fill-rule:evenodd;stroke:none"
-           d="M 18.48,516.96 H 63.6 v 12 H 18.48 Z" /></g></g><path
-       id="path32"
-       style="fill:#0070c0;fill-opacity:1;fill-rule:evenodd;stroke:none"
-       d="m 63.48,516.96 h 99.384 v 12 H 63.48 Z" /><path
-       id="path34"
-       style="fill:#4472c4;fill-opacity:1;fill-rule:evenodd;stroke:none"
-       d="m 162.74,516.96 h 634.54 v 12 H 162.74 Z" /><g
-       id="g36"><g
-         clip-path="url(#clipPath42)"
-         id="g38"><path
-           id="path44"
-           style="fill:#00b050;fill-opacity:1;fill-rule:evenodd;stroke:none"
-           d="m 18.48,505.06 h 778.8 v 12.024 H 18.48 Z" /></g></g><g
-       id="g46"><g
-         clip-path="url(#clipPath52)"
-         id="g48"><path
-           id="path54"
-           style="fill:#7030a0;fill-opacity:1;fill-rule:evenodd;stroke:none"
-           d="M 18.48,469.42 H 63.6 v 35.76 H 18.48 Z" /></g></g><path
-       id="path56"
-       style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:none"
-       d="m 63.48,469.42 h 733.8 v 35.76 H 63.48 Z" /><g
-       id="g58"><g
-         clip-path="url(#clipPath64)"
-         id="g60"><path
-           id="path66"
-           style="fill:#00b050;fill-opacity:1;fill-rule:evenodd;stroke:none"
-           d="m 18.48,457.54 h 778.8 v 12 H 18.48 Z" /></g></g><g
-       id="g68"><g
-         clip-path="url(#clipPath74)"
-         id="g70"><path
-           id="path76"
-           style="fill:#7030a0;fill-opacity:1;fill-rule:evenodd;stroke:none"
-           d="M 18.48,421.9 H 63.6 v 35.76 H 18.48 Z" /></g></g><path
-       id="path78"
-       style="fill:#806000;fill-opacity:1;fill-rule:evenodd;stroke:none"
-       d="m 63.48,421.9 h 733.8 v 35.76 H 63.48 Z" /><g
-       id="g80"><g
-         clip-path="url(#clipPath86)"
-         id="g82"><path
-           id="path88"
-           style="fill:#00b050;fill-opacity:1;fill-rule:evenodd;stroke:none"
-           d="m 18.48,410.02 h 778.8 v 12 H 18.48 Z" /></g></g><g
-       id="g90"><g
-         clip-path="url(#clipPath96)"
-         id="g92"><path
-           id="path98"
-           style="fill:#7030a0;fill-opacity:1;fill-rule:evenodd;stroke:none"
-           d="M 18.48,374.35 H 63.6 v 35.784 H 18.48 Z" /></g></g><path
-       id="path100"
-       style="fill:#ffff00;fill-opacity:1;fill-rule:evenodd;stroke:none"
-       d="m 63.48,374.35 h 733.8 v 35.784 H 63.48 Z" /><g
-       id="g102"><g
-         clip-path="url(#clipPath108)"
-         id="g104"><path
-           id="path110"
-           style="fill:#00b050;fill-opacity:1;fill-rule:evenodd;stroke:none"
-           d="m 18.48,362.47 h 778.8 v 12 H 18.48 Z" /></g></g><g
-       id="g112"><g
-         clip-path="url(#clipPath118)"
-         id="g114"><path
-           id="path120"
-           style="fill:#7030a0;fill-opacity:1;fill-rule:evenodd;stroke:none"
-           d="M 18.48,326.83 H 63.6 v 35.76 H 18.48 Z" /></g></g><path
-       id="path122"
-       style="fill:#0070c0;fill-opacity:1;fill-rule:evenodd;stroke:none"
-       d="m 63.48,326.83 h 733.8 v 35.76 H 63.48 Z" /><g
-       id="g124"><g
-         clip-path="url(#clipPath130)"
-         id="g126"><path
-           id="path132"
-           style="fill:#00b050;fill-opacity:1;fill-rule:evenodd;stroke:none"
-           d="m 18.48,314.95 h 778.8 v 12 H 18.48 Z" /></g></g><g
-       id="g134"><g
-         clip-path="url(#clipPath140)"
-         id="g136"><path
-           id="path142"
-           style="fill:#7030a0;fill-opacity:1;fill-rule:evenodd;stroke:none"
-           d="M 18.48,278.81 H 63.6 v 36.264 H 18.48 Z" /></g></g><path
-       id="path144"
-       style="fill:#a9d08e;fill-opacity:1;fill-rule:evenodd;stroke:none"
-       d="m 63.48,278.81 h 733.8 v 36.264 H 63.48 Z" /><g
-       id="g146"><g
-         clip-path="url(#clipPath152)"
-         id="g148"><text
-           id="text156"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,24.36,520.2)"><tspan
-             id="tspan154"
-             y="0"
-             x="0 6.4980001 11.502 14.499 19.548 22.545 24.579 29.610001">Horários</tspan></text>
-<text
-           id="text160"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,95.424,520.2)"><tspan
-             id="tspan158"
-             y="0"
-             x="0 6.0029998 11.034 16.065001 21.096001 26.127001 31.158001">Segunda</tspan></text>
-<text
-           id="text164"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,213.86,520.2)"><tspan
-             id="tspan162"
-             y="0"
-             x="0 5.4000001 10.431 13.428 17.982">Terça</tspan></text>
-<text
-           id="text168"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,340.73,520.2)"><tspan
-             id="tspan166"
-             y="0"
-             x="0 6.9569998 11.988 17.018999 20.016001 22.518">Quarta</tspan></text>
-<text
-           id="text172"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,527.83,520.2)"><tspan
-             id="tspan170"
-             y="0"
-             x="0 6.9569998 11.988 14.022 19.052999 21.555">Quinta</tspan></text>
-<text
-           id="text176"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,700.66,520.2)"><tspan
-             id="tspan174"
-             y="0"
-             x="0 6.0029998 11.034 15.354 17.856001">Sexta</tspan></text>
-<text
-           id="text180"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,764.76,520.2)"><tspan
-             id="tspan178"
-             y="0"
-             x="0 6.0029998 11.034 16.065001 21.096001 26.127001">Sábado</tspan></text>
-<text
-           id="text184"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,23.52,496.42)"><tspan
-             id="tspan182"
-             y="0"
-             x="0 5.0310001 7.533 10.53 13.059 18.09 23.121 25.622999 30.672001">8 - 11:40</tspan></text>
-<text
-           id="text188"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,291.29,496.42)"><tspan
-             id="tspan186"
-             y="0"
-             x="0 6.0029998 9 14.031 16.065001 21.096001 23.598 28.646999 31.149 36.198002 38.700001 44.702999 49.751999 54.783001 56.817001 58.851002 63.404999 68.435997 70.938004 75.987 81.017998 83.519997 89.523003 91.566002 96.597 101.628 104.625 106.659 109.161 116.73 121.761">Projeto e Análise de Algoritmos</tspan></text>
-<text
-           id="text192"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,424.87,496.42)"><tspan
-             id="tspan190"
-             y="0"
-             x="0 5.4000001 10.431 15.462 18.459 20.493 25.524 28.025999 33.075001 38.105999 40.608002 47.105999 52.137001 59.688 64.719002 69.75 72.251999 77.301003 81.855003 86.886002 91.917 94.418999 96.947998 101.979 104.013 109.044 114.075 119.106 124.137 129.168 134.19901 139.23 143.784 146.286 151.812 156.843 159.84 167.39101 172.422 174.45599 179.00999 181.51199 186.561 189.063 195.06599 200.11501 202.617 207.666 215.217 220.248 222.75 227.799">Teoria da Computação, Linguagens Formais e Autômatos</tspan></text>
-<text
-           id="text196"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,665.5,496.42)"><tspan
-             id="tspan194"
-             y="0"
-             x="0 6.0029998 8.0279999 12.582 15.084 20.132999 27.684 32.715 37.269001 39.771 46.772999 51.777 56.817001 59.813999 64.845001 69.399002 71.432999 76.463997 81.495003 86.526001 88.559998">Sistemas Operacionais</tspan></text>
-<text
-           id="text200"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,21,484.54)"><tspan
-             id="tspan198"
-             y="0"
-             x="0 5.0310001 10.062 12.564 15.561 18.09 23.121 28.152 30.653999 35.702999">14 - 17:40</tspan></text>
-<text
-           id="text204"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,183.86,484.54)"><tspan
-             id="tspan202"
-             y="0"
-             x="0 6.4980001 11.502 19.070999 24.101999 29.132999 31.635 36.683998 41.237999 46.269001 51.299999 53.801998 60.804001 63.800999 68.805 71.334 73.367996 77.921997">Computação Gráfica</tspan></text>
-<text
-           id="text208"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,293.57,484.54)"><tspan
-             id="tspan206"
-             y="0"
-             x="0 2.5020001 7.5510001 10.053 15.102 18.099001 20.601 25.65 30.204 35.235001 37.737 44.235001 49.265999 56.817001 61.848 69.399002 71.901001 78.399002 83.43 90.981003 96.012001 101.043 103.545 108.594 113.625 118.656">Interface Homem Computador</tspan></text>
-<text
-           id="text212"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,21,472.66)"><tspan
-             id="tspan210"
-             y="0"
-             x="0 5.0310001 10.062 12.564 15.561 18.09 23.121 28.152 30.653999 35.702999">19 - 22:40</tspan></text>
-<text
-           id="text216"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,292.73,472.66)"><tspan
-             id="tspan214"
-             y="0"
-             x="0 6.4980001 11.502 13.554 18.108 23.139 25.173 30.204 32.706001 39.203999 41.237999 43.740002 48.789001 51.785999 56.817001 61.848 66.402 68.435997 73.467003 75.500999 78.002998 83.052002 85.554001 88.083 93.113998 95.615997 100.665 105.696 108.693 113.724 115.758 118.26">Cálculo Diferencial e Integral 1</tspan></text>
-<text
-           id="text220"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,23.52,448.9)"><tspan
-             id="tspan218"
-             y="0"
-             x="0 5.0310001 7.533 10.53 13.059 18.09 23.121 25.622999 30.672001">8 - 11:40</tspan></text>
-<text
-           id="text224"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,99.984,448.9)"><tspan
-             id="tspan222"
-             y="0"
-             x="0 6.0029998 8.0279999 13.059 15.561 17.613001 22.049999">Eletiva</tspan></text>
-<text
-           id="text228"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,298.01,448.9)"><tspan
-             id="tspan226"
-             y="0"
-             x="0 6.0029998 9 14.031 18.584999 23.615999 28.17 32.723999 37.755001 45.306 50.337002 55.368 57.869999 62.918999 65.420998 70.470001 75.500999 78.002998 80.531998 88.083 93.113998 98.144997 103.176 108.207">Processamento de Imagens</tspan></text>
-<text
-           id="text232"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,477.55,448.9)"><tspan
-             id="tspan230"
-             y="0"
-             x="0 5.4990001 8.0279999 12.582 14.616 19.17 24.201 26.702999 32.120998 37.152 42.182999 45.18 47.214001 51.768002 56.799 59.300999 64.349998 66.851997 72.855003 77.193001 82.223999 87.254997 90.251999 92.286003 99.836998 104.868 109.899 112.401 117.45 119.484 121.986">Física Teórica e Experimental 1</tspan></text>
-<text
-           id="text236"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,21,437.02)"><tspan
-             id="tspan234"
-             y="0"
-             x="0 5.0310001 10.062 12.564 15.561 18.09 23.121 28.152 30.653999 35.702999">14 - 17:40</tspan></text>
-<text
-           id="text240"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,85.584,437.02)"><tspan
-             id="tspan238"
-             y="0"
-             x="0 6.4980001 11.502 19.070999 24.101999 26.136 28.17 33.201 38.231998 43.263 46.259998 51.291">Compiladores</tspan></text>
-<text
-           id="text244"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,208.58,437.02)"><tspan
-             id="tspan242"
-             y="0"
-             x="0 6.9569998 11.988 14.49 19.539 22.041 24.093 28.530001">Optativa</tspan></text>
-<text
-           id="text248"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,667.78,437.02)"><tspan
-             id="tspan246"
-             y="0"
-             x="0 6.0029998 11.034 15.588 20.618999 25.65 27.684 32.237999 37.269001 39.771 46.772999 51.777 56.817001 59.813999 64.845001 69.399002 71.432999 76.463997 81.495003 86.526001">Pesquisa Operacional</tspan></text>
-<text
-           id="text252"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,21,425.14)"><tspan
-             id="tspan250"
-             y="0"
-             x="0 5.0310001 10.062 12.564 15.561 18.09 23.121 28.152 30.653999 35.702999">19 - 22:40</tspan></text>
-<text
-           id="text256"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,23.52,401.38)"><tspan
-             id="tspan254"
-             y="0"
-             x="0 5.0310001 7.533 10.53 13.059 18.09 23.121 25.622999 30.672001">8 - 11:40</tspan></text>
-<text
-           id="text260"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,190.58,401.38)"><tspan
-             id="tspan258"
-             y="0"
-             x="0 6.0029998 8.0279999 12.582 15.084 20.132999 27.684 32.715 37.269001 39.771 46.269001 48.303001 53.334 55.368 57.869999 62.918999 64.953003">Sistemas Digitais</tspan></text>
-<text
-           id="text264"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,314.93,401.38)"><tspan
-             id="tspan262"
-             y="0"
-             x="0 6.0029998 13.554 18.584999 21.582001 26.613001 31.643999 36.674999 41.706001 46.737 51.768002 56.799 59.796001 61.830002 66.384003 73.934998">Empreendedorismo</tspan></text>
-<text
-           id="text268"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,501.07,401.38)"><tspan
-             id="tspan266"
-             y="0"
-             x="0 2.5020001 7.5510001 10.053 15.102 17.136 19.17 24.201 29.232 34.263 38.817001 40.851002 45.882 48.383999 54.387001 57.383999 59.912998 61.946999 64.448997 66.500999 71.055 73.088997 78.120003">Inteligência Artificial</tspan></text>
-<text
-           id="text272"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,21,389.47)"><tspan
-             id="tspan270"
-             y="0"
-             x="0 5.0310001 10.062 12.564 15.561 18.09 23.121 28.152 30.653999 35.702999">14 - 17:40</tspan></text>
-<text
-           id="text276"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,477.55,389.47)"><tspan
-             id="tspan274"
-             y="0"
-             x="0 5.4990001 8.0279999 12.582 14.616 19.17 24.201 26.702999 32.120998 37.152 42.182999 45.18 47.214001 51.768002 56.799 59.300999 64.349998 66.851997 72.855003 77.193001 82.223999 87.254997 90.251999 92.286003 99.836998 104.868 109.899 112.401 117.45 119.484 121.986">Física Teórica e Experimental 2</tspan></text>
-<text
-           id="text280"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,664.06,389.47)"><tspan
-             id="tspan278"
-             y="0"
-             x="0 6.4980001 11.502 16.551001 21.582001 24.084 29.132999 34.164001 36.666 43.164001 48.195 55.745998 60.777 65.807999 68.309998 73.359001 78.389999 83.420998 86.417999 91.448997">Rede de Computadores</tspan></text>
-<text
-           id="text284"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,21,377.59)"><tspan
-             id="tspan282"
-             y="0"
-             x="0 5.0310001 10.062 12.564 15.561 18.09 23.121 28.152 30.653999 35.702999">19 - 22:40</tspan></text>
-<text
-           id="text288"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,23.52,353.83)"><tspan
-             id="tspan286"
-             y="0"
-             x="0 5.0310001 7.533 10.53 13.059 18.09 23.121 25.622999 30.672001">8 - 11:40</tspan></text>
-<text
-           id="text292"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,66,353.83)"><tspan
-             id="tspan290"
-             y="0"
-             x="0 6.0029998 10.548 13.05 18.099001 23.129999 25.164 30.195 32.696999 38.700001 43.749001 48.779999 53.811001 56.807999 61.254002 63.287998 67.842003 69.875999 74.906998 79.938004 84.969002 90">Estágio Supervisionado</tspan></text>
-<text
-           id="text296"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,292.73,353.83)"><tspan
-             id="tspan294"
-             y="0"
-             x="0 6.4980001 11.502 13.554 18.108 23.139 25.173 30.204 32.706001 39.203999 41.237999 43.740002 48.789001 51.785999 56.817001 61.848 66.402 68.435997 73.467003 75.500999 78.002998 83.052002 85.554001 88.083 93.113998 95.615997 100.665 105.696 108.693 113.724 115.758 118.26">Cálculo Diferencial e Integral 2</tspan></text>
-<text
-           id="text300"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,21,341.95)"><tspan
-             id="tspan298"
-             y="0"
-             x="0 5.0310001 10.062 12.564 15.561 18.09 23.121 28.152 30.653999 35.702999">14 - 17:40</tspan></text>
-<text
-           id="text304"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,69.72,341.95)"><tspan
-             id="tspan302"
-             y="0"
-             x="0 6.0029998 8.0279999 12.582 15.084 20.132999 27.684 32.715 37.269001 39.771 46.269001 48.303001 52.856998 55.359001 58.355999 60.408001 65.439003 70.470001 72.972 78.021004 83.052002">Sistemas Distribuídos</tspan></text>
-<text
-           id="text308"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,208.58,341.95)"><tspan
-             id="tspan306"
-             y="0"
-             x="0 6.9569998 11.988 14.49 19.539 22.041 24.093 28.530001">Optativa</tspan></text>
-<text
-           id="text312"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,664.06,341.95)"><tspan
-             id="tspan310"
-             y="0"
-             x="0 6.0029998 9 14.031 16.065001 21.096001 23.598 28.646999 31.149 36.198002 41.229 43.730999 50.733002 53.73 58.734001 63.783001 68.814003 73.845001 78.399002 83.43 88.460999 90.962997">Projeto de Graduação 1</tspan></text>
-<text
-           id="text316"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,21,330.07)"><tspan
-             id="tspan314"
-             y="0"
-             x="0 5.0310001 10.062 12.564 15.561 18.09 23.121 28.152 30.653999 35.702999">19 - 22:40</tspan></text>
-<text
-           id="text320"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,23.52,306.31)"><tspan
-             id="tspan318"
-             y="0"
-             x="0 5.0310001 7.533 10.53 13.059 18.09 23.121 25.622999 30.672001">8 - 11:40</tspan></text>
-<text
-           id="text324"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,21,294.43)"><tspan
-             id="tspan322"
-             y="0"
-             x="0 5.0310001 10.062 12.564 15.561 18.09 23.121 28.152 30.653999 35.702999">14 - 17:40</tspan></text>
-<text
-           id="text328"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,165.98,294.43)"><tspan
-             id="tspan326"
-             y="0"
-             x="0 6.4980001 11.502 13.554 18.108 23.139 25.173 30.204 32.706001 38.709 43.757999 46.259998 51.308998 54.306 56.34 61.370998 63.404999 65.906998 70.956001 73.458 80.459999 82.961998 84.987 92.538002 94.571999 99.009003 104.04 108.594 113.625">Cálculo Vetorial e Otimização</tspan></text>
-<text
-           id="text332"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,664.06,294.43)"><tspan
-             id="tspan330"
-             y="0"
-             x="0 6.0029998 9 14.031 16.065001 21.096001 23.598 28.646999 31.149 36.198002 41.229 43.730999 50.733002 53.73 58.734001 63.783001 68.814003 73.845001 78.399002 83.43 88.460999 90.962997">Projeto de Graduação 2</tspan></text>
-<text
-           id="text336"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,21,282.77)"><tspan
-             id="tspan334"
-             y="0"
-             x="0 5.0310001 10.062 12.564 15.561 18.09 23.121 28.152 30.653999 35.702999">19 - 22:40</tspan></text>
-<text
-           id="text340"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,676.3,282.77)"><tspan
-             id="tspan338"
-             y="0"
-             x="0 6.4980001 11.502 13.554 18.108 23.139 25.173 30.204 32.706001 39.203999 44.235001 51.785999 56.817001 59.813999 61.848 66.402">Cálculo Numérico</tspan></text>
-</g></g><g
-       id="g342"><g
-         clip-path="url(#clipPath348)"
-         id="g344"><text
-           id="text352"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,391.61,318.19)"><tspan
-             id="tspan350"
-             y="0"
-             x="0 5.0310001 10.062 15.093 20.124001 22.625999 25.622999 28.152">2020 - 2</tspan></text>
-</g></g><g
-       id="g354"><g
-         clip-path="url(#clipPath360)"
-         id="g356"><text
-           id="text364"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,391.61,508.3)"><tspan
-             id="tspan362"
-             y="0"
-             x="0 5.0310001 10.062 15.093 20.124001 22.625999 25.622999 28.152">2018 - 2</tspan></text>
-</g></g><g
-       id="g366"><g
-         clip-path="url(#clipPath372)"
-         id="g368"><text
-           id="text376"
-           style="font-variant:normal;font-weight:bold;font-size:9px;font-family:Arial;-inkscape-font-specification:Arial-BoldMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,352.49,532.08)"><tspan
-             id="tspan374"
-             y="0"
-             x="0 6.0029998 8.5050001 13.554 19.052999 24.101999 26.604 31.653 39.681 44.712002 50.210999 53.208 58.743 61.244999 66.771004 71.802002 74.304001 80.802002 86.301003 89.802002 94.833 98.334 100.836 106.335">Planejamento de Horários</tspan></text>
-</g></g><g
-       id="g378"><g
-         clip-path="url(#clipPath384)"
-         id="g380"><text
-           id="text388"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,391.61,460.78)"><tspan
-             id="tspan386"
-             y="0"
-             x="0 5.0310001 10.062 15.093 20.124001 22.625999 25.622999 28.152">2019 - 1</tspan></text>
-</g></g><g
-       id="g390"><g
-         clip-path="url(#clipPath396)"
-         id="g392"><text
-           id="text400"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,391.61,413.26)"><tspan
-             id="tspan398"
-             y="0"
-             x="0 5.0310001 10.062 15.093 20.124001 22.625999 25.622999 28.152">2019 - 2</tspan></text>
-</g></g><g
-       id="g402"><g
-         clip-path="url(#clipPath408)"
-         id="g404"><text
-           id="text412"
-           style="font-variant:normal;font-weight:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:ArialMT;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           transform="matrix(1,0,0,-1,391.61,365.71)"><tspan
-             id="tspan410"
-             y="0"
-             x="0 5.0310001 10.062 15.093 20.124001 22.625999 25.622999 28.152">2020 - 1</tspan></text>
-</g></g><g
-       id="g414"><g
-         clip-path="url(#clipPath420)"
-         id="g416"><path
-           id="path422"
-           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
-           d="m 17.76,278.09 h 1.56 v 263.47 h -1.56 z" /><path
-           id="path424"
-           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
-           d="M 796.44,278.09 H 798 V 540 h -1.56 z" /><path
-           id="path426"
-           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
-           d="M 19.32,540 H 798 v 1.56 H 19.32 Z" /><path
-           id="path428"
-           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
-           d="M 19.32,278.09 H 798 v 1.56 H 19.32 Z" /></g></g></g></svg>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+
+<!-- Page 1 -->
+<svg x="0" y="0" width="1286" height="909" viewBox="0 0 1286 909" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+style="display: block;margin-left: auto;margin-right: auto;">
+<defs>
+
+<style type="text/css"><![CDATA[
+text { white-space: pre; }
+path, image { pointer-events: none; }
+
+.s1_1{
+font-size: 14.12px;
+	font-family: Arial;
+fill: #FFFFFF;
+}
+
+.s2_1{
+font-size: 14.12px;
+	font-family: Arial;
+fill: #000000;
+}
+
+.s3_1{
+font-size: 14.12px;
+	font-family: Arial;
+fill: #FFFFFF;
+}
+
+.g0_1{
+fill: #FFC000;
+}
+.g1_1{
+fill: #7030A0;
+}
+.g2_1{
+fill: #0070C0;
+}
+.g3_1{
+fill: #4472C4;
+}
+.g4_1{
+fill: #00B050;
+}
+.g5_1{
+fill: #FF0000;
+}
+.g6_1{
+fill: #806000;
+}
+.g7_1{
+fill: #FFFF00;
+}
+.g8_1{
+fill: #A9D08E;
+}
+.g9_1{
+}
+
+]]></style>
+
+</defs>
+<path d="M0,0
+L0,909
+L1286,909
+L1286,0 Z " 
+fill="#FFFFFF" stroke="none" />
+<path d="M29,84H1256.8v18.1H29Z" class="g0_1" />
+<path d="M29,101.9H98.3v18.9H29Z" class="g1_1" />
+<path d="M98.1,101.9H257.6v18.9H98.1Z" class="g2_1" />
+<path d="M257.4,101.9h999.4v18.9H257.4Z" class="g3_1" />
+<path d="M29,120.6H1256.8v18.9H29Z" class="g4_1" />
+<path d="M29,139.3H98.3v56.3H29Z" class="g1_1" />
+<path d="M98.1,139.3H1256.8v56.3H98.1Z" class="g5_1" />
+<path d="M29,195.4H1256.8v18.9H29Z" class="g4_1" />
+<path d="M29,214.1H98.3v56.3H29Z" class="g1_1" />
+<path d="M98.1,214.1H1256.8v56.3H98.1Z" class="g6_1" />
+<path d="M29,270.2H1256.8v18.9H29Z" class="g4_1" />
+<path d="M29,288.9H98.3v56.3H29Z" class="g1_1" />
+<path d="M98.1,288.9H1256.8v56.3H98.1Z" class="g7_1" />
+<path d="M29,345H1256.8v18.9H29Z" class="g4_1" />
+<path d="M29,363.7H98.3V420H29Z" class="g1_1" />
+<path d="M98.1,363.7H1256.8V420H98.1Z" class="g2_1" />
+<path d="M29,419.8H1256.8v18.9H29Z" class="g4_1" />
+<path d="M29,438.5H98.3v56.9H29Z" class="g1_1" />
+<path d="M98.1,438.5H1256.8v56.9H98.1Z" class="g8_1" />
+<text x="37" y="115" dx="0,0.1,0,0.1,0,0.1,0,-0.1" class="s1_1">Horários</text>
+<text x="150" y="115" dx="0,-0.1,0,0,0,0.2,-0.1" class="s1_1">Segunda</text>
+<text x="337" y="115" dx="0,0,0,0.1,0.1" class="s1_1">Terça</text>
+<text x="536" y="115" dx="0,0,0,0,0.1,0" class="s1_1">Quarta</text>
+<text x="831" y="115" dx="0,0,0,0.1,0,-0.1" class="s1_1">Quinta</text>
+<text x="1103" y="115" dx="0,-0.1,0,-0.1,-0.1" class="s1_1">Sexta</text>
+<text x="1204" y="115" dx="0,-0.1,0,0,0,0" class="s1_1">Sábado</text>
+<text x="35" y="153" dx="0,0,0,0,-0.1,0,0.2,-0.1,0" class="s1_1">8 - 11:40</text>
+<text x="459" y="153" dx="0,-0.1,0.1,0,0,0,-0.1,0,0,0,0,-0.1,0,0,0.1,0,0,0,0,0,0,0,-0.1,0,0,0,0.1,0,-0.1,0.2,-0.1" class="s1_1">Projeto e Análise de Algoritmos</text>
+<text x="670" y="153" dx="0,0,0,0,0.1,0,0,-0.1,0,0.2,-0.1,0.1,-0.1,0.2,0,0,0,0,0.1,0,0,-0.1,0,0,0,0,0,0,0.2,-0.1,0,0,0.1,0,0,0,0.1,0.1,0,0.1,0,0,0,-0.1,0,0,-0.1,0,0.2,0,-0.1,0" class="s1_1">Teoria da Computação, Linguagens Formais e Autômatos</text>
+<text x="1048" y="153" dx="0,-0.1,0.1,0,-0.1,0,0.2,0,0.1,-0.1,0,0,0,0.2,-0.1,0.1,0,0,0,0,0.1" class="s1_1">Sistemas Operacionais</text>
+<text x="32" y="171" dx="0,0,0,0,0.1,-0.1,0,0,0,0" class="s1_1">14 - 17:40</text>
+<text x="290" y="171" dx="0,0.1,0,0.2,-0.1,0,0,0,0.1,0,0,0,0,0.1,0,0.2,0,0" class="s1_1">Computação Gráfica</text>
+<text x="462" y="171" dx="0,-0.1,0,0,0,0.1,0.2,0,0.1,-0.1,0,0.1,-0.1,0.2,0,0.2,-0.1,0.1,-0.1,0.2,0,0,0,0,0,0" class="s1_1">Interface Homem Computador</text>
+<text x="755" y="171" dx="0,0.1,0,0,0.1,0,0,0,-0.1,0.1,0,0.2,-0.1,0.1,0,0,0.1,0,0,0,0,0,-0.1,-0.1,0,0,0,0,0.1,0,0.1,-0.1" class="s1_1">Cálculo Diferencial e Integral 1</text>
+<text x="32" y="190" dx="0,0,0,0,0.1,-0.1,0,0,0,0" class="s1_1">19 - 22:40</text>
+<text x="35" y="228" dx="0,0,0,0,-0.1,0,0.2,-0.1,0" class="s1_1">8 - 11:40</text>
+<text x="157" y="228" dx="0,-0.1,0,0,-0.1,0.1,0" class="s1_1">Eletiva</text>
+<text x="470" y="228" dx="0,-0.1,0.1,0,0.1,-0.1,0.1,0.1,0,0.1,0,0,0,0,0,0,0,0,-0.1,0.2,0,0,0,0" class="s1_1">Processamento de Imagens</text>
+<text x="752" y="228" dx="0,0,-0.1,0.1,0,0.1,-0.1,0,0,0,0,0.1,0,0.1,-0.1,0,0,-0.1,0,-0.3,0,0,0.1,0,0.2,-0.1,0,0,0,0,-0.1" class="s1_1">Física Teórica e Experimental 1</text>
+<text x="32" y="246" dx="0,0,0,0,0.1,-0.1,0,0,0,0" class="s1_1">14 - 17:40</text>
+<text x="134" y="246" dx="0,0.1,0,0.2,0,0,0,0,0,0,0.1,0" class="s1_1">Compiladores</text>
+<text x="329" y="246" class="s1_1">Optativa</text>
+<text x="1052" y="246" dx="0,-0.1,0,0.1,0,0,0,0.1,0,-0.1,0,0,0,0.2,-0.1,0.1,0,0,0,0" class="s1_1">Pesquisa Operacional</text>
+<text x="32" y="265" dx="0,0,0,0,0.1,-0.1,0,0,0,0" class="s1_1">19 - 22:40</text>
+<text x="35" y="302" dx="0,0,0,0,-0.1,0,0.2,-0.1,0" class="s1_1">8 - 11:40</text>
+<text x="301" y="302" dx="0,-0.1,0,0.1,-0.1,0,0.2,0,0.1,-0.1,0.1,0,-0.1,0,-0.1,0,0.1" class="s2_1">Sistemas Digitais</text>
+<text x="496" y="302" dx="0,0,0.1,0,0.1,0,0,0.2,0,0,0,0,0.1,0,0.1,0.1" class="s2_1">Empreendedorismo</text>
+<text x="789" y="302" dx="0,0,0,-0.1,0,0.1,0,-0.1,0,0,0.1,0,0,0,-0.1,0.1,-0.1,0,0.2,0,0,0,0" class="s2_1">Inteligência Artificial</text>
+<text x="32" y="321" dx="0,0,0,0,0.1,-0.1,0,0,0,0" class="s1_1">14 - 17:40</text>
+<text x="752" y="321" dx="0,0,-0.1,0.1,0,0,0,0,0,0,0,0.1,0,0.1,0,-0.1,0,0,-0.1,-0.3,0,0,0.2,0,0.1,0,0,0,0,0,-0.1" class="s2_1">Física Teórica e Experimental 2</text>
+<text x="1046" y="321" dx="0,0.1,0,0,0,0,0,0,0,0.1,0,0.2,0,0,-0.1,0,0,0.2,0,0" class="s2_1">Rede de Computadores</text>
+<text x="32" y="340" dx="0,0,0,0,0.1,-0.1,0,0,0,0" class="s1_1">19 - 22:40</text>
+<text x="35" y="377" dx="0,0,0,0,-0.1,0,0.2,-0.1,0" class="s1_1">8 - 11:40</text>
+<text x="104" y="377" dx="0,-0.1,0.1,-0.1,0,0,0.1,0,-0.1,0,0,0,0,0.1,0.1,0,0.1,0,-0.1,0,0,0.2" class="s1_1">Estágio Supervisionado</text>
+<text x="461" y="377" dx="0,0.1,0,0,0.1,0,0,0,-0.1,0.1,0,0.2,-0.1,0.1,0,0,0.1,0,0,0,-0.1,0,0,-0.1,0,0,0,0,0.1,0,0.1,-0.1" class="s1_1">Cálculo Diferencial e Integral 2</text>
+<text x="32" y="396" dx="0,0,0,0,0.1,-0.1,0,0,0,0" class="s1_1">14 - 17:40</text>
+<text x="109" y="396" dx="0,0,0,0,0,0,0.1,0,0.1,0,0.1,0,0,-0.1,0.1,0,0,0,0,0,0" class="s1_1">Sistemas Distribuídos</text>
+<text x="329" y="396" dx="0,0,0,0,0,-0.1,0.1,0" class="s1_1">Optativa</text>
+<text x="1046" y="396" dx="0,-0.1,0.1,0,0,0,-0.1,0,0,0,0,0,0,0.1,0,0,0,0.2,0,0,0,0" class="s1_1">Projeto de Graduação 1</text>
+<text x="32" y="415" dx="0,0,0,0,0.1,-0.1,0,0,0,0" class="s1_1">19 - 22:40</text>
+<text x="35" y="452" dx="0,0,0,0,-0.1,0,0.2,-0.1,0" class="s1_1">8 - 11:40</text>
+<text x="32" y="471" dx="0,0,0,0,0.1,-0.1,0,0,0,0" class="s1_1">14 - 17:40</text>
+<text x="263" y="471" dx="0,0.1,0,0,0.1,0,0,0,-0.1,0,0,-0.1,0,0.1,0.1,-0.1,0,0,0,-0.1,0,0,0,0.1,0,-0.1,0,0.1,0" class="s1_1">Cálculo Vetorial e Otimização</text>
+<text x="1046" y="471" dx="0,-0.1,0.1,0,0,0,0,0,-0.1,0,0,0,0,0.1,0,0,0,0.2,0,0,0,0" class="s1_1">Projeto de Graduação 2</text>
+<text x="32" y="489" dx="0,0,0,0,0.1,-0.1,0,0,0,0" class="s1_1">19 - 22:40</text>
+<text x="1065" y="489" dx="0,0.1,0,0,0,0,0.1,0,-0.1,0.1,0,0.2,0,0.1,0,0" class="s1_1">Cálculo Numérico</text>
+<text x="617" y="433" dx="0,0,0,0,0.2,-0.1,0.1,-0.1" class="s1_1">2020 - 2</text>
+<text x="617" y="134" dx="0,0,0,0,0.2,-0.1,0.1,-0.1" class="s1_1">2018 - 2</text>
+<text x="556" y="97" dx="0,-0.1,0,0,0,0,-0.2,0,0,0,0,0.1,0,-0.1,0,0,-0.1,0.1,0,0,0,0,0,0" class="s3_1">Planejamento de Horários</text>
+<text x="617" y="209" dx="0,0,0,0,0.2,-0.1,0.1,-0.1" class="s1_1">2019 - 1</text>
+<text x="617" y="284" dx="0,0,0,0,0.2,-0.1,0.1,-0.1" class="s1_1">2019 - 2</text>
+<text x="617" y="358" dx="0,0,0,0,0.2,-0.1,0.1,-0.1" class="s1_1">2020 - 1</text>
+<path fill-rule="evenodd" d="M27.1,82.1h2.4V496.5H27.1Zm1228.4,2.4h2.4v412h-2.4Z" class="g9_1" />
+<path fill-rule="evenodd" d="M29.5,82.1H1257.9v2.4H29.5Zm0,412H1257.9v2.4H29.5Z" class="g9_1" />
+
+
+<!-- Any embedded fonts defined here -->
+<style type="text/css" ><![CDATA[
+
+@font-face {
+	font-family: Arial;
+	src: url("fonts/CIDFont-F1_b.woff") format("woff");	
+}
+
+@font-face {
+	font-family: Arial;
+	src: url("fonts/CIDFont-F2_j.woff") format("woff");
+}
+
+]]></style>
+
+</svg>
