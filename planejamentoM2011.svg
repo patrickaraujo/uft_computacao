@@ -1,0 +1,2013 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Gerado pelo Microsoft Visio, SVG Export 2011.svg Page-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="22.8858in" height="8.26772in"
+		viewBox="0 0 1647.78 595.276" xml:space="preserve" color-interpolation-filters="sRGB" class="st50">
+	<v:documentProperties v:langID="1046" v:metric="true" v:viewMarkup="false">
+		<v:userDefs>
+			<v:ud v:nameU="msvSubprocessMaster" v:prompt="" v:val="VT4(Rectangle)"/>
+			<v:ud v:nameU="msvNoAutoConnect" v:val="VT0(1):26"/>
+		</v:userDefs>
+	</v:documentProperties>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:#ed7d31;stroke:#7f7f7f;stroke-width:6}
+		.st2 {fill:#feffff;font-family:Segoe UI;font-size:0.833336em}
+		.st3 {font-size:1em;font-style:italic}
+		.st4 {font-size:1em}
+		.st5 {fill:#ffc000;stroke:#7f7f7f;stroke-width:6}
+		.st6 {fill:#7030a0;stroke:#7f7f7f;stroke-width:6}
+		.st7 {fill:#ed7d31;stroke:#ff0000;stroke-width:6}
+		.st8 {fill:#4672c4;stroke:#ff0000;stroke-width:6}
+		.st9 {fill:#ed7d31;stroke:#ffff00;stroke-width:6}
+		.st10 {fill:#4672c4;stroke:#ffff00;stroke-width:6}
+		.st11 {fill:#00b050;stroke:#7f7f7f;stroke-width:6}
+		.st12 {fill:#00b050;stroke:#ffff00;stroke-width:6}
+		.st13 {fill:#bfbfbf;stroke:#bfbfbf;stroke-width:0.25}
+		.st14 {fill:#feffff;font-family:Segoe UI;font-size:1.00001em}
+		.st15 {fill:#00b050;stroke:#41719c;stroke-width:6}
+		.st16 {fill:#00b050;stroke:#ff0000;stroke-width:6}
+		.st17 {fill:#ffc000;stroke:#ffff00;stroke-width:6}
+		.st18 {fill:#7030a0;stroke:#a8d08d;stroke-width:6}
+		.st19 {fill:#000000;stroke:#7f7f7f;stroke-width:6}
+		.st20 {font-family:Courier New;font-size:0.799995em;font-style:italic}
+		.st21 {fill:#bdd7ee;stroke:#7f7f7f;stroke-width:6}
+		.st22 {fill:#203864;stroke:#41719c;stroke-width:6}
+		.st23 {fill:#7030a0;stroke:#c5e0b3;stroke-width:6}
+		.st24 {fill:#bdd7ee;stroke:#ff0000;stroke-width:6}
+		.st25 {fill:#000000;stroke:#41719c;stroke-width:6}
+		.st26 {fill:#203864;stroke:#c5e0b3;stroke-width:6}
+		.st27 {marker-end:url(#mrkr4-246);stroke:#4672c4;stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
+		.st28 {fill:#4672c4;fill-opacity:1;stroke:#4672c4;stroke-opacity:1;stroke-width:0.28409090909091}
+		.st29 {fill:none;stroke:none;stroke-width:0.25}
+		.st30 {fill:#4672c4;font-family:Segoe UI;font-size:4.00001em;font-weight:bold}
+		.st31 {fill:#4672c4;font-family:Segoe UI;font-size:1.5em}
+		.st32 {fill:#a8d08d;stroke:#a8d08d;stroke-width:0.25}
+		.st33 {fill:#feffff;font-family:Segoe UI;font-size:1.00001em;font-weight:bold}
+		.st34 {fill:#ffc000;stroke:#c7c8c8;stroke-width:0.25}
+		.st35 {fill:#ffffff;font-family:Segoe UI;font-size:0.833336em}
+		.st36 {fill:#00b050;stroke:#00b050;stroke-width:0.25}
+		.st37 {fill:#ed7d31;stroke:#ed7d31;stroke-width:0.25}
+		.st38 {fill:#4672c4;stroke:#4672c4;stroke-width:0.25}
+		.st39 {fill:#7030a0;stroke:#7030a0;stroke-width:0.25}
+		.st40 {fill:#366658;stroke:#366658;stroke-width:0.25}
+		.st41 {fill:#7f7f7f;stroke:none;stroke-width:0.25}
+		.st42 {fill:#00fefe;stroke:none;stroke-width:0.25}
+		.st43 {fill:#ffffff;font-family:Segoe UI;font-size:0.499992em}
+		.st44 {fill:#4672c4;font-family:Segoe UI;font-size:1.5em;font-weight:bold}
+		.st45 {fill:#ff0000;font-family:Segoe UI;font-size:2.50001em;font-weight:bold}
+		.st46 {fill:#ff0000;stroke:none;stroke-width:0.25}
+		.st47 {fill:#ffff00;stroke:none;stroke-width:0.25}
+		.st48 {fill:#41719c;stroke:none;stroke-width:0.25}
+		.st49 {fill:#c5e0b3;stroke:none;stroke-width:0.25}
+		.st50 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<defs id="Markers">
+		<g id="lend4">
+			<path d="M 2 1 L 0 0 L 2 -1 L 2 1 " style="stroke:none"/>
+		</g>
+		<marker id="mrkr4-246" class="st28" v:arrowType="4" v:arrowSize="2" v:setback="7.04" refX="-7.04" orient="auto"
+				markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend4" transform="scale(-3.52,-3.52) "/>
+		</marker>
+	</defs>
+	<g v:mID="0" v:index="2" v:groupContext="foregroundPage">
+		<v:userDefs>
+			<v:ud v:nameU="msvThemeOrder" v:val="VT0(0):26"/>
+		</v:userDefs>
+		<title>Planejamento - Matriz 2011</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<v:layer v:name="Conector" v:index="0"/>
+		<g id="shape43-1" v:mID="43" v:groupContext="shape" transform="translate(113.386,-432.165)">
+			<title>Retângulo Arredondado</title>
+			<desc>Lógica Matemática (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st1"/>
+			<text x="15.08" y="563.89" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Lógica Matemática<v:newlineChar/><tspan
+						x="41.72" dy="1.2em" class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape44-5" v:mID="44" v:groupContext="shape" transform="translate(113.386,-356.996)">
+			<title>Retângulo Arredondado.44</title>
+			<desc>Cálculo Diferencial e Integral 1 (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st1"/>
+			<text x="11.85" y="557.89" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Cálculo Diferencial e <tspan
+						x="35.72" dy="1.2em" class="st4">Integral 1<v:newlineChar/></tspan><tspan x="41.72" dy="1.2em" class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape45-10" v:mID="45" v:groupContext="shape" transform="translate(113.386,-281.827)">
+			<title>Retângulo Arredondado.45</title>
+			<desc>Introdução à Computação (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st5"/>
+			<text x="28.7" y="557.89" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Introdução à <tspan
+						x="28.57" dy="1.2em" class="st4">Computação<v:newlineChar/></tspan><tspan x="41.72" dy="1.2em" class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape46-15" v:mID="46" v:groupContext="shape" transform="translate(113.386,-131.489)">
+			<title>Retângulo Arredondado.46</title>
+			<desc>Leitura e Produção de Textos Ciêntíficos (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st6"/>
+			<text x="8.4" y="557.89" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Leitura e Produção de <tspan
+						x="18.26" dy="1.2em" class="st4">Textos Ciêntíficos<v:newlineChar/></tspan><tspan x="41.72" dy="1.2em"
+						class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape47-20" v:mID="47" v:groupContext="shape" transform="translate(113.386,-206.658)">
+			<title>Retângulo Arredondado.47</title>
+			<desc>Introdução à Ciência da Computação (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st5"/>
+			<text x="4.66" y="557.89" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Introdução à Ciência da <tspan
+						x="28.57" dy="1.2em" class="st4">Computação<v:newlineChar/></tspan><tspan x="41.72" dy="1.2em" class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape48-25" v:mID="48" v:groupContext="shape" transform="translate(283.465,-432.165)">
+			<title>Retângulo Arredondado.48</title>
+			<desc>Probabilidade e Estatística (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st1"/>
+			<text x="22.14" y="557.89" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Probabilidade e <tspan
+						x="35.02" dy="1.2em" class="st4">Estatística<v:newlineChar/></tspan><tspan x="41.72" dy="1.2em" class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape49-30" v:mID="49" v:groupContext="shape" transform="translate(283.465,-356.996)">
+			<title>Retângulo Arredondado.49</title>
+			<desc>Cálculo Diferencial e Integral 2 (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st7"/>
+			<text x="11.85" y="557.89" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Cálculo Diferencial e <tspan
+						x="35.72" dy="1.2em" class="st4">Integral 2<v:newlineChar/></tspan><tspan x="41.72" dy="1.2em" class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape50-35" v:mID="50" v:groupContext="shape" transform="translate(283.465,-281.827)">
+			<title>Retângulo Arredondado.50</title>
+			<desc>Física Teórica e Experimental 1 (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st8"/>
+			<text x="23.53" y="557.89" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Física Teórica e <tspan
+						x="24.1" dy="1.2em" class="st4">Experimental 1<v:newlineChar/></tspan><tspan x="41.72" dy="1.2em"
+						class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape51-40" v:mID="51" v:groupContext="shape" transform="translate(283.465,-206.658)">
+			<title>Retângulo Arredondado.51</title>
+			<desc>Programação Orientada à Objetos (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st5"/>
+			<text x="4.1" y="557.89" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Programação Orientada <tspan
+						x="35.5" dy="1.2em" class="st4">à Objetos<v:newlineChar/></tspan><tspan x="41.72" dy="1.2em" class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape52-45" v:mID="52" v:groupContext="shape" transform="translate(283.465,-131.489)">
+			<title>Retângulo Arredondado.52</title>
+			<desc>Algoritmos e Estrutura de Dados 1 (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st5"/>
+			<text x="7.31" y="557.89" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Algoritmos e Estrutura <tspan
+						x="31.65" dy="1.2em" class="st4">de Dados 1<v:newlineChar/></tspan><tspan x="41.72" dy="1.2em" class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape53-50" v:mID="53" v:groupContext="shape" transform="translate(283.465,-56.3198)">
+			<title>Retângulo Arredondado.53</title>
+			<desc>Matemática Discreta (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st5"/>
+			<text x="11.63" y="563.89" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Matemática Discreta<v:newlineChar/><tspan
+						x="41.72" dy="1.2em" class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape54-54" v:mID="54" v:groupContext="shape" transform="translate(453.543,-432.165)">
+			<title>Retângulo Arredondado.54</title>
+			<desc>Álgebra Linear (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st1"/>
+			<text x="24.82" y="563.89" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Álgebra Linear<v:newlineChar/><tspan
+						x="41.72" dy="1.2em" class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape55-58" v:mID="55" v:groupContext="shape" transform="translate(453.543,-356.996)">
+			<title>Retângulo Arredondado.55</title>
+			<desc>Cálculo Vetorial e Otimização (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st9"/>
+			<text x="18.16" y="557.89" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Cálculo Vetorial e <tspan
+						x="31.91" dy="1.2em" class="st4">Otimização<v:newlineChar/></tspan><tspan x="41.72" dy="1.2em" class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape56-63" v:mID="56" v:groupContext="shape" transform="translate(453.543,-281.827)">
+			<title>Retângulo Arredondado.56</title>
+			<desc>Física Teórica e Experimental 2 (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st10"/>
+			<text x="23.53" y="557.89" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Física Teórica e <tspan
+						x="24.1" dy="1.2em" class="st4">Experimental 2<v:newlineChar/></tspan><tspan x="41.72" dy="1.2em"
+						class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape57-68" v:mID="57" v:groupContext="shape" transform="translate(453.543,-206.658)">
+			<title>Retângulo Arredondado.57</title>
+			<desc>Cálculo Numérico (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st9"/>
+			<text x="17.51" y="563.89" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Cálculo Numérico<v:newlineChar/><tspan
+						x="41.72" dy="1.2em" class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape58-72" v:mID="58" v:groupContext="shape" transform="translate(453.543,-131.489)">
+			<title>Retângulo Arredondado.58</title>
+			<desc>Banco de Dados (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st11"/>
+			<text x="20.87" y="563.89" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Banco de Dados<v:newlineChar/><tspan
+						x="41.72" dy="1.2em" class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape59-76" v:mID="59" v:groupContext="shape" transform="translate(453.543,-56.3198)">
+			<title>Retângulo Arredondado.59</title>
+			<desc>Algoritmos e Estrutura de Dados 2 (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st5"/>
+			<text x="7.31" y="557.89" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Algoritmos e Estrutura <tspan
+						x="31.65" dy="1.2em" class="st4">de Dados 2<v:newlineChar/></tspan><tspan x="41.72" dy="1.2em" class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape60-81" v:mID="60" v:groupContext="shape" transform="translate(623.622,-432.165)">
+			<title>Retângulo Arredondado.60</title>
+			<desc>Teoria e Algoritmos dos Grafos (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st5"/>
+			<text x="4" y="557.89" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Teoria e Algoritmos dos <tspan
+						x="42.36" dy="1.2em" class="st4">Grafos<v:newlineChar/></tspan><tspan x="41.72" dy="1.2em" class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape61-86" v:mID="61" v:groupContext="shape" transform="translate(623.622,-356.996)">
+			<title>Retângulo Arredondado.61</title>
+			<desc>Sistemas Digitais (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st12"/>
+			<text x="19.61" y="563.89" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Sistemas Digitais<v:newlineChar/><tspan
+						x="41.72" dy="1.2em" class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape62-90" v:mID="62" v:groupContext="shape" transform="translate(623.622,-281.827)">
+			<title>Retângulo Arredondado.62</title>
+			<desc>Linguagens de Programação (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st5"/>
+			<text x="24.54" y="557.89" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Linguagens de <tspan
+						x="27.36" dy="1.2em" class="st4">Programação<v:newlineChar/></tspan><tspan x="41.72" dy="1.2em" class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape63-95" v:mID="63" v:groupContext="shape" transform="translate(623.622,-206.658)">
+			<title>Retângulo Arredondado.63</title>
+			<desc>Engenharia de Software (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st11"/>
+			<text x="4.42" y="563.89" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Engenharia de Software<v:newlineChar/><tspan
+						x="41.72" dy="1.2em" class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape64-99" v:mID="64" v:groupContext="shape" transform="translate(623.622,-131.489)">
+			<title>Retângulo Arredondado.64</title>
+			<desc>Projeto de Banco de Dados (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st11"/>
+			<text x="12.07" y="557.89" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Projeto de Banco de <tspan
+						x="42.65" dy="1.2em" class="st4">Dados<v:newlineChar/></tspan><tspan x="41.72" dy="1.2em" class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape65-104" v:mID="65" v:groupContext="shape" transform="translate(623.622,-56.3198)">
+			<title>Retângulo Arredondado.65</title>
+			<desc>Teoria da Computação, Linguagens Formais e Autômatos (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st11"/>
+			<text x="5.6" y="551.89" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Teoria da Computação, <tspan
+						x="8.82" dy="1.2em" class="st4">Linguagens Formais e </tspan><tspan x="32.42" dy="1.2em" class="st4">Autômatos<v:newlineChar/></tspan><tspan
+						x="41.72" dy="1.2em" class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape66-110" v:mID="66" v:groupContext="shape" transform="translate(113.386,-507.334)">
+			<title>Retângulo Arredondado.66</title>
+			<desc>1º Período</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="581.083" width="113.39" height="28.386"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 578.23 A11.3384 11.3384 -180 0
+						 0 102.05 566.89 L11.34 566.89 A11.3384 11.3384 -180 0 0 0 578.23 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st13"/>
+			<text x="28.63" y="584.68" class="st14" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>1º Período</text>		</g>
+		<g id="shape67-113" v:mID="67" v:groupContext="shape" transform="translate(283.465,-507.334)">
+			<title>Retângulo Arredondado.67</title>
+			<desc>2º Período</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="581.083" width="113.39" height="28.386"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 578.23 A11.3384 11.3384 -180 0
+						 0 102.05 566.89 L11.34 566.89 A11.3384 11.3384 -180 0 0 0 578.23 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st13"/>
+			<text x="28.63" y="584.68" class="st14" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>2º Período</text>		</g>
+		<g id="shape68-116" v:mID="68" v:groupContext="shape" transform="translate(453.543,-510.197)">
+			<title>Retângulo Arredondado.68</title>
+			<desc>3º Período</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="581.083" width="113.39" height="28.386"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 578.23 A11.3384 11.3384 -180 0
+						 0 102.05 566.89 L11.34 566.89 A11.3384 11.3384 -180 0 0 0 578.23 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st13"/>
+			<text x="28.63" y="584.68" class="st14" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>3º Período</text>		</g>
+		<g id="shape69-119" v:mID="69" v:groupContext="shape" transform="translate(623.622,-510.197)">
+			<title>Retângulo Arredondado.69</title>
+			<desc>4º Período</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="581.083" width="113.39" height="28.386"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 578.23 A11.3384 11.3384 -180 0
+						 0 102.05 566.89 L11.34 566.89 A11.3384 11.3384 -180 0 0 0 578.23 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st13"/>
+			<text x="28.63" y="584.68" class="st14" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>4º Período</text>		</g>
+		<g id="shape70-122" v:mID="70" v:groupContext="shape" transform="translate(793.701,-510.197)">
+			<title>Retângulo Arredondado.70</title>
+			<desc>5º Período</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="581.083" width="113.39" height="28.386"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 578.23 A11.3384 11.3384 -180 0
+						 0 102.05 566.89 L11.34 566.89 A11.3384 11.3384 -180 0 0 0 578.23 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st13"/>
+			<text x="28.63" y="584.68" class="st14" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>5º Período</text>		</g>
+		<g id="shape71-125" v:mID="71" v:groupContext="shape" transform="translate(963.78,-510.197)">
+			<title>Retângulo Arredondado.71</title>
+			<desc>6º Período</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="581.083" width="113.39" height="28.386"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 578.23 A11.3384 11.3384 -180 0
+						 0 102.05 566.89 L11.34 566.89 A11.3384 11.3384 -180 0 0 0 578.23 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st13"/>
+			<text x="28.63" y="584.68" class="st14" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>6º Período</text>		</g>
+		<g id="shape72-128" v:mID="72" v:groupContext="shape" transform="translate(1133.86,-510.197)">
+			<title>Retângulo Arredondado.72</title>
+			<desc>7º Período</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="581.083" width="113.39" height="28.386"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 578.23 A11.3384 11.3384 -180 0
+						 0 102.05 566.89 L11.34 566.89 A11.3384 11.3384 -180 0 0 0 578.23 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st13"/>
+			<text x="28.63" y="584.68" class="st14" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>7º Período</text>		</g>
+		<g id="shape73-131" v:mID="73" v:groupContext="shape" transform="translate(1303.94,-510.197)">
+			<title>Retângulo Arredondado.73</title>
+			<desc>8º Período</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="581.083" width="113.39" height="28.386"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 578.23 A11.3384 11.3384 -180 0
+						 0 102.05 566.89 L11.34 566.89 A11.3384 11.3384 -180 0 0 0 578.23 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st13"/>
+			<text x="28.63" y="584.68" class="st14" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>8º Período</text>		</g>
+		<g id="shape74-134" v:mID="74" v:groupContext="shape" transform="translate(793.701,-432.165)">
+			<title>Retângulo Arredondado.74</title>
+			<desc>Organização de Computadores (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st5"/>
+			<text x="22.14" y="557.89" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Organização de <tspan
+						x="24" dy="1.2em" class="st4">Computadores<v:newlineChar/></tspan><tspan x="41.72" dy="1.2em" class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape75-139" v:mID="75" v:groupContext="shape" transform="translate(793.701,-356.996)">
+			<title>Retângulo Arredondado.75</title>
+			<desc>Computação Gráfica (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st11"/>
+			<text x="11.86" y="563.89" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Computação Gráfica<v:newlineChar/><tspan
+						x="41.72" dy="1.2em" class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape76-143" v:mID="76" v:groupContext="shape" transform="translate(793.701,-281.827)">
+			<title>Retângulo Arredondado.76</title>
+			<desc>Projeto e Análise de Algoritmos (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st5"/>
+			<text x="12.74" y="557.89" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Projeto e Análise de <tspan
+						x="32.38" dy="1.2em" class="st4">Algoritmos<v:newlineChar/></tspan><tspan x="41.72" dy="1.2em" class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape77-148" v:mID="77" v:groupContext="shape" transform="translate(793.701,-206.658)">
+			<title>Retângulo Arredondado.77</title>
+			<desc>Redes de Computadores (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st15"/>
+			<text x="36.48" y="557.89" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Redes de <tspan
+						x="24" dy="1.2em" class="st4">Computadores<v:newlineChar/></tspan><tspan x="41.72" dy="1.2em" class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape78-153" v:mID="78" v:groupContext="shape" transform="translate(793.701,-131.489)">
+			<title>Retângulo Arredondado.78</title>
+			<desc>Projeto de Sistemas (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st11"/>
+			<text x="13.21" y="563.89" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Projeto de Sistemas<v:newlineChar/><tspan
+						x="41.72" dy="1.2em" class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape79-157" v:mID="79" v:groupContext="shape" transform="translate(793.701,-56.3198)">
+			<title>Retângulo Arredondado.79</title>
+			<desc>Compiladores (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st16"/>
+			<text x="26.11" y="563.89" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Compiladores<v:newlineChar/><tspan
+						x="41.6" dy="1.2em" class="st4">(60hrs)</tspan></text>		</g>
+		<g id="shape80-161" v:mID="80" v:groupContext="shape" transform="translate(963.78,-432.165)">
+			<title>Retângulo Arredondado.80</title>
+			<desc>Pesquisa Operacional (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st17"/>
+			<text x="9.5" y="563.89" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Pesquisa Operacional<v:newlineChar/><tspan
+						x="41.6" dy="1.2em" class="st4">(60hrs)</tspan></text>		</g>
+		<g id="shape81-165" v:mID="81" v:groupContext="shape" transform="translate(963.78,-356.996)">
+			<title>Retângulo Arredondado.81</title>
+			<desc>Processamento de Imagens (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st16"/>
+			<text x="16.21" y="557.89" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Processamento de <tspan
+						x="38" dy="1.2em" class="st4">Imagens<v:newlineChar/></tspan><tspan x="41.72" dy="1.2em" class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape82-170" v:mID="82" v:groupContext="shape" transform="translate(963.78,-281.827)">
+			<title>Retângulo Arredondado.82</title>
+			<desc>Sistemas Operacionais (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st5"/>
+			<text x="7.29" y="563.89" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Sistemas Operacionais<v:newlineChar/><tspan
+						x="41.72" dy="1.2em" class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape83-174" v:mID="83" v:groupContext="shape" transform="translate(963.78,-206.658)">
+			<title>Retângulo Arredondado.83</title>
+			<desc>Inteligência Artificial (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st12"/>
+			<text x="12.06" y="563.89" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Inteligência Artificial<v:newlineChar/><tspan
+						x="41.6" dy="1.2em" class="st4">(60hrs)</tspan></text>		</g>
+		<g id="shape84-178" v:mID="84" v:groupContext="shape" transform="translate(963.78,-131.489)">
+			<title>Retângulo Arredondado.84</title>
+			<desc>Estágio Supervisionado (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st18"/>
+			<text x="5.45" y="563.89" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Estágio Supervisionado<v:newlineChar/><tspan
+						x="41.72" dy="1.2em" class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape85-182" v:mID="85" v:groupContext="shape" transform="translate(963.78,-56.3198)">
+			<title>Retângulo Arredondado.85</title>
+			<desc>Computador e Sociedade (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st6"/>
+			<text x="24.76" y="557.89" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Computador e <tspan
+						x="33.92" dy="1.2em" class="st4">Sociedade<v:newlineChar/></tspan><tspan x="41.72" dy="1.2em" class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape86-187" v:mID="86" v:groupContext="shape" transform="translate(1133.86,-432.165)">
+			<title>Retângulo Arredondado.86</title>
+			<desc>Optativa 1 Programação Comercial (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st19"/>
+			<text x="33.84" y="559.09" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Optativa 1<v:newlineChar/><tspan
+						x="6.29" dy="1.275em" class="st20">Programação Comercial<v:newlineChar/></tspan><tspan x="41.72"
+						dy="1.14em" class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape87-192" v:mID="87" v:groupContext="shape" transform="translate(1133.86,-281.827)">
+			<title>Retângulo Arredondado.87</title>
+			<desc>Optativa 3 Interface Homem Computador (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st19"/>
+			<text x="33.84" y="553.09" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Optativa 3<v:newlineChar/><tspan
+						x="20.69" dy="1.275em" class="st20">Interface Homem </tspan><tspan x="32.69" dy="1.425em" class="st20">Computador<v:newlineChar/></tspan><tspan
+						x="41.72" dy="1.2em" class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape88-198" v:mID="88" v:groupContext="shape" transform="translate(1133.86,-56.3198)">
+			<title>Retângulo Arredondado.88</title>
+			<desc>Eletiva 1 Ética e Legislação (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st21"/>
+			<text x="38.43" y="559.09" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Eletiva 1<v:newlineChar/><tspan
+						x="13.49" dy="1.275em" class="st20">Ética e Legislação<v:newlineChar/></tspan><tspan x="41.72" dy="1.14em"
+						class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape89-203" v:mID="89" v:groupContext="shape" transform="translate(1133.86,-206.658)">
+			<title>Retângulo Arredondado.89</title>
+			<desc>Sistemas Distribuídos (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st15"/>
+			<text x="9.6" y="563.89" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Sistemas Distribuídos<v:newlineChar/><tspan
+						x="41.72" dy="1.2em" class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape90-207" v:mID="90" v:groupContext="shape" transform="translate(1133.86,-131.489)">
+			<title>Retângulo Arredondado.90</title>
+			<desc>Projeto de Graduação 1 (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st22"/>
+			<text x="4.6" y="563.89" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Projeto de Graduação 1<v:newlineChar/><tspan
+						x="41.6" dy="1.2em" class="st4">(60hrs)</tspan></text>		</g>
+		<g id="shape92-211" v:mID="92" v:groupContext="shape" transform="translate(1303.94,-432.165)">
+			<title>Retângulo Arredondado.92</title>
+			<desc>Empreendedorismo (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st23"/>
+			<text x="13.38" y="563.89" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Empreendedorismo<v:newlineChar/><tspan
+						x="41.72" dy="1.2em" class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape93-215" v:mID="93" v:groupContext="shape" transform="translate(1303.94,-356.996)">
+			<title>Retângulo Arredondado.93</title>
+			<desc>Eletiva 2 Sociologia Aplicada (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st24"/>
+			<text x="38.43" y="559.09" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Eletiva 2<v:newlineChar/><tspan
+						x="11.09" dy="1.275em" class="st20">Sociologia Aplicada<v:newlineChar/><v:paragraph v:horizAlign="1"/></tspan><tspan
+						x="41.72" dy="1.14em" class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape94-220" v:mID="94" v:groupContext="shape" transform="translate(1303.94,-281.827)">
+			<title>Retângulo Arredondado.94</title>
+			<desc>Optativa 4 Gerência de Redes (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st25"/>
+			<text x="33.84" y="559.09" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Optativa 4<v:newlineChar/><tspan
+						x="15.89" dy="1.275em" class="st20">Gerência de Redes<v:newlineChar/></tspan><tspan x="41.72" dy="1.14em"
+						class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape95-225" v:mID="95" v:groupContext="shape" transform="translate(1303.94,-206.658)">
+			<title>Retângulo Arredondado.95</title>
+			<desc>Optativa 5 Computação Forense e Perícia Digital (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st25"/>
+			<text x="33.84" y="553.09" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Optativa 5<v:newlineChar/><tspan
+						x="8.69" dy="1.275em" class="st20">Computação Forense e </tspan><tspan x="20.69" dy="1.425em" class="st20">Perícia Digital<v:newlineChar/></tspan><tspan
+						x="41.72" dy="1.2em" class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape96-231" v:mID="96" v:groupContext="shape" transform="translate(1303.94,-131.489)">
+			<title>Retângulo Arredondado.96</title>
+			<desc>Projeto de Graduação 2 (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st26"/>
+			<text x="4.6" y="563.89" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Projeto de Graduação 2<v:newlineChar/><tspan
+						x="41.72" dy="1.2em" class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape98-235" v:mID="98" v:groupContext="shape" transform="translate(1133.86,-356.996)">
+			<title>Retângulo Arredondado.98</title>
+			<desc>Optativa 2 Fundamentos de Sistema de Informação (60hrs)</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.89" width="113.39" height="56.7719"/>
+			<path d="M11.34 595.28 L102.05 595.28 A11.3384 11.3384 -180 0 0 113.39 583.94 L113.39 549.84 A11.3384 11.3384 -180 0
+						 0 102.05 538.5 L11.34 538.5 A11.3384 11.3384 -180 0 0 0 549.84 L0 583.94 A11.3384 11.3384 -180 0 0 11.34
+						 595.28 Z" class="st19"/>
+			<text x="33.84" y="554.29" class="st2" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Optativa 2<v:newlineChar/><tspan
+						x="23.09" dy="1.275em" class="st20">Fundamentos de </tspan><tspan x="6.29" dy="1.2em" class="st20">Sistema de Informação<v:newlineChar/></tspan><tspan
+						x="41.72" dy="1.14em" class="st3">(60hrs)</tspan></text>		</g>
+		<g id="shape99-241" v:mID="99" v:groupContext="shape" v:layerMember="0" transform="translate(223.451,-485.616)">
+			<title>Conector dinâmico</title>
+			<path d="M0 595.28 L52.93 595.28 L52.93 584.87 L390.72 584.87 A2.3622 2.3622 0 0 1 395.45 584.87 L721.43 584.87 L721.43
+						 820.78 L736.61 820.78" class="st27"/>
+		</g>
+		<g id="shape100-247" v:mID="100" v:groupContext="shape" v:layerMember="0" transform="translate(226.772,-460.551)">
+			<title>Conector dinâmico.100</title>
+			<path d="M0 595.28 L49.61 595.28 L49.61 637.76 L366.14 637.76 A2.3622 2.3622 0 0 1 370.87 637.76 L386.22 637.76 L386.22
+						 645.38 L393.13 645.38" class="st27"/>
+		</g>
+		<g id="shape101-252" v:mID="101" v:groupContext="shape" v:layerMember="0" transform="translate(226.772,-378.295)">
+			<title>Conector dinâmico.101</title>
+			<path d="M0 588.19 L49.65 588.19" class="st27"/>
+		</g>
+		<g id="shape102-257" v:mID="102" v:groupContext="shape" v:layerMember="0" transform="translate(223.451,-360.317)">
+			<title>Conector dinâmico.102</title>
+			<path d="M0 595.28 L13.95 595.28 L13.95 634.47 L48.5 634.47 L48.5 645.38 L52.97 645.38" class="st27"/>
+		</g>
+		<g id="shape103-262" v:mID="103" v:groupContext="shape" v:layerMember="0" transform="translate(226.772,-310.213)">
+			<title>Conector dinâmico.103</title>
+			<path d="M0 595.28 L30.61 595.28 L30.61 645.38 L52.97 645.38" class="st27"/>
+		</g>
+		<g id="shape104-267" v:mID="104" v:groupContext="shape" v:layerMember="0" transform="translate(223.451,-285.148)">
+			<title>Conector dinâmico.104</title>
+			<path d="M0 595.28 L20.33 595.28 L20.33 695.48 L56.3 695.48" class="st27"/>
+		</g>
+		<g id="shape105-272" v:mID="105" v:groupContext="shape" v:layerMember="0" transform="translate(226.772,-227.957)">
+			<title>Conector dinâmico.105</title>
+			<path d="M0 588.19 L14.65 588.19 A2.3622 2.3622 0 1 1 19.37 588.19 L49.65 588.19" class="st27"/>
+		</g>
+		<g id="shape106-277" v:mID="106" v:groupContext="shape" v:layerMember="0" transform="translate(223.451,-209.979)">
+			<title>Conector dinâmico.106</title>
+			<path d="M0 595.28 L13.95 595.28 L13.95 635.22 L48.5 635.22 L48.5 645.38 L52.97 645.38" class="st27"/>
+		</g>
+		<g id="shape107-282" v:mID="107" v:groupContext="shape" v:layerMember="0" transform="translate(226.772,-166.961)">
+			<title>Conector dinâmico.107</title>
+			<path d="M0 602.36 L31.89 602.36 L31.89 726.84 L351.97 726.84 A2.3622 2.3622 0 0 1 356.69 726.84 L724.02 726.84 A2.3622
+						 2.3622 0 1 1 728.74 726.84 L889.37 726.84 L889.37 602.36 L900.05 602.36" class="st27"/>
+		</g>
+		<g id="shape110-287" v:mID="110" v:groupContext="shape" v:layerMember="0" transform="translate(396.85,-378.295)">
+			<title>Conector dinâmico.110</title>
+			<path d="M0 588.19 L49.65 588.19" class="st27"/>
+		</g>
+		<g id="shape111-292" v:mID="111" v:groupContext="shape" v:layerMember="0" transform="translate(566.929,-460.551)">
+			<title>Conector dinâmico.111</title>
+			<path d="M0 595.28 L17.72 595.28 L17.72 632.09 L25.98 632.09 A2.3622 2.3622 0 0 1 30.71 632.09 L178.35 632.09 A2.3622
+						 2.3622 0 0 1 183.07 632.09 L190.39 632.09 A2.3622 2.3622 0 0 1 195.12 632.09 L201.73 632.09 A2.3622 2.3622
+						 0 1 1 206.46 632.09 L230.09 632.09 L230.09 638.34" class="st27"/>
+		</g>
+		<g id="shape113-297" v:mID="113" v:groupContext="shape" v:layerMember="0" transform="translate(396.85,-303.126)">
+			<title>Conector dinâmico.113</title>
+			<path d="M0 588.19 L49.65 588.19" class="st27"/>
+		</g>
+		<g id="shape114-302" v:mID="114" v:groupContext="shape" v:layerMember="0" transform="translate(393.529,-285.148)">
+			<title>Conector dinâmico.114</title>
+			<path d="M0 595.28 L13.95 595.28 L13.95 620.31 L50.57 620.31 A2.3622 2.3622 0 1 1 55.29 620.31 L56.3 620.31"
+					class="st27"/>
+		</g>
+		<g id="shape115-307" v:mID="115" v:groupContext="shape" v:layerMember="0" transform="translate(393.529,-260.109)">
+			<title>Conector dinâmico.115</title>
+			<path d="M0 595.28 L0 579.01 L11.59 579.01 A2.3622 2.3622 0 1 1 16.31 579.01 L199.38 579.01 A2.3622 2.3622 0 0 1 204.11
+						 579.01 L219.46 579.01 L219.46 545.17 L223.05 545.17" class="st27"/>
+		</g>
+		<g id="shape116-312" v:mID="116" v:groupContext="shape" v:layerMember="0" transform="translate(396.85,-227.957)">
+			<title>Conector dinâmico.116</title>
+			<path d="M0 588.19 L49.61 588.19 L49.61 553.35 L196.06 553.35 A2.3622 2.3622 0 1 1 200.79 553.35 L216.14 553.35 L216.14
+						 588.19 L219.73 588.19" class="st27"/>
+		</g>
+		<g id="shape118-317" v:mID="118" v:groupContext="shape" v:layerMember="0" transform="translate(393.529,-177.853)">
+			<title>Conector dinâmico.118</title>
+			<path d="M0 588.19 L56.3 588.19" class="st27"/>
+		</g>
+		<g id="shape119-322" v:mID="119" v:groupContext="shape" v:layerMember="0" transform="translate(393.529,-134.81)">
+			<title>Conector dinâmico.119</title>
+			<path d="M0 595.28 L30.99 595.28 L30.99 645.38 L52.97 645.38" class="st27"/>
+		</g>
+		<g id="shape120-327" v:mID="120" v:groupContext="shape" v:layerMember="0" transform="translate(396.85,-159.875)">
+			<title>Conector dinâmico.120</title>
+			<path d="M0 595.28 L49.61 595.28 L49.61 630.75 L196.06 630.75 A2.3622 2.3622 0 0 1 200.79 630.75 L216.14 630.75 L216.14
+						 645.38 L223.05 645.38" class="st27"/>
+		</g>
+		<g id="shape121-332" v:mID="121" v:groupContext="shape" v:layerMember="0" transform="translate(396.85,-77.6191)">
+			<title>Conector dinâmico.121</title>
+			<path d="M0 588.19 L12.4 588.19 L12.4 623.66 L181.89 623.66 A2.3622 2.3622 0 0 1 186.61 623.66 L196.06 623.66 A2.3622
+						 2.3622 0 1 1 200.79 623.66 L216.14 623.66 L216.14 588.19 L219.73 588.19" class="st27"/>
+		</g>
+		<g id="shape122-337" v:mID="122" v:groupContext="shape" v:layerMember="0" transform="translate(733.687,-485.616)">
+			<title>Conector dinâmico.122</title>
+			<path d="M0 595.28 L26 595.28 L26 745.61 L39.94 745.61 A2.3622 2.3622 0 0 1 44.66 745.61 L56.3 745.61" class="st27"/>
+		</g>
+		<g id="shape123-342" v:mID="123" v:groupContext="shape" v:layerMember="0" transform="translate(737.008,-460.551)">
+			<title>Conector dinâmico.123</title>
+			<path d="M0 595.28 L10.63 595.28 L10.63 795.72 L15.35 795.72 A2.3622 2.3622 0 0 1 20.08 795.72 L36.61 795.72 A2.3622
+						 2.3622 0 0 1 41.34 795.72 L52.97 795.72" class="st27"/>
+		</g>
+		<g id="shape124-347" v:mID="124" v:groupContext="shape" v:layerMember="0" transform="translate(733.687,-435.486)">
+			<title>Conector dinâmico.124</title>
+			<path d="M0 595.28 L11.59 595.28 A2.3622 2.3622 0 0 1 16.31 595.28 L23.64 595.28 A2.3622 2.3622 0 1 1 28.36 595.28 L34.97
+						 595.28 A2.3622 2.3622 0 0 1 39.7 595.28 L52.93 595.28 L52.93 601.92 L199.38 601.92 A2.3622 2.3622 0 0 1
+						 204.11 601.92 L208.83 601.92 A2.3622 2.3622 0 0 1 213.56 601.92 L219.46 601.92 L219.46 570.21 L223.05 570.21"
+					class="st27"/>
+		</g>
+		<g id="shape125-352" v:mID="125" v:groupContext="shape" v:layerMember="0" transform="translate(563.608,-492.702)">
+			<title>Conector dinâmico.125</title>
+			<path d="M0 602.36 L52.93 602.36 L52.93 584.19 L403.49 584.19 L403.49 595.32" class="st27"/>
+		</g>
+		<g id="shape126-357" v:mID="126" v:groupContext="shape" v:layerMember="0" transform="translate(566.929,-310.213)">
+			<title>Conector dinâmico.126</title>
+			<path d="M0 595.28 L10.63 595.28 L10.63 520.11 L25.98 520.11 A2.3622 2.3622 0 0 1 30.71 520.11 L49.65 520.11"
+					class="st27"/>
+		</g>
+		<g id="shape127-362" v:mID="127" v:groupContext="shape" v:layerMember="0" transform="translate(566.929,-235.044)">
+			<title>Conector dinâmico.127</title>
+			<path d="M0 595.28 L22.95 595.28 L22.95 630.73 L25.98 630.73 A2.3622 2.3622 0 1 1 30.71 630.73 L178.35 630.73 A2.3622
+						 2.3622 0 0 1 183.07 630.73 L206.69 630.73 A2.3622 2.3622 0 1 1 211.42 630.73 L348.43 630.73 A2.3622 2.3622
+						 0 1 1 353.15 630.73 L366.14 630.73 A2.3622 2.3622 0 1 1 370.87 630.73 L383.86 630.73 A2.3622 2.3622 0 1
+						 1 388.58 630.73 L536.22 630.73 A2.3622 2.3622 0 0 1 540.94 630.73 L556.3 630.73 L556.3 645.38 L563.21 645.38"
+					class="st27"/>
+		</g>
+		<g id="shape129-367" v:mID="129" v:groupContext="shape" v:layerMember="0" transform="translate(566.929,-152.788)">
+			<title>Conector dinâmico.129</title>
+			<path d="M0 588.19 L25.98 588.19 A2.3622 2.3622 0 1 1 30.71 588.19 L49.65 588.19" class="st27"/>
+		</g>
+		<g id="shape130-372" v:mID="130" v:groupContext="shape" v:layerMember="0" transform="translate(563.608,-134.81)">
+			<title>Conector dinâmico.130</title>
+			<path d="M0 595.28 L29.31 595.28 A2.3622 2.3622 0 1 1 34.03 595.28 L52.93 595.28 L52.93 605.68 L194.66 605.68 L194.66
+						 570.21 L210.01 570.21 A2.3622 2.3622 0 1 1 214.74 570.21 L223.05 570.21" class="st27"/>
+		</g>
+		<g id="shape131-377" v:mID="131" v:groupContext="shape" v:layerMember="0" transform="translate(563.608,-109.771)">
+			<title>Conector dinâmico.131</title>
+			<path d="M0 595.28 L31.67 595.28 L31.67 244.5 L52.97 244.5" class="st27"/>
+		</g>
+		<g id="shape132-382" v:mID="132" v:groupContext="shape" v:layerMember="0" transform="translate(563.608,-59.6408)">
+			<title>Conector dinâmico.132</title>
+			<path d="M0 595.28 L15.13 595.28 A2.3622 2.3622 0 1 1 19.86 595.28 L31.67 595.28 L31.67 611.02 L212.38 611.02 L212.38
+						 269.53 L223.05 269.53" class="st27"/>
+		</g>
+		<g id="shape133-387" v:mID="133" v:groupContext="shape" v:layerMember="0" transform="translate(737.008,-385.382)">
+			<title>Conector dinâmico.133</title>
+			<path d="M0 595.28 L8.27 595.28 A2.3622 2.3622 0 0 1 12.99 595.28 L20.31 595.28 A2.3622 2.3622 0 1 1 25.04 595.28 L34.02
+						 595.28 L34.02 520.11 L49.65 520.11" class="st27"/>
+		</g>
+		<g id="shape134-392" v:mID="134" v:groupContext="shape" v:layerMember="0" transform="translate(733.687,-360.317)">
+			<title>Conector dinâmico.134</title>
+			<path d="M0 595.28 L11.59 595.28 A2.3622 2.3622 0 0 1 16.31 595.28 L21.04 595.28 L21.04 745.61 L39.94 745.61 A2.3622
+						 2.3622 0 1 1 44.66 745.61 L56.29 745.61" class="st27"/>
+		</g>
+		<g id="shape135-397" v:mID="135" v:groupContext="shape" v:layerMember="0" transform="translate(737.008,-235.044)">
+			<title>Conector dinâmico.135</title>
+			<path d="M0 595.28 L10.63 595.28 L10.63 645.38 L36.61 645.38 A2.3622 2.3622 0 1 1 41.34 645.38 L52.97 645.38"
+					class="st27"/>
+		</g>
+		<g id="shape136-402" v:mID="136" v:groupContext="shape" v:layerMember="0" transform="translate(737.008,-91.7923)">
+			<title>Conector dinâmico.136</title>
+			<path d="M0 602.36 L36.61 602.36 A2.3622 2.3622 0 0 1 41.34 602.36 L49.65 602.36" class="st27"/>
+		</g>
+		<g id="shape137-407" v:mID="137" v:groupContext="shape" v:layerMember="0" transform="translate(907.087,-460.551)">
+			<title>Conector dinâmico.137</title>
+			<path d="M0 595.28 L28.35 595.28 L28.35 745.61 L35.43 745.61 A2.3622 2.3622 0 0 1 40.16 745.61 L49.65 745.61"
+					class="st27"/>
+		</g>
+		<g id="shape138-412" v:mID="138" v:groupContext="shape" v:layerMember="0" transform="translate(907.087,-378.295)">
+			<title>Conector dinâmico.138</title>
+			<path d="M0 588.19 L25.98 588.19 A2.3622 2.3622 0 1 1 30.71 588.19 L35.43 588.19 A2.3622 2.3622 0 1 1 40.16 588.19 L49.65
+						 588.19" class="st27"/>
+		</g>
+		<g id="shape139-417" v:mID="139" v:groupContext="shape" v:layerMember="0" transform="translate(566.929,-84.7057)">
+			<title>Conector dinâmico.139</title>
+			<path d="M0 595.28 L14.17 595.28 L14.17 663.24 L386.22 663.24 L386.22 444.94 L389.81 444.94" class="st27"/>
+		</g>
+		<g id="shape140-422" v:mID="140" v:groupContext="shape" v:layerMember="0" transform="translate(907.087,-235.044)">
+			<title>Conector dinâmico.140</title>
+			<path d="M0 595.28 L10.63 595.28 L10.63 645.38 L43.7 645.38 A2.3622 2.3622 0 1 1 48.43 645.38 L52.97 645.38"
+					class="st27"/>
+		</g>
+		<g id="shape141-427" v:mID="141" v:groupContext="shape" v:layerMember="0" transform="translate(903.766,-209.979)">
+			<title>Conector dinâmico.141</title>
+			<path d="M0 595.28 L11.59 595.28 A2.3622 2.3622 0 1 1 16.31 595.28 L31.67 595.28 L31.67 611.83 L47.02 611.83 A2.3622
+						 2.3622 0 1 1 51.75 611.83 L201.75 611.83 L201.75 570.21 L223.05 570.21" class="st27"/>
+		</g>
+		<g id="shape142-432" v:mID="142" v:groupContext="shape" v:layerMember="0" transform="translate(1247.24,-152.788)">
+			<title>Conector dinâmico.142</title>
+			<path d="M0 588.19 L49.65 588.19" class="st27"/>
+		</g>
+		<g id="shape144-437" v:mID="144" v:groupContext="shape" v:layerMember="0" transform="translate(907.087,-152.788)">
+			<title>Conector dinâmico.144</title>
+			<path d="M0 588.19 L43.7 588.19 A2.3622 2.3622 0 1 1 48.43 588.19 L49.65 588.19" class="st27"/>
+		</g>
+		<g id="shape145-442" v:mID="145" v:groupContext="shape" v:layerMember="0" transform="translate(903.766,-127.723)">
+			<title>Conector dinâmico.145</title>
+			<path d="M0 588.19 L13.23 588.19 L13.23 598.6 L47.02 598.6 A2.3622 2.3622 0 1 1 51.75 598.6 L210.01 598.6 A2.3622 2.3622
+						 0 0 1 214.74 598.6 L219.46 598.6 L219.46 588.19 L226.37 588.19" class="st27"/>
+		</g>
+		<g id="shape146-447" v:mID="146" v:groupContext="shape" v:layerMember="0" transform="translate(1077.17,-310.213)">
+			<title>Conector dinâmico.146</title>
+			<path d="M0 595.28 L10.63 595.28 L10.63 645.38 L52.97 645.38" class="st27"/>
+		</g>
+		<g id="shape147-452" v:mID="147" v:groupContext="shape" v:layerMember="0" transform="translate(1077.17,-159.875)">
+			<title>Conector dinâmico.147</title>
+			<path d="M0 595.28 L31.89 595.28 L31.89 561.73 L43.7 561.73 A2.3622 2.3622 0 1 1 48.43 561.73 L216.14 561.73 L216.14
+						 570.21 L223.05 570.21" class="st27"/>
+		</g>
+		<g id="shape148-457" v:mID="148" v:groupContext="shape" transform="translate(-532.756,500.495) rotate(-90)">
+			<title>Planilha.148</title>
+			<desc>Matriz Curricular</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="202.857" cy="585.276" width="405.72" height="20"/>
+			<rect x="0" y="575.276" width="405.714" height="20" class="st29"/>
+			<text x="12.4" y="599.68" class="st30" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Matriz Curricular</text>		</g>
+		<g id="shape149-460" v:mID="149" v:groupContext="shape" transform="translate(-497.323,195.72) rotate(-90)">
+			<title>Planilha.149</title>
+			<desc>PPC: 2011</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="48.2539" cy="585.276" width="96.51" height="20"/>
+			<rect x="0" y="575.276" width="96.5079" height="20" class="st29"/>
+			<text x="8.78" y="590.68" class="st31" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>PPC: 2011</text>		</g>
+		<g id="shape152-463" v:mID="152" v:groupContext="shape" transform="translate(1438.44,-340.157)">
+			<title>Retângulo Arredondado.152</title>
+			<desc>Legendas dos núcleos temáticos</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.25570864472424):1"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.25570864472424):1"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.25570864472424):1"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.25570864472424):1"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
+			<v:textRect cx="92.0551" cy="496.063" width="184.12" height="198.425"/>
+			<path d="M18.41 595.28 L165.7 595.28 A18.4107 18.4107 -180 0 0 184.11 576.86 L184.11 415.26 A18.4107 18.4107 -180 0 0
+						 165.7 396.85 L18.41 396.85 A18.4107 18.4107 -180 0 0 0 415.26 L0 576.86 A18.4107 18.4107 -180 0 0 18.41
+						 595.28 Z" class="st32"/>
+			<text x="30.84" y="411.65" class="st33" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Legendas dos núcleos <tspan
+						x="64.52" dy="1.2em" class="st4">temáticos</tspan></text>		</g>
+		<g id="shape153-467" v:mID="153" v:groupContext="shape" transform="translate(1445.53,-484.634)">
+			<title>Retângulo Arredondado.153</title>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.059055035452562):1"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.059055035452562):1"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.059055035452562):1"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.059055035452562):1"/>
+			</v:userDefs>
+			<path d="M4.25 595.28 L38.27 595.28 A4.25189 4.25189 -180 0 0 42.52 591.02 L42.52 588.1 A4.25189 4.25189 -180 0 0 38.27
+						 583.85 L4.25 583.85 A4.25189 4.25189 -180 0 0 0 588.1 L0 591.02 A4.25189 4.25189 -180 0 0 4.25 595.28 Z"
+					class="st34"/>
+		</g>
+		<g id="shape155-469" v:mID="155" v:groupContext="shape" transform="translate(1480.96,-480.348)">
+			<title>Planilha.155</title>
+			<desc>Fundamentos da Computação</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="74.4094" cy="585.276" width="148.82" height="20"/>
+			<rect x="0" y="575.276" width="148.819" height="20" class="st29"/>
+			<text x="7.97" y="588.28" class="st35" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Fundamentos da Computação</text>		</g>
+		<g id="shape156-472" v:mID="156" v:groupContext="shape" transform="translate(1445.53,-453.205)">
+			<title>Retângulo Arredondado.156</title>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.059055035452562):1"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.059055035452562):1"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.059055035452562):1"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.059055035452562):1"/>
+			</v:userDefs>
+			<path d="M4.25 595.28 L38.27 595.28 A4.25189 4.25189 -180 0 0 42.52 591.02 L42.52 588.1 A4.25189 4.25189 -180 0 0 38.27
+						 583.85 L4.25 583.85 A4.25189 4.25189 -180 0 0 0 588.1 L0 591.02 A4.25189 4.25189 -180 0 0 4.25 595.28 Z"
+					class="st36"/>
+		</g>
+		<g id="shape157-474" v:mID="157" v:groupContext="shape" transform="translate(1480.96,-448.919)">
+			<title>Planilha.157</title>
+			<desc>Tecnologia da Computação</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="74.4094" cy="585.276" width="148.82" height="20"/>
+			<rect x="0" y="575.276" width="148.819" height="20" class="st29"/>
+			<text x="13.92" y="588.28" class="st35" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Tecnologia da Computação</text>		</g>
+		<g id="shape158-477" v:mID="158" v:groupContext="shape" transform="translate(1445.53,-421.776)">
+			<title>Retângulo Arredondado.158</title>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.059055035452562):1"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.059055035452562):1"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.059055035452562):1"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.059055035452562):1"/>
+			</v:userDefs>
+			<path d="M4.25 595.28 L38.27 595.28 A4.25189 4.25189 -180 0 0 42.52 591.02 L42.52 588.1 A4.25189 4.25189 -180 0 0 38.27
+						 583.85 L4.25 583.85 A4.25189 4.25189 -180 0 0 0 588.1 L0 591.02 A4.25189 4.25189 -180 0 0 4.25 595.28 Z"
+					class="st37"/>
+		</g>
+		<g id="shape159-479" v:mID="159" v:groupContext="shape" transform="translate(1480.96,-417.49)">
+			<title>Planilha.159</title>
+			<desc>Matemática</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="74.4094" cy="585.276" width="148.82" height="20"/>
+			<rect x="0" y="575.276" width="148.819" height="20" class="st29"/>
+			<text x="48.46" y="588.28" class="st35" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Matemática</text>		</g>
+		<g id="shape160-482" v:mID="160" v:groupContext="shape" transform="translate(1445.53,-390.347)">
+			<title>Retângulo Arredondado.160</title>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.059055035452562):1"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.059055035452562):1"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.059055035452562):1"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.059055035452562):1"/>
+			</v:userDefs>
+			<path d="M4.25 595.28 L38.27 595.28 A4.25189 4.25189 -180 0 0 42.52 591.02 L42.52 588.1 A4.25189 4.25189 -180 0 0 38.27
+						 583.85 L4.25 583.85 A4.25189 4.25189 -180 0 0 0 588.1 L0 591.02 A4.25189 4.25189 -180 0 0 4.25 595.28 Z"
+					class="st38"/>
+		</g>
+		<g id="shape161-484" v:mID="161" v:groupContext="shape" transform="translate(1479.44,-386.061)">
+			<title>Planilha.161</title>
+			<desc>Ciências da Natureza</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="74.4094" cy="585.276" width="148.82" height="20"/>
+			<rect x="0" y="575.276" width="148.819" height="20" class="st29"/>
+			<text x="28.28" y="588.28" class="st35" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Ciências da Natureza</text>		</g>
+		<g id="shape162-487" v:mID="162" v:groupContext="shape" transform="translate(1446.09,-358.583)">
+			<title>Retângulo Arredondado.162</title>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.059055035452562):1"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.059055035452562):1"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.059055035452562):1"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.059055035452562):1"/>
+			</v:userDefs>
+			<path d="M4.25 595.28 L38.27 595.28 A4.25189 4.25189 -180 0 0 42.52 591.02 L42.52 588.1 A4.25189 4.25189 -180 0 0 38.27
+						 583.85 L4.25 583.85 A4.25189 4.25189 -180 0 0 0 588.1 L0 591.02 A4.25189 4.25189 -180 0 0 4.25 595.28 Z"
+					class="st39"/>
+		</g>
+		<g id="shape164-489" v:mID="164" v:groupContext="shape" transform="translate(1488.19,-354.331)">
+			<title>Planilha.164</title>
+			<desc>Contexto Social e Profissional</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="67.3228" cy="585.276" width="134.65" height="20"/>
+			<rect x="0" y="575.276" width="134.646" height="20" class="st29"/>
+			<text x="29.02" y="582.28" class="st35" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Contexto Social e <tspan
+						x="42.11" dy="1.2em" class="st4">Profissional</tspan></text>		</g>
+		<g id="shape1008-493" v:mID="1008" v:groupContext="shape" transform="translate(1438.44,-184.252)">
+			<title>Retângulo Arredondado.1008</title>
+			<desc>Situação</desc>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.25570864472424):1"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.25570864472424):1"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.25570864472424):1"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.25570864472424):1"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
+			<v:textRect cx="92.0551" cy="518.926" width="184.12" height="152.7"/>
+			<path d="M18.41 595.28 L165.7 595.28 A18.4107 18.4107 -180 0 0 184.11 576.86 L184.11 460.99 A18.4107 18.4107 -180 0 0
+						 165.7 442.58 L18.41 442.58 A18.4107 18.4107 -180 0 0 0 460.99 L0 576.86 A18.4107 18.4107 -180 0 0 18.41
+						 595.28 Z" class="st40"/>
+			<text x="68.02" y="457.38" class="st33" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Situação</text>		</g>
+		<g id="shape1000-496" v:mID="1000" v:groupContext="shape" transform="translate(1459.84,-283.465)">
+			<title>Retângulo Arredondado.1000</title>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.039369996710717):1"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.039369996710717):1"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.039369996710717):1"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.039369996710717):1"/>
+			</v:userDefs>
+			<path d="M2.83 595.28 L25.51 595.28 A2.83459 2.83459 -180 0 0 28.35 592.44 L28.35 591.02 A2.83459 2.83459 -180 0 0 25.51
+						 588.19 L2.83 588.19 A2.83459 2.83459 -180 0 0 0 591.02 L0 592.44 A2.83459 2.83459 -180 0 0 2.83 595.28 Z"
+					class="st41"/>
+		</g>
+		<g id="shape1001-498" v:mID="1001" v:groupContext="shape" transform="translate(1459.84,-269.291)">
+			<title>Retângulo Arredondado.19</title>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.039369996710717):1"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.039369996710717):1"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.039369996710717):1"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.039369996710717):1"/>
+			</v:userDefs>
+			<path d="M2.83 595.28 L25.51 595.28 A2.83459 2.83459 -180 0 0 28.35 592.44 L28.35 591.02 A2.83459 2.83459 -180 0 0 25.51
+						 588.19 L2.83 588.19 A2.83459 2.83459 -180 0 0 0 591.02 L0 592.44 A2.83459 2.83459 -180 0 0 2.83 595.28 Z"
+					class="st42"/>
+		</g>
+		<g id="shape1009-500" v:mID="1009" v:groupContext="shape" transform="translate(1488.19,-281.293)">
+			<title>Planilha.1009</title>
+			<desc>Já cursada</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="67.1811" cy="589.561" width="134.37" height="11.429"/>
+			<rect x="0" y="583.847" width="134.362" height="11.429" class="st29"/>
+			<text x="44.45" y="592.56" class="st35" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Já cursada</text>		</g>
+		<g id="shape1010-503" v:mID="1010" v:groupContext="shape" transform="translate(1459.84,-290.472)">
+			<title>Planilha.1010</title>
+			<desc>Borda</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="14.1732" cy="589.561" width="28.35" height="11.429"/>
+			<rect x="0" y="583.847" width="28.3464" height="11.429" class="st29"/>
+			<text x="6.36" y="591.36" class="st43" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Borda</text>		</g>
+		<g id="shape1011-506" v:mID="1011" v:groupContext="shape" transform="translate(1488.19,-267.12)">
+			<title>Planilha.1011</title>
+			<desc>Cursando: 2019 - 1</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="67.1811" cy="589.561" width="134.37" height="11.429"/>
+			<rect x="0" y="583.847" width="134.362" height="11.429" class="st29"/>
+			<text x="25.48" y="592.56" class="st35" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Cursando: 2019 - 1</text>		</g>
+		<g id="shape1012-509" v:mID="1012" v:groupContext="shape" transform="translate(1488.19,-252.947)">
+			<title>Planilha.1012</title>
+			<desc>2019 - 2</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="67.1811" cy="589.561" width="134.37" height="11.429"/>
+			<rect x="0" y="583.847" width="134.362" height="11.429" class="st29"/>
+			<text x="48.97" y="592.56" class="st35" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>2019 - 2</text>		</g>
+		<g id="shape1013-512" v:mID="1013" v:groupContext="shape" transform="translate(1488.19,-238.774)">
+			<title>Planilha.1013</title>
+			<desc>2020 - 1</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="67.1811" cy="589.561" width="134.37" height="11.429"/>
+			<rect x="0" y="583.847" width="134.362" height="11.429" class="st29"/>
+			<text x="48.97" y="592.56" class="st35" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>2020 - 1</text>		</g>
+		<g id="shape1014-515" v:mID="1014" v:groupContext="shape" transform="translate(1488.19,-224.6)">
+			<title>Planilha.1014</title>
+			<desc>2020 - 2</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="67.1811" cy="589.561" width="134.37" height="11.429"/>
+			<rect x="0" y="583.847" width="134.362" height="11.429" class="st29"/>
+			<text x="48.97" y="592.56" class="st35" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>2020 - 2</text>		</g>
+		<g id="shape1017-518" v:mID="1017" v:groupContext="shape" transform="translate(-497.323,510.236) rotate(-90)">
+			<title>Planilha.1017</title>
+			<desc>Ciência da Computação - UFT</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="134.646" cy="585.276" width="269.3" height="20"/>
+			<rect x="0" y="575.276" width="269.291" height="20" class="st29"/>
+			<text x="10.59" y="590.68" class="st44" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Ciência da Computação - UFT</text>		</g>
+		<g id="shape1018-521" v:mID="1018" v:groupContext="shape" transform="translate(694.488,-557.276)">
+			<title>Planilha.1018</title>
+			<desc>Planejamento</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="106.299" cy="585.276" width="212.6" height="20"/>
+			<rect x="0" y="575.276" width="212.598" height="20" class="st29"/>
+			<text x="9.29" y="594.28" class="st45" v:langID="1046"><v:paragraph v:horizAlign="1"/><v:tabList/>Planejamento</text>		</g>
+		<g id="shape1019-524" v:mID="1019" v:groupContext="shape" transform="translate(1459.84,-269.291)">
+			<title>Retângulo Arredondado.1019</title>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.039369996710717):1"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.039369996710717):1"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.039369996710717):1"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.039369996710717):1"/>
+			</v:userDefs>
+			<path d="M2.83 595.28 L25.51 595.28 A2.83459 2.83459 -180 0 0 28.35 592.44 L28.35 591.02 A2.83459 2.83459 -180 0 0 25.51
+						 588.19 L2.83 588.19 A2.83459 2.83459 -180 0 0 0 591.02 L0 592.44 A2.83459 2.83459 -180 0 0 2.83 595.28 Z"
+					class="st46"/>
+		</g>
+		<g id="shape1020-526" v:mID="1020" v:groupContext="shape" transform="translate(1459.84,-255.118)">
+			<title>Retângulo Arredondado.1020</title>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.039369996710717):1"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.039369996710717):1"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.039369996710717):1"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.039369996710717):1"/>
+			</v:userDefs>
+			<path d="M2.83 595.28 L25.51 595.28 A2.83459 2.83459 -180 0 0 28.35 592.44 L28.35 591.02 A2.83459 2.83459 -180 0 0 25.51
+						 588.19 L2.83 588.19 A2.83459 2.83459 -180 0 0 0 591.02 L0 592.44 A2.83459 2.83459 -180 0 0 2.83 595.28 Z"
+					class="st47"/>
+		</g>
+		<g id="shape1021-528" v:mID="1021" v:groupContext="shape" transform="translate(1459.84,-240.945)">
+			<title>Retângulo Arredondado.1021</title>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.039369996710717):1"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.039369996710717):1"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.039369996710717):1"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.039369996710717):1"/>
+			</v:userDefs>
+			<path d="M2.83 595.28 L25.51 595.28 A2.83459 2.83459 -180 0 0 28.35 592.44 L28.35 591.02 A2.83459 2.83459 -180 0 0 25.51
+						 588.19 L2.83 588.19 A2.83459 2.83459 -180 0 0 0 591.02 L0 592.44 A2.83459 2.83459 -180 0 0 2.83 595.28 Z"
+					class="st48"/>
+		</g>
+		<g id="shape1022-530" v:mID="1022" v:groupContext="shape" transform="translate(1459.84,-226.772)">
+			<title>Retângulo Arredondado.1022</title>
+			<v:userDefs>
+				<v:ud v:nameU="CTypeTopLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeTopRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotLeftSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CTypeBotRightSnip" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="CornerLockHoriz" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockVert" v:prompt="" v:val="VT0(1):5"/>
+				<v:ud v:nameU="CornerLockDiag" v:prompt="" v:val="VT0(0):5"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.15748031496063):24"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				<v:ud v:nameU="TopLeftOffset" v:prompt="" v:val="VT0(0.039369996710717):1"/>
+				<v:ud v:nameU="TopRightOffset" v:prompt="" v:val="VT0(0.039369996710717):1"/>
+				<v:ud v:nameU="BotLeftOffset" v:prompt="" v:val="VT0(0.039369996710717):1"/>
+				<v:ud v:nameU="BotRightOffset" v:prompt="" v:val="VT0(0.039369996710717):1"/>
+			</v:userDefs>
+			<path d="M2.83 595.28 L25.51 595.28 A2.83459 2.83459 -180 0 0 28.35 592.44 L28.35 591.02 A2.83459 2.83459 -180 0 0 25.51
+						 588.19 L2.83 588.19 A2.83459 2.83459 -180 0 0 0 591.02 L0 592.44 A2.83459 2.83459 -180 0 0 2.83 595.28 Z"
+					class="st49"/>
+		</g>
+	</g>
+</svg>
